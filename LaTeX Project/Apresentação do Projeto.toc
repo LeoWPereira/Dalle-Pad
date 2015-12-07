@@ -1,0 +1,16 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {portuges}
+\beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Tema}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{Delimita\IeC {\c c}\IeC {\~a}o do estudo}{5}{0}{1}
+\beamer@subsectionintoc {1}{3}{Objetivos}{6}{0}{1}
+\beamer@subsectionintoc {1}{4}{Procedimentos metodol\IeC {\'o}gicos}{8}{0}{1}
+\beamer@subsectionintoc {1}{5}{Estrutura da apresenta\IeC {\c c}\IeC {\~a}o}{9}{0}{1}
+\beamer@sectionintoc {2}{Desenvolvimento do Projeto}{10}{0}{2}
+\beamer@subsectionintoc {2}{1}{Hardware}{10}{0}{2}
+\beamer@subsectionintoc {2}{2}{Aplicativo}{11}{0}{2}
+\beamer@subsectionintoc {2}{3}{Comunica\IeC {\c c}\IeC {\~a}o entre Hardware e aplicativo}{19}{0}{2}
+\beamer@subsectionintoc {2}{4}{Projeto Mec\IeC {\^a}nico - Inv\IeC {\'o}lucro}{20}{0}{2}
+\beamer@sectionintoc {3}{Resultados e discuss\IeC {\~o}es}{21}{0}{3}
+\beamer@subsectionintoc {3}{1}{Resultados}{21}{0}{3}
+\beamer@subsectionintoc {3}{2}{Discuss\IeC {\~o}es}{22}{0}{3}
