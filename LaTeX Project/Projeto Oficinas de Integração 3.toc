@@ -28,34 +28,34 @@
 \contentsline {chapter}{REFER\^ENCIAS}{19}
 \contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Gerenciamento de Integra\IeC {\c c}\IeC {\~a}o do Projeto}}{20}
 \contentsline {section}{\numberline {A.1}\MakeUppercase {Termo de Abertura do Projeto}}{20}
-\contentsline {section}{\numberline {A.2}\MakeUppercase {Declara\IeC {\c c}\IeC {\~a}o do Escopo Preliminar do Projeto}}{29}
-\contentsline {section}{\numberline {A.3}\MakeUppercase {Plano de Gerenciamento do Projeto}}{29}
-\contentsline {chapter}{Ap\^endice{} B{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Gerenciamento de Escopo do Projeto}}{30}
-\contentsline {section}{\numberline {B.1}\MakeUppercase {Planejamento do Escopo}}{30}
-\contentsline {section}{\numberline {B.2}\MakeUppercase {Defini\IeC {\c c}\IeC {\~a}o do Escopo}}{30}
-\contentsline {section}{\numberline {B.3}\MakeUppercase {Estrutura Anal\IeC {\'\i }tica do Projeto}}{30}
-\contentsline {chapter}{Ap\^endice{} C{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Gerenciamento do Tempo do Projeto}}{31}
-\contentsline {section}{\numberline {C.1}\MakeUppercase {Defini\IeC {\c c}\IeC {\~a}o da Atividade}}{31}
-\contentsline {section}{\numberline {C.2}\MakeUppercase {Sequenciamento de Atividades}}{31}
-\contentsline {section}{\numberline {C.3}\MakeUppercase {Estimativa de recursos de atividade}}{31}
-\contentsline {section}{\numberline {C.4}\MakeUppercase {Estimativa de dura\IeC {\c c}\IeC {\~a}o de atividade}}{31}
-\contentsline {section}{\numberline {C.5}\MakeUppercase {Desenvolvimento do Cronograma}}{31}
-\contentsline {chapter}{Ap\^endice{} D{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Gerenciamento do Custo do Projeto}}{32}
-\contentsline {section}{\numberline {D.1}\MakeUppercase {Estimativa de custos}}{32}
-\contentsline {section}{\numberline {D.2}\MakeUppercase {Or\IeC {\c c}amenta\IeC {\c c}\IeC {\~a}o}}{32}
-\contentsline {chapter}{Ap\^endice{} E{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Gerenciamento da Qualidade do Projeto}}{33}
-\contentsline {section}{\numberline {E.1}\MakeUppercase {Planejamento da qualidade}}{33}
-\contentsline {chapter}{Ap\^endice{} F{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Gerenciamento de Recursos Humanos do Projeto}}{34}
-\contentsline {section}{\numberline {F.1}\MakeUppercase {Planejamento de recursos humanos}}{34}
-\contentsline {chapter}{Ap\^endice{} G{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Gerenciamento de Comunica\IeC {\c c}\IeC {\~a}o do Projeto}}{35}
-\contentsline {section}{\numberline {G.1}\MakeUppercase {Planejamento das comunica\IeC {\c c}\IeC {\~o}es}}{35}
-\contentsline {chapter}{Ap\^endice{} H{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Gerenciamento do Risco do Projeto}}{36}
-\contentsline {section}{\numberline {H.1}\MakeUppercase {Planejamento do gerenciamento de riscos}}{36}
-\contentsline {section}{\numberline {H.2}\MakeUppercase {Identifica\IeC {\c c}\IeC {\~a}o de riscos}}{36}
-\contentsline {section}{\numberline {H.3}\MakeUppercase {An\IeC {\'a}lise Qualitativa de riscos}}{36}
-\contentsline {section}{\numberline {H.4}\MakeUppercase {Planejamento de respostas a riscos}}{36}
-\contentsline {chapter}{Ap\^endice{} I{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Gerenciamento das Aquisi\IeC {\c c}\IeC {\~o}es do Projeto}}{37}
-\contentsline {section}{\numberline {I.1}\MakeUppercase {Planejar compras e aquisi\IeC {\c c}\IeC {\~o}es}}{37}
-\contentsline {section}{\numberline {I.2}\MakeUppercase {Planejar contrata\IeC {\c c}\IeC {\~o}es}}{37}
-\contentsline {chapter}{Ap\^endice{} J{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Atas de Reuni\IeC {\~a}o}}{38}
-\contentsline {chapter}{Anexo{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Nome do Anexo}}{39}
+\contentsline {section}{\numberline {A.2}\MakeUppercase {Declara\IeC {\c c}\IeC {\~a}o do Escopo Preliminar do Projeto}}{30}
+\contentsline {section}{\numberline {A.3}\MakeUppercase {Plano de Gerenciamento do Projeto}}{30}
+\contentsline {chapter}{Ap\^endice{} B{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Gerenciamento de Escopo do Projeto}}{31}
+\contentsline {section}{\numberline {B.1}\MakeUppercase {Planejamento do Escopo}}{31}
+\contentsline {section}{\numberline {B.2}\MakeUppercase {Defini\IeC {\c c}\IeC {\~a}o do Escopo}}{31}
+\contentsline {section}{\numberline {B.3}\MakeUppercase {Estrutura Anal\IeC {\'\i }tica do Projeto}}{31}
+\contentsline {chapter}{Ap\^endice{} C{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Gerenciamento do Tempo do Projeto}}{32}
+\contentsline {section}{\numberline {C.1}\MakeUppercase {Defini\IeC {\c c}\IeC {\~a}o da Atividade}}{32}
+\contentsline {section}{\numberline {C.2}\MakeUppercase {Sequenciamento de Atividades}}{32}
+\contentsline {section}{\numberline {C.3}\MakeUppercase {Estimativa de recursos de atividade}}{32}
+\contentsline {section}{\numberline {C.4}\MakeUppercase {Estimativa de dura\IeC {\c c}\IeC {\~a}o de atividade}}{32}
+\contentsline {section}{\numberline {C.5}\MakeUppercase {Desenvolvimento do Cronograma}}{32}
+\contentsline {chapter}{Ap\^endice{} D{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Gerenciamento do Custo do Projeto}}{33}
+\contentsline {section}{\numberline {D.1}\MakeUppercase {Estimativa de custos}}{33}
+\contentsline {section}{\numberline {D.2}\MakeUppercase {Or\IeC {\c c}amenta\IeC {\c c}\IeC {\~a}o}}{33}
+\contentsline {chapter}{Ap\^endice{} E{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Gerenciamento da Qualidade do Projeto}}{34}
+\contentsline {section}{\numberline {E.1}\MakeUppercase {Planejamento da qualidade}}{34}
+\contentsline {chapter}{Ap\^endice{} F{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Gerenciamento de Recursos Humanos do Projeto}}{35}
+\contentsline {section}{\numberline {F.1}\MakeUppercase {Planejamento de recursos humanos}}{35}
+\contentsline {chapter}{Ap\^endice{} G{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Gerenciamento de Comunica\IeC {\c c}\IeC {\~a}o do Projeto}}{36}
+\contentsline {section}{\numberline {G.1}\MakeUppercase {Planejamento das comunica\IeC {\c c}\IeC {\~o}es}}{36}
+\contentsline {chapter}{Ap\^endice{} H{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Gerenciamento do Risco do Projeto}}{37}
+\contentsline {section}{\numberline {H.1}\MakeUppercase {Planejamento do gerenciamento de riscos}}{37}
+\contentsline {section}{\numberline {H.2}\MakeUppercase {Identifica\IeC {\c c}\IeC {\~a}o de riscos}}{37}
+\contentsline {section}{\numberline {H.3}\MakeUppercase {An\IeC {\'a}lise Qualitativa de riscos}}{37}
+\contentsline {section}{\numberline {H.4}\MakeUppercase {Planejamento de respostas a riscos}}{37}
+\contentsline {chapter}{Ap\^endice{} I{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Gerenciamento das Aquisi\IeC {\c c}\IeC {\~o}es do Projeto}}{38}
+\contentsline {section}{\numberline {I.1}\MakeUppercase {Planejar compras e aquisi\IeC {\c c}\IeC {\~o}es}}{38}
+\contentsline {section}{\numberline {I.2}\MakeUppercase {Planejar contrata\IeC {\c c}\IeC {\~o}es}}{38}
+\contentsline {chapter}{Ap\^endice{} J{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Atas de Reuni\IeC {\~a}o}}{39}
+\contentsline {chapter}{Anexo{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Nome do Anexo}}{40}
