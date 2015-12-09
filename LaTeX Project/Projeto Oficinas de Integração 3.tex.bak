@@ -32,7 +32,8 @@
 \titulo{\MakeUppercase{Dalle Pad}} % Título do trabalho em português
 \title{\MakeUppercase{Dalle Pad}} % Título do trabalho em inglês
 
-\autor{\hspace{2.25cm}Leonardo Winter Pereira \newline Lucas Zimmermann Cordeiro} % Autor do trabalho
+\autor{
+Leonardo Winter Pereira, Lucas Zimmermann Cordeiro} % Autor do trabalho
 \cita{WINTER PEREIRA, Leonardo; ZIMMERMANN CORDEIRO, Lucas} % sobrenome (maiúsculas), Nome do autor do trabalho
 
 \palavraschave{Arduino, Android, Projeto, Gerenciamento} % Palavras-chave do trabalho
@@ -40,7 +41,7 @@
 
 \comentario{\UTFPRdocumentodata\ apresentado pelo \UTFPRprogramadata\ da \ABNTinstituicaodata\ como requisito parcial para aprovação na disciplina de "\UTFPRtitulacaodata\ ".}
 
-\orientador{Gustavo Benvenutti Borba \newline Guilherme Alceu Schneider} % nome do orientador do trabalho
+\orientador{Gustavo Benvenutti Borba \n } % nome do orientador do trabalho
 \local{Curitiba} % cidade
 \data{\the\year} % ano automático
 
