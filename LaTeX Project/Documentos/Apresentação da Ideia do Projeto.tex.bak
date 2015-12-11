@@ -9,7 +9,7 @@
 % Link for download: http://www2.informatik.uni-freiburg.de/~frank/ENG/latex-course/latex-course-3/latex-course-3_en.html
 
 %%
-%% Apresentação do Projeto.tex
+%% Apresentação da Ideia do Projeto.tex
 %% Projeto Oficinas de Integração 3
 %% Created by Leonardo Winter Pereira and Lucas Zimmermann Cordeiro on 10.03.2016
 %% Copyright (C). All rights reserved
@@ -24,7 +24,7 @@
 
 \begin{document}
 \title{Dalle Pad \newline O Gadget que te transforma em um DJ}
-\author{Leonardo Winter Pereira \newline Lucas Zimmermann Cordeiro \newline Luís Felipe Mazzuchetti Ortiz}
+\author{Leonardo Winter Pereira, Lucas Zimmermann Cordeiro}
 \date{\today}
 
 \begin{frame}
