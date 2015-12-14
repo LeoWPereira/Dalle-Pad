@@ -28,4 +28,6 @@
 \contentsline {section}{\numberline {5.1}\MakeUppercase {Sugest\IeC {\~o}es para trabalhos futuros}}{17}
 \contentsline {chapter}{REFER\^ENCIAS}{18}
 \contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Nome do Ap\IeC {\^e}ndice}}{19}
-\contentsline {chapter}{Anexo{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Nome do Anexo}}{20}
+\contentsline {chapter}{Anexo{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Datasheets}}{20}
+\contentsline {section}{\numberline {A.1}\MakeUppercase {Potenci\IeC {\^o}metro rotativo}}{21}
+\contentsline {section}{\numberline {A.2}\MakeUppercase {Potenci\IeC {\^o}metro linear}}{23}

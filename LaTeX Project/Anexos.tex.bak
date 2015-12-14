@@ -11,9 +11,7 @@
 \chapter{Datasheets}
 \label{chap:anexosA}
 
-    Este capítulo compreende todos os \textit{datasheets} utilizados durante o desenvolver do projeto.
-    
-    É importante ressaltar que os componentes desenvolvidos pela própria equipe, sistemas eletrônicos e códigos estão todos relatados no capítulo anterior.
+    Este capítulo 
 
     \includepdf[scale={0.8}, pages={1}, pagecommand=\section{Potenciômetro rotativo}]{../Datasheets/rotary_potentiometer.pdf}
     \includepdf[scale={ 1 }, pages={2}, pagecommand={}]{../Datasheets/rotary_potentiometer.pdf}
