@@ -4,6 +4,7 @@
 % http://www.globaldjs.com.br/ecommerce_site/produto_23606_5997_Controlador-Sampler-LAUNCHPAD-Novation
 % http://www.homestudio.com.br/artigos/Art074.htm
 % http://palcoprincipal.com/artigos/Artigo/tudo_o_que_precisa_de_saber_sobre_samples_audio
+% https://pt.wikipedia.org/wiki/MIDI
 % https://pt.wikipedia.org/wiki/Sampler
 % Fazendo Música no Computador
 % http://www.instructables.com/id/Send-and-Receive-MIDI-with-Arduino/?ALLSTEPS
@@ -16,6 +17,7 @@
 % http://www.instructables.com/id/Arcade-Button-MIDI-Controller/
 % http://www.instructables.com/id/Custom-Arduino-MIDI-Controller/
 % http://pt.aliexpress.com/item/12-pcs-of-24mm-arcade-momentary-push-button-switch-with-screw-cap-24mm-mounting-hole/1701758592.html?spm=2114.02020208.3.35.7OMa7o&ws_ab_test=searchweb201556_7_79_78_77_82_80_62,searchweb201644_0,searchweb201560_8
+% http://www.aliexpress.com/item/Free-shipping-10PCS-Mixer-fader-potentiometer-75MM-B10K-2-1-single-channel-rectilinear-slide-potentiometer/32370880211.html?spm=2114.01020208.3.10.GFwVAc&ws_ab_test=searchweb201556_7_79_78_77_82_80_62,searchweb201644_0,searchweb201560_8
 
 @BOOK{Kaufman1974,
   title = {Sight and Mind: An Introduction to Visual Perception},
