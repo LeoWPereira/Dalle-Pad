@@ -16,7 +16,8 @@
 %%
 
 \documentclass{beamer}
-\setbeamertemplate{navigations symbols}{}
+\setbeamertemplate{navigation symbols}{}
+\usetheme{CambridgeUS}
 
 \usepackage{beamerthemeshadow}
 \usepackage[brazil, portuges]{babel} % pacote português brasileiro
