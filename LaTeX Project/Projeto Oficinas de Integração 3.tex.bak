@@ -32,8 +32,8 @@
 \titulo{\MakeUppercase{Dalle Pad}} % Título do trabalho em português
 \title{\MakeUppercase{Dalle Pad}} % Título do trabalho em inglês
 
-\autor{\hspace{2.25cm}Leonardo Winter Pereira \newline Lucas Zimmermann Cordeiro \newline Luís Felipe Mazzuchetti Ortiz} % Autor do trabalho
-\cita{WINTER PEREIRA, Leonardo; ZIMMERMANN CORDEIRO, Lucas} % sobrenome (maiúsculas), Nome do autor do trabalho
+\autor{\hspace{2.25cm}Leonardo Winter Pereira \newline Lucas Zimmermann Cordeiro \hspace{10cm} Luís Felipe Mazzuchetti Ortiz} % Autor do trabalho
+\cita{WINTER PEREIRA, Leonardo; ZIMMERMANN CORDEIRO, Lucas; MAZZUCHETTI ORTIZ, Luís F.} % sobrenome (maiúsculas), Nome do autor do trabalho
 
 \palavraschave{Arduino, Android, Projeto, Gerenciamento} % Palavras-chave do trabalho
 \keywords{Arduino, Android, Project, Management} % Palavras-chave do trabalho em inglês
@@ -47,61 +47,61 @@
 %---------- Inicio do Documento ----------
 \begin{document}
 
-\capa % Geração automática da capa
-\folhaderosto % Geração automática da folha de rosto
+    \capa % Geração automática da capa
+    \folhaderosto % Geração automática da folha de rosto
 
-% Dedicatória (Ppcional)
-\begin{dedicatoria}
-AQUI A DEDICATÓRIA
-\end{dedicatoria}
+    % Dedicatória (Ppcional)
+    \begin{dedicatoria}
+    AQUI A DEDICATÓRIA
+    \end{dedicatoria}
 
-% Agradecimentos (Opcional)
-\begin{agradecimentos}
-AQUI OS AGRADECIMENTOS
-\end{agradecimentos}
+    % Agradecimentos (Opcional)
+    \begin{agradecimentos}
+    AQUI OS AGRADECIMENTOS
+    \end{agradecimentos}
 
-% Epigrafe (Opcional)
-\begin{epigrafe}
-"A geometria é uma ciência de todas as espécies possíveis de espaços." (Kant)
-\end{epigrafe}
+    % Epigrafe (Opcional)
+    \begin{epigrafe}
+    "A geometria é uma ciência de todas as espécies possíveis de espaços." (Kant)
+    \end{epigrafe}
 
-% Resumo
-\begin{resumo}
+    % Resumo
+    \begin{resumo}
 
-Resumo (Máximo de 500 palavras).
+    Resumo (Máximo de 500 palavras).
 
-\end{resumo}
+    \end{resumo}
 
-% Abstract
-\begin{abstract}
+    % Abstract
+    \begin{abstract}
 
-Abstract text (maximum of 500 words).
+    Abstract text (maximum of 500 words).
 
-\end{abstract}
+    \end{abstract}
 
-% Listas (opcionais, mas recomenda-se a partir de 5 elementos)
-\listadefiguras % Geração automática da lista de figuras
-\listadetabelas % Geração automática da lista de tabelas
-\listadesiglas % Geração automática da lista de siglas
-\listadesimbolos % Geração automática da lista de símbolos
+    % Listas (opcionais, mas recomenda-se a partir de 5 elementos)
+    \listadefiguras % Geração automática da lista de figuras
+    \listadetabelas % Geração automática da lista de tabelas
+    \listadesiglas % Geração automática da lista de siglas
+    \listadesimbolos % Geração automática da lista de símbolos
 
-% Sumário
-\sumario % Geração automática do sumário
+    % Sumário
+    \sumario % Geração automática do sumário
 
-%---------- Início do Texto ----------
-\input{Introducao.tex}
-\input{FundamentacaoTeorica.tex}
-\input{Desenvolvimento.tex}
-\input{Resultados.tex}
-\input{Conclusao.tex}
+    %---------- Início do Texto ----------
+    \input{Introducao.tex}
+    \input{FundamentacaoTeorica.tex}
+    \input{Desenvolvimento.tex}
+    \input{Resultados.tex}
+    \input{Conclusao.tex}
 
-%---------- Referências ----------
-\bibliography{reflatex} % Geração automática das referências a partir do arquivo reflatex.bib
+    %---------- Referências ----------
+    \bibliography{reflatex} % Geração automática das referências a partir do arquivo reflatex.bib
 
-\apendice
-\input{Apendice.tex}
+    \apendice
+    \input{Apendice.tex}
 
-\anexo
-\input{Anexos.tex}
+    \anexo
+    \input{Anexos.tex}
 
 \end{document} 

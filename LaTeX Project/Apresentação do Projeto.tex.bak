@@ -15,16 +15,16 @@
 %% Copyright (C). All rights reserved
 %%
 
-\documentclass{beamer}
-\setbeamertemplate{navigation symbols}{}
+\documentclass[hyperref={pdfpagelabels=false}]{beamer}
 
-\usepackage{beamerthemeshadow}
 \usepackage[brazil, portuges]{babel} % pacote português brasileiro
-\usepackage[utf8]{inputenc} % pacote para acentuação direta
+\usepackage[utf8]{inputenc} % pacote para acentuação diret
+\usepackage{lmodern}
+\usetheme{CambridgeUS}
 
 \begin{document}
 \title{Dalle Pad \newline O Gadget que te transforma em um DJ}
-\author{Leonardo Winter Pereira \newline Lucas Zimmermann Cordeiro}
+\author{Leonardo Winter Pereira \newline Lucas Zimmermann Cordeiro \newline Luís Felipe Mazzuchetti Ortiz}
 \date{\today}
 
 \begin{frame}

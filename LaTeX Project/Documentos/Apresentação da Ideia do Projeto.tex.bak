@@ -17,6 +17,7 @@
 
 \documentclass{beamer}
 \setbeamertemplate{navigation symbols}{}
+\usetheme{CambridgeUS}
 
 \usepackage{beamerthemeshadow}
 \usepackage[brazil, portuges]{babel} % pacote português brasileiro
@@ -24,7 +25,7 @@
 
 \begin{document}
 \title{Dalle Pad \newline O Gadget que te transforma em um DJ}
-\author{Leonardo Winter Pereira, Lucas Zimmermann Cordeiro}
+\author{Leonardo Winter Pereira \newline Lucas Zimmermann Cordeiro \newline Luís Felipe Mazzuchetti Ortiz}
 \date{\today}
 
 \begin{frame}
@@ -44,131 +45,6 @@
 
         \begin{frame}\frametitle{Tema}
         Without title something is missing.
-        \end{frame}
-
-        \subsection{Delimitação do estudo}
-
-        \begin{frame}\frametitle{Delimitação do estudo}
-        Without title something is missing.
-        \end{frame}
-
-        \subsection{Objetivos}
-
-        \begin{frame}\frametitle{Objetivos gerais}
-        Without title something is missing.
-        \end{frame}
-
-        \begin{frame}\frametitle{Objetivos específicos}
-        Without title something is missing.
-        \end{frame}
-
-        \subsection{Procedimentos metodológicos}
-
-        \begin{frame}\frametitle{Procedimentos metodológicos}
-        Without title something is missing.
-        \end{frame}
-
-        \subsection{Estrutura da apresentação}
-
-        \begin{frame}\frametitle{Estrutura da apresentação}
-        Without title something is missing.
-        \end{frame}
-
-    \section{Desenvolvimento do Projeto}
-
-        \subsection{Hardware}
-
-        \begin{frame}\frametitle{Hardware}
-        \begin{itemize}
-        \item Introduction to  \LaTeX
-        \item Course 2
-        \item Termpapers and presentations with \LaTeX
-        \item Beamer class
-        \end{itemize}
-        \end{frame}
-
-        \subsection{Aplicativo}
-
-        \begin{frame}\frametitle{Aplicativo - Interface}
-        \begin{itemize}
-        \item Introduction to  \LaTeX \pause
-        \item Course 2 \pause
-        \item Termpapers and presentations with \LaTeX \pause
-        \item Beamer class
-        \end{itemize}
-        \end{frame}
-
-        \begin{frame}\frametitle{Aplicativo - Lógica}
-        \begin{itemize}
-        \item Introduction to  \LaTeX \pause
-        \item Course 2 \pause
-        \item Termpapers and presentations with \LaTeX \pause
-        \item Beamer class
-        \end{itemize}
-        \end{frame}
-
-        \subsection{Comunicação entre Hardware e aplicativo}
-
-        \begin{frame}\frametitle{Comunicação entre Hardware e aplicativo}
-        \begin{enumerate}
-        \item Introduction to  \LaTeX
-        \item Course 2
-        \item Termpapers and presentations with \LaTeX
-        \item Beamer class
-        \end{enumerate}
-        \end{frame}
-
-        \subsection{Projeto Mecânico - Invólucro}
-
-        \begin{frame}\frametitle{Projeto Mecânico - Invólucro}
-        \begin{columns}
-        \begin{column}{5cm}
-        \begin{itemize}
-        \item Beamer
-        \item Beamer Class
-        \item Beamer Class Latex
-        \end{itemize}
-        \end{column}
-        \begin{column}{5cm}
-        \begin{tabular}{|c|c|}
-        \hline
-        \textbf{Instructor} & \textbf{Title} \\
-        \hline
-        Sascha Frank &  \LaTeX \ Course 1 \\
-        \hline
-        Sascha Frank &  Course serial  \\
-        \hline
-        \end{tabular}
-        \end{column}
-        \end{columns}
-        \end{frame}
-
-    \section{Resultados e discussões}
-
-        \subsection{Resultados}
-
-        \begin{frame}\frametitle{Resultados}
-        \begin{block}{title of the bloc}
-        bloc text
-        \end{block}
-
-        \begin{exampleblock}{title of the bloc}
-        bloc text
-        \end{exampleblock}
-
-
-        \begin{alertblock}{title of the bloc}
-        bloc text
-        \end{alertblock}
-        \end{frame}
-
-        \subsection{Discussões}
-
-        \begin{frame}\frametitle{Discussões}
-        \begin{figure}
-        %\includegraphics[scale=0.5]{PIC1}
-        %\caption{show an example picture}
-        \end{figure}
         \end{frame}
 
 \end{document} 

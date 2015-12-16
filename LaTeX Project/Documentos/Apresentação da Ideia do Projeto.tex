@@ -15,35 +15,36 @@
 %% Copyright (C). All rights reserved
 %%
 
-\documentclass{beamer}
-\setbeamertemplate{navigation symbols}{}
+\documentclass[hyperref={pdfpagelabels=false}]{beamer}
 
-\usepackage{beamerthemeshadow}
 \usepackage[brazil, portuges]{babel} % pacote português brasileiro
-\usepackage[utf8]{inputenc} % pacote para acentuação direta
+\usepackage[utf8]{inputenc} % pacote para acentuação diret
+\usepackage{lmodern}
+\usetheme{CambridgeUS}
 
-\begin{document}
 \title{Dalle Pad \newline O Gadget que te transforma em um DJ}
 \author{Leonardo Winter Pereira \newline Lucas Zimmermann Cordeiro \newline Luís Felipe Mazzuchetti Ortiz}
 \date{\today}
 
-\begin{frame}
-\titlepage
-\end{frame}
+\begin{document}
 
-\begin{frame}\frametitle{Índice}\tableofcontents
-\end{frame}
-
-    \section{Introdução}
-
-    \begin{frame}\frametitle{Introdução}
-    Each frame should have a title.
+    \begin{frame}
+    \titlepage
     \end{frame}
 
-        \subsection{Tema}
+    \begin{frame}\frametitle{Índice}\tableofcontents
+    \end{frame}
 
-        \begin{frame}\frametitle{Tema}
-        Without title something is missing.
+        \section{Introdução}
+
+        \begin{frame}\frametitle{Introdução}
+        Each frame should have a title.
         \end{frame}
+
+            \subsection{Tema}
+
+            \begin{frame}\frametitle{Tema}
+            Without title something is missing.
+            \end{frame}
 
 \end{document} 
