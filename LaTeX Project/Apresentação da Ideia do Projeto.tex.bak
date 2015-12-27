@@ -1,13 +1,3 @@
-% This text is proprietary.
-% It's a part of presentation made by myself.
-% It may not used commercial.
-% The noncommercial use such as private and study is free
-% May 2007
-% Author: Sascha Frank
-% University Freiburg
-% www.informatik.uni-freiburg.de/~frank/
-% Link for download: http://www2.informatik.uni-freiburg.de/~frank/ENG/latex-course/latex-course-3/latex-course-3_en.html
-
 %%
 %% Apresentação da Ideia do Projeto.tex
 %% Projeto Oficinas de Integração 3
@@ -18,11 +8,11 @@
 \documentclass[hyperref={pdfpagelabels=false}]{beamer}
 
 \usepackage[brazil, portuges]{babel} % pacote português brasileiro
-\usepackage[utf8]{inputenc} % pacote para acentuação diret
+\usepackage[utf8]{inputenc} % pacote para acentuação direta
 \usepackage{lmodern}
 \usetheme{CambridgeUS}
 
-\title{Dalle Pad \newline O Gadget que te transforma em um DJ}
+\title{Oficinas de Integração III}
 \author{Leonardo Winter Pereira \newline Lucas Zimmermann Cordeiro \newline Luís Felipe Mazzuchetti Ortiz}
 \date{\today}
 
@@ -32,19 +22,24 @@
     \titlepage
     \end{frame}
 
-    \begin{frame}\frametitle{Índice}\tableofcontents
+    \begin{frame}\frametitle{Índice}
+        \tableofcontents
     \end{frame}
 
-        \section{Introdução}
+    \section{Dalle Pad}
 
         \begin{frame}\frametitle{Introdução}
-        Each frame should have a title.
+
+            Each frame should have a title.
+
         \end{frame}
 
-            \subsection{Tema}
+        \subsection{Tema}
 
             \begin{frame}\frametitle{Tema}
-            Without title something is missing.
+
+                Without title something is missing.
+
             \end{frame}
 
 \end{document} 
