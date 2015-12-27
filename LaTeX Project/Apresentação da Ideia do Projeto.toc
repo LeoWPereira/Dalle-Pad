@@ -1,0 +1,5 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {portuges}
+\beamer@sectionintoc {1}{Dalle Pad}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Equipe}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{O que \IeC {\'e}}{5}{0}{1}
