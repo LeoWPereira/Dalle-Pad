@@ -18,6 +18,7 @@
 \usepackage{listings} % pacote para códigos
 \usepackage{pdfsync} % para sincronização automática do PDF
 \usepackage{pdfpages} % para poder adicionar documentos PDF ao arquivo
+\usepackage{epigraph}
 
 %\geometry{left=3.0cm,right=1.5cm,top=4cm,bottom=1cm}       Usado para realizar pequenos ajustes das margens.
 
@@ -52,30 +53,30 @@
 
     % Dedicatória (Ppcional)
     \begin{dedicatoria}
-    AQUI A DEDICATÓRIA
+        AQUI A DEDICATÓRIA
     \end{dedicatoria}
 
     % Agradecimentos (Opcional)
     \begin{agradecimentos}
-    AQUI OS AGRADECIMENTOS
+        AQUI OS AGRADECIMENTOS
     \end{agradecimentos}
 
     % Epigrafe (Opcional)
     \begin{epigrafe}
-    "A geometria é uma ciência de todas as espécies possíveis de espaços." (Kant)
+        "A geometria é uma ciência de todas as espécies possíveis de espaços." (Kant)
     \end{epigrafe}
 
     % Resumo
     \begin{resumo}
 
-    Resumo (Máximo de 500 palavras).
+        Resumo (Máximo de 500 palavras).
 
     \end{resumo}
 
     % Abstract
     \begin{abstract}
 
-    Abstract text (maximum of 500 words).
+        Abstract text (maximum of 500 words).
 
     \end{abstract}
 

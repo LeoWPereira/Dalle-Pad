@@ -8,15 +8,31 @@
 \chapter{Introdução}
 \label{chap:introducao}
 
+    \textbf{DALLE PAD - O Gadget que te transforma em um DJ} foi desenvolvido para a disciplina de Oficina de Integração 3 (IF66J - S71), do curso de Engenharia de Computação da Universidade Tecnológica Federal do Paraná.
 
+    Como proposto pela disciplina, o sistema é composto por uma estação base principal (desenvolvida para \textit{Desktop e notebook}) e outra secundária (desenvolvida para \textit{mobile}), um sistema de comunicação e um sistema embarcado. Em ambas as estações base encontram-se os softwares de interface com o usuário; o sistema de comunicação é baseado em tecnologia sem fio, além de conexão \sigla{USB}{Universal Serial Bus} e \sigla{MIDI}{Musical Instrument Digital Interface}; o sistema embarcado consiste em um sistema microcontrolado e a estrutura física do produto é composta por um invólucro mecânico contendo todo o sistema microcontrolado e toda a estrutura física necessária para que o usuário final possa utilizar tudo o que o \textbf{DALLE PAD} permite.
+
+    Este capítulo divide-se em nove seções. Na Seção 1.1 e 1.2, apresentam-se o tema e a delimitação do projeto, respectivamente. Na Seção 1.3, enuncia-se o problema cuja solução é proposta neste trabalho. Na Seção 1.4, enunciam-se os objetivos geral e específicos. A justificativa e o procedimento metodológico adotados s˜ao descritos, respectivamente, nas seções 1.5 e 1.6. Na Seção 1.7 é apresentado o embasamento teórico, na Seção 1.8 é apresentada a estrutura do restante do trabalho e por fim, na Seção 1.9, é apresentada a banca examinadora e pessoas convidadas para a defesa do trabalho.
 
     \section{Tema}
 
+        A música é a arte de combinar sons de maneira agradável ao ouvido e a sensibilidade emocional utilizando elementos como melodia, harmonia e ritmo. Atualmente, não se conhece nenhuma civilização ou agrupamento que não possua manifestações musicais próprias. A criação, o desempenho, o significado e até mesmo a definição de música variam de acordo com a cultura e o contexto social, como composições fortemente organizadas e improvisadas.
+        
+        A música expandiu-se ao longo dos anos, e atualmente encontra-se em diversas utilidades, não só como arte, mas também como a militar, educacional ou terapêutica (musicoterapia).~\cite{PPD}
 
+        Desde seu lançamento no mercado no inicio da década de 1980, o protocolo MIDI tem tido um papel de grande importância na indústria da música. Entretanto, mais importante ainda é que este trouxe para músicos e entusiastas uma ferramenta que lhes permitiu preencher a lacuna antes existente. MIDI permitiu, pela primeira vez, um meio de comunicação de informações musicais de um dispositivo para outro de uma forma que foi aceito e adotado por toda uma indústria.~\cite{Guerin}
+
+        Alguns anos mais tarde, em meados da década de 1990, alguns acreditavam que MIDI não tinha mais futuro. Estações de trabalho de áudio digital foram se tornando cada vez mais acessíveis e computadores passaram a oferecer um poder de processamento cada vez maior, que o uso de MIDI foi quase considerada uma coisa do passado, lento demais para continuar sendo utilizado. Entretanto, não foi isso o que aconteceu.
+
+        Este protocolo continua sendo amplamente utilizado na área musical, e é de interesse deste projeto compreender a teoria por trás do mesmo, não somente sua utilização no produto final, o controlador DALLE PAD.
+        
+        Inspirado em diversos produtos já existentes, o protótipo aqui apresentado será capaz de realizar todas as principais funções de um controlador MIDI (a ser explicitado no decorrer deste documento).
 
     \section{Delimitação do Estudo}
 
-
+        Este trabalho busca disponibilizar as informações necessárias sobre o protocolo MIDI para os leitores interessados, incluindo sua importância, utilidade e formas de utilização, além de explicar a teoria por trás de todos os conceitos utilizados neste protótipo. Desta forma, até mesmo o leitor leigo na área de computação musical poderá acompanhar este trabalho sem maiores problemas.
+        
+        Com o objetivo de desenvolver um produto acessível para o usuário final, procurou-se componentes de baixo custo e interfaces gráficas para trabalhar em conjunto com o mesmo que fossem comuns e de fácil aquisição: computadores, \textit{notebooks}, \textit{smartphones} e \textit{tablets}.
 
     \section{Problema}
 
@@ -24,15 +40,25 @@
 
     \section{Objetivos}
 
-    Nesta seção são apresentados os objetivos geral e específicos do trabalho, relativos ao problema anteriormente apresentado.
+        Nesta seção são apresentados os objetivos geral e específicos do trabalho, relativos ao problema anteriormente apresentado.
 
         \subsection{Objetivos Gerais}
 
-
+            Desenvolver um controlador MIDI capaz de exercer todas as principais funções impostas a ele no meio musical, através de um dispositivo que possua sistema operacional \textit{Android} e comunicação por \textit{bluetooth} ou através de um computador ou \textit{notebook} que possua o sistema operacional \textit{Windows}, utilizando-se das comunicações USB e MIDI.
 
         \subsection{Objetivos Específicos}
 
-
+            \begin{itemize}
+              \item Estudo profundo do protocolo MIDI;
+              
+              \item Projetar e montar o protótipo do controlador aqui proposto;
+              
+              \item Desenvolver um aplicativo para \textit{Android} capaz de se comunicar com o mesmo;
+              
+              \item Desenvolver um software para \textit{Windows} capaz de trabalhar com arquivos MIDI e de se comunicar com o controlador;
+            
+              \item Implementação do protocolo de comunicação entre as estações base e o controlador.
+            \end{itemize}
 
     \section{Justificativa}
 
@@ -40,29 +66,67 @@
 
     \section{Procedimentos Metodológicos}
 
-
+        A natureza deste trabalho é de pesquisa aplicada, pois gerará um protótipo de aplicação prática, dirigido a um problema específico. A abordagem é qualitativa, envolvendo testes do projeto em ambiente simulado.
+        
+        O seu desenvolvimento é organizado em três principais estágios: pesquisa bibliográfica, implementação e experimentação. Na fase de pesquisa bibliográfica, s˜ao considerados os resultados de trabalhos passados que se mostraram relevantes para a implementação do presente projeto, desde os conceitos mais abrangentes (e.g.: ) até os mecanismos básicos (e.g.: ).
+        
+        %TODO
 
     \section{Embasamento Teórico}
 
+        Para que seja possível a execução deste projeto, diversas referências serão utilizadas.
 
+        Referente ao protocolo MIDI, serão utilizados como referencial teórico, principalmente, ~\cite{Alves}, ~\cite{Hewitt}, ~\cite{Colbeck}, ~\cite{Guerin}, ~\cite{McGuire} e ~\cite{Huber}, mas diversos outros trabalhos serão citados no decorrer deste trabalho.
+
+        Referente às estações base, os principais referenciais teóricos são, além dos já citados anteriormente, ~\cite{Ballou}, ~\cite{Gregoire}, ~\cite{Jackson}, além de ~\cite{AndroidDeveloper}.
+
+        Por último, para o sistema microcontrolado, as principais referencias são ~\cite{Wheat}, ~\cite{Bayle}, ~\cite{Ghassaei} e ~\cite{Hass}, além de ~\cite{Arduino2014}, ~\cite{ArduinoRef2014}.
 
     \section{Estrutura do Trabalho}
 
-    O trabalho terá a estrutura abaixo apresentada:
+        O trabalho terá a estrutura abaixo apresentada:
+
+        \begin{itemize}
+          \item Capítulo 1 - Introdução: são apresentados o tema, as delimitações da pesquisa, o problema e a premissa, os objetivos da pesquisa, a justificativa, os procedimentos metodológicos, as indicações para o embasamento teórico e a estrutura geral do trabalho.
+
+          \item Capítulo 2 - Fundamentação Teórica: são apresentados os conceitos e equipamentos necessários para a construção do Dalle Pad.
+
+          \item Capítulo 3 - Desenvolvimento: é apresentado o funcionamento do Hardware e Software do Dalle Pad, bem como a comunicação entre ambas as partes.
+
+          \item Capítulo 4 - Resultados e Discussões: são apresentados os resultados obtidos e discussões pertinentes.
+
+          \item Capítulo 5 - Considerações Finais: serão retomadas a pergunta de pesquisa e os seus objetivos e apontado como foram solucionados, respondidos, atingidos, por meio do trabalho realizado. Além disto, serão sugeridos trabalhos futuros que poderiam ser realizados a partir do estudo realizado.
+        \end{itemize}
+
+    \section {Banca Examinadora}
+
+        Durante toda a execução deste projeto, diversos alunos e professores foram de extrema ajuda e importância.
+
+        É com grande alegria que nomeio alguns destes para participar da banca examinadora do projeto:
 
     \begin{itemize}
-      \item Capítulo 1 - Introdução: são apresentados o tema, as delimitações da pesquisa, o problema e a premissa, os objetivos da pesquisa, a justificativa, os procedimentos metodológicos, as indicações para o embasamento teórico e a estrutura geral do trabalho.
+        \item Aluno(s) convidado(s):
 
-      \item Capítulo 2 - Fundamentação Teórica: são apresentados os conceitos e equipamentos necessários para a construção do Dalle Pad.
+            \subitem João Pedro Curti
 
-      \item Capítulo 3 - Desenvolvimento: é apresentado o funcionamento do Hardware e Software do Dalle Pad, bem como a comunicação entre ambas as partes.
+            \subitem André Eleutério
 
-      \item Capítulo 4 - Resultados e Discussões: são apresentados os resultados obtidos e discussões pertinentes.
+        \item Professor orientador:
 
-      \item Capítulo 5 - Considerações Finais: serão retomadas a pergunta de pesquisa e os seus objetivos e apontado como foram solucionados, respondidos, atingidos, por meio do trabalho realizado. Além disto, serão sugeridos trabalhos futuros que poderiam ser realizados a partir do estudo realizado.
+            \subitem César Manuel Vargas Benitez (DAELN)
+
+            \subitem Rafael Barreto (DAFIS)
+
+        \item Professor(a) convidado(a):
+
+            \subitem Leyza Dorini (DAINF)
+
+            \subitem Fábio Dorini (DAMAT)
+
+        \item Professor(es) da disciplina:
+
+            \subitem Gustavo Benvenutti Borba (DAELN)
+
+            \subitem Guilherme Alceu Schneider (DAELN)
+
     \end{itemize} 
-    
-    \section {Banca Examinadora}
-    
-    
-    Para este trabalho os seguintes professores e alunos foram 

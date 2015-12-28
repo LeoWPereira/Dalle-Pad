@@ -1,32 +1,173 @@
 %% Possíveis Referências
 
+% http://www.cricte2004.eletrica.ufpr.br/ufpr2/tccs/37.pdf
+
 % http://www.djban.com.br/blog/tecnologia/launchpad-novation-controlador-ableton/
 % http://www.globaldjs.com.br/ecommerce_site/produto_23606_5997_Controlador-Sampler-LAUNCHPAD-Novation
-% http://www.homestudio.com.br/artigos/Art074.htm
-% http://palcoprincipal.com/artigos/Artigo/tudo_o_que_precisa_de_saber_sobre_samples_audio
-% https://pt.wikipedia.org/wiki/MIDI
-% https://pt.wikipedia.org/wiki/Sampler
-% Fazendo Música no Computador
-% http://www.instructables.com/id/Send-and-Receive-MIDI-with-Arduino/?ALLSTEPS
-% http://www.instructables.com/id/What-is-MIDI/?ALLSTEPS
 % http://www.instructables.com/id/Easy-3-Pot-Potentiometer-Arduino-Uno-Effects-Midi-/?ALLSTEPS
 % https://en.wikipedia.org/wiki/Sampler_(musical_instrument)
-% http://ohdratdigital.com/musicproduction101/how-samplers-work/
-% http://www.artistshousemusic.org/articles/a+beginners+guide+to+sampling
-% http://www.instructables.com/id/Arduino-MIDI-Controller/
-% http://www.instructables.com/id/Arcade-Button-MIDI-Controller/
-% http://www.instructables.com/id/Custom-Arduino-MIDI-Controller/
+
 % http://pt.aliexpress.com/item/12-pcs-of-24mm-arcade-momentary-push-button-switch-with-screw-cap-24mm-mounting-hole/1701758592.html?spm=2114.02020208.3.35.7OMa7o&ws_ab_test=searchweb201556_7_79_78_77_82_80_62,searchweb201644_0,searchweb201560_8
 % http://www.aliexpress.com/item/Free-shipping-10PCS-Mixer-fader-potentiometer-75MM-B10K-2-1-single-channel-rectilinear-slide-potentiometer/32370880211.html?spm=2114.01020208.3.10.GFwVAc&ws_ab_test=searchweb201556_7_79_78_77_82_80_62,searchweb201644_0,searchweb201560_8
 
-@BOOK{Kaufman1974,
-  title = {Sight and Mind: An Introduction to Visual Perception},
-  publisher = {NY: Oxford University Press},
-  year = {1974},
-  author = {Kaufman, Lloyd},
+@BOOK{Alves,
+  title = {Fazendo Música no Computador},
+  publisher = {Editora Campus},
+  year = {2009},
+  author = {Alves, Luciano},
   address = {368},
-  owner = {Lloyd Kaufman},
-  timestamp = {2014.02.01}
+  owner = {Luciano Alves},
+  timestamp = {2015.19.12}
+}
+
+@BOOK{Hewitt,
+  title = {Music Theory for Computer Musicians},
+  publisher = {Course Technology},
+  year = {2008},
+  author = {Hewitt, Michael},
+  address = {368},
+  owner = {Michael Hewitt},
+  timestamp = {2015.19.12}
+}
+
+@BOOK{Colbeck,
+  title = {MIDI Inside and Out},
+  publisher = {musicPRO guides},
+  year = {2016},
+  author = {Colbeck, Julian},
+  address = {368},
+  owner = {Julian Colbeck},
+  timestamp = {2015.19.12}
+}
+
+@BOOK{Valenzuela,
+  title = {The Complete Guide to Connecting Audio, Video, and MIDI Equipment: Get the Most Out of Your Digital, Analog, and Electronic Music Setups},
+  publisher = {musicPRO guides},
+  year = {2015},
+  author = {Valenzuela, Jose},
+  address = {368},
+  owner = {Jose "Chilitos" Valenzuela},
+  timestamp = {2015.19.12}
+}
+
+@BOOK{White,
+  title = {Basic MIDI (Music Technology Series)},
+  publisher = {SMT},
+  year = {2006},
+  author = {White, Paul},
+  address = {368},
+  owner = {Paul White},
+  timestamp = {2015.19.12}
+}
+
+@BOOK{Rona,
+  title = {The MIDI Companion: The Ins, Outs and Throughs},
+  publisher = {SMT},
+  year = {1994},
+  author = {Rona, Jeff},
+  address = {368},
+  owner = {Jeff Rona},
+  timestamp = {2015.19.12}
+}
+
+@BOOK{Guerin,
+  title = {Midi Power!},
+  publisher = {Course Technology PTR},
+  year = {2009},
+  author = {Guerin, Robert},
+  address = {368},
+  owner = {Robert Guérin},
+  timestamp = {2015.19.12}
+}
+
+@BOOK{McGuire,
+  title = {Modern MIDI},
+  publisher = {Focal Press},
+  year = {2013},
+  author = {McGuire, Sam},
+  address = {368},
+  owner = {Sam McGuire},
+  timestamp = {2015.19.12}
+}
+
+@BOOK{Wheat,
+  title = {Arduino Internals},
+  publisher = {Apress},
+  year = {2011},
+  author = {Wheat, Dale},
+  address = {368},
+  owner = {Dale Wheat},
+  timestamp = {2015.19.12}
+}
+
+@BOOK{Middleton&Gurevitz,
+  title = {Music Technology Workbook},
+  publisher = {Focal Press},
+  year = {2013},
+  author = {Middleton, Paul; Gurevitz, Steven},
+  address = {368},
+  owner = {Paul Middleton; Steven Gurevitz},
+  timestamp = {2015.19.12}
+}
+
+@BOOK{Jackson,
+  title = {Learn Android App Development},
+  publisher = {Focal Press},
+  year = {2013},
+  author = {Jackson, Wallace},
+  address = {368},
+  owner = {Wallace Jackson},
+  timestamp = {2015.19.12}
+}
+
+@BOOK{Bayle,
+  title = {C Programming for Arduino},
+  publisher = {Packt Publishing},
+  year = {2013},
+  author = {Bayle, Julien},
+  address = {368},
+  owner = {Julien Bayle},
+  timestamp = {2015.19.12}
+}
+
+@BOOK{Ballou,
+  title = {Handbook for Sound Engineers, 5th Edition},
+  publisher = {Focal Press},
+  year = {2015},
+  author = {Ballou, Glen},
+  address = {368},
+  owner = {Glen Ballou},
+  timestamp = {2015.19.12}
+}
+
+@BOOK{Huber,
+  title = {The MIDI Manual, 3rd Edition},
+  publisher = {Focal Press},
+  year = {2012},
+  author = {Miles Huber, David},
+  address = {368},
+  owner = {David Miles Huber},
+  timestamp = {2015.19.12}
+}
+
+@BOOK{Friedman,
+  title = {FL Studio Cookbook},
+  publisher = {Packt Publishing},
+  year = {2014},
+  author = {Friedman, Shaun},
+  address = {368},
+  owner = {Shaun Friedman},
+  timestamp = {2015.19.12}
+}
+
+@BOOK{Gregoire,
+  title = {Professional C++, 3rd Edition},
+  publisher = {John Wiley and Sons, Inc.},
+  year = {2014},
+  author = {Gregoire, Marc},
+  address = {368},
+  owner = {Marc Gregoire},
+  timestamp = {2015.19.12}
 }
 
 @MISC{Arduino2014,
@@ -49,12 +190,132 @@
   urlaccessdate = {02 de janeiro de 2014}
 }
 
-@MISC{RoboLivre2014,
-  author = {RoboLivre},
-  title = {Sensor de Infravermelho},
-  year = {2014},
-  owner = {RoboLivre},
-  timestamp = {2014.01.02},
-  url = {http://robolivre.org/conteudo/sensor-de-infravermelho},
-  urlaccessdate = {02 de janeiro de 2014}
+@MISC{Izecksohn,
+  author = {Izecksohn, Sérgio},
+  title = {Eles não sabem o que é MIDI},
+  year = {2015},
+  owner = {Sergio Izecksohn},
+  timestamp = {2015.19.12},
+  url = {http://www.homestudio.com.br/artigos/Art074.htm},
+  urlaccessdate = {19 de dezembro de 2015}
+}
+
+@MISC{PalcoPrincipal,
+  author = {Principal, Palco},
+  title = {Tudo o que precisa de saber sobre samples áudio!},
+  year = {2015},
+  owner = {Palco Principal},
+  timestamp = {2015.19.12},
+  url = {http://palcoprincipal.com/artigos/Artigo/tudo_o_que_precisa_de_saber_sobre_samples_audio},
+  urlaccessdate = {19 de dezembro de 2015}
+}
+
+@MISC{Hass,
+  author = {Hass, Jeffrey},
+  title = {Indiana University - Introduction to Computer Music},
+  year = {2013},
+  owner = {Jeffrey Hass},
+  timestamp = {2015.19.12},
+  url = {http://www.indiana.edu/~emusic/etext/MIDI/chapter3\_MIDI.shtml},
+  urlaccessdate = {19 de dezembro de 2015}
+}
+
+@MISC{WikipediaSampler,
+  author = {Wikipedia},
+  title = {Wikipedia - Sampler},
+  year = {2015},
+  owner = {Wikipedia},
+  timestamp = {2015.19.12},
+  url = {https://pt.wikipedia.org/wiki/Sampler},
+  urlaccessdate = {19 de dezembro de 2015}
+}
+
+@MISC{WikipediaMIDI,
+  author = {Wikipedia},
+  title = {Wikipedia - MIDI},
+  year = {2015},
+  owner = {Wikipedia},
+  timestamp = {2015.19.12},
+  url = {https://pt.wikipedia.org/wiki/MIDI},
+  urlaccessdate = {19 de dezembro de 2015}
+}
+
+@MISC{Ghassaei,
+  author = {Ghassaei, Amanda},
+  title = {Send and Receive MIDI with Arduino},
+  year = {2015},
+  owner = {Amanda Ghassaei},
+  timestamp = {2015.19.12},
+  url = {http://www.instructables.com/id/Send-and-Receive-MIDI-with-Arduino/?ALLSTEPS},
+  urlaccessdate = {19 de dezembro de 2015}
+}
+
+@MISC{Ghassaei02,
+  author = {Ghassaei, Amanda},
+  title = {What is MIDI?},
+  year = {2015},
+  owner = {Amanda Ghassaei},
+  timestamp = {2015.19.12},
+  url = {http://www.instructables.com/id/What-is-MIDI/?ALLSTEPS},
+  urlaccessdate = {19 de dezembro de 2015}
+}
+
+@MISC{OHDratDigital,
+  author = {Digital, OH Drat},
+  title = {How samplers work},
+  year = {2015},
+  owner = {OH Drat Digital},
+  timestamp = {2015.19.12},
+  url = {http://ohdratdigital.com/musicproduction101/how-samplers-work/},
+  urlaccessdate = {19 de dezembro de 2015}
+}
+
+@MISC{ArtistsHouseMusic,
+  author = {Music, Artists House},
+  title = {A Beginner's Guide to Sampling},
+  year = {2015},
+  owner = {Artists House Music},
+  timestamp = {2015.19.12},
+  url = {http://www.artistshousemusic.org/articles/a+beginners+guide+to+sampling},
+  urlaccessdate = {19 de dezembro de 2015}
+}
+
+@MISC{Stout,
+  author = {Stout, Dylan},
+  title = {Arduino MIDI Controller},
+  year = {2015},
+  owner = {Dylan Stout},
+  timestamp = {2015.19.12},
+  url = {http://www.instructables.com/id/Arduino-MIDI-Controller/?ALLSTEPS},
+  urlaccessdate = {19 de dezembro de 2015}
+}
+
+@MISC{Instructables,
+  author = {Instructables},
+  title = {Arcade Button MIDI Controller},
+  year = {2015},
+  owner = {Instructables},
+  timestamp = {2015.19.12},
+  url = {http://www.instructables.com/id/Arcade-Button-MIDI-Controller/?ALLSTEPS},
+  urlaccessdate = {19 de dezembro de 2015}
+}
+
+@MISC{Instructables02,
+  author = {Instructables},
+  title = {Custom Arduino MIDI Controller},
+  year = {2015},
+  owner = {Instructables},
+  timestamp = {2015.19.12},
+  url = {http://www.instructables.com/id/Custom-Arduino-MIDI-Controller/?ALLSTEPS},
+  urlaccessdate = {19 de dezembro de 2015}
+}
+
+@MISC{AndroidDeveloper,
+  author = {Android},
+  title = {Android Reference},
+  year = {2015},
+  owner = {Android},
+  timestamp = {2015.19.12},
+  url = {http://developer.android.com/,
+  urlaccessdate = {19 de dezembro de 2015}
 }
