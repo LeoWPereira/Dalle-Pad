@@ -1,5 +1,7 @@
 %% Possíveis Referências
 
+% http://www.cricte2004.eletrica.ufpr.br/ufpr2/tccs/37.pdf
+
 % http://www.djban.com.br/blog/tecnologia/launchpad-novation-controlador-ableton/
 % http://www.globaldjs.com.br/ecommerce_site/produto_23606_5997_Controlador-Sampler-LAUNCHPAD-Novation
 % http://www.instructables.com/id/Easy-3-Pot-Potentiometer-Arduino-Uno-Effects-Midi-/?ALLSTEPS
@@ -78,7 +80,7 @@
   timestamp = {2015.19.12}
 }
 
-@BOOK{DaleWheat,
+@BOOK{McGuire,
   title = {Modern MIDI},
   publisher = {Focal Press},
   year = {2013},
@@ -88,7 +90,7 @@
   timestamp = {2015.19.12}
 }
 
-@BOOK{DaleWheat,
+@BOOK{Wheat,
   title = {Arduino Internals},
   publisher = {Apress},
   year = {2011},
@@ -158,6 +160,16 @@
   timestamp = {2015.19.12}
 }
 
+@BOOK{Gregoire,
+  title = {Professional C++, 3rd Edition},
+  publisher = {John Wiley and Sons, Inc.},
+  year = {2014},
+  author = {Gregoire, Marc},
+  address = {368},
+  owner = {Marc Gregoire},
+  timestamp = {2015.19.12}
+}
+
 @MISC{Arduino2014,
   author = {Arduino},
   title = {Arduino Core functions and Libraries},
@@ -204,7 +216,7 @@
   year = {2013},
   owner = {Jeffrey Hass},
   timestamp = {2015.19.12},
-  url = {http://www.indiana.edu/~emusic/etext/MIDI/chapter3_MIDI.shtml},
+  url = {http://www.indiana.edu/~emusic/etext/MIDI/chapter3\_MIDI.shtml},
   urlaccessdate = {19 de dezembro de 2015}
 }
 
@@ -298,11 +310,11 @@
   urlaccessdate = {19 de dezembro de 2015}
 }
 
-@MISC{Instructables02,
-  author = {Instructables},
-  title = {Custom Arduino MIDI Controller},
+@MISC{AndroidDeveloper,
+  author = {Android},
+  title = {Android Reference},
   year = {2015},
-  owner = {Instructables},
+  owner = {Android},
   timestamp = {2015.19.12},
   url = {http://developer.android.com/,
   urlaccessdate = {19 de dezembro de 2015}
