@@ -18,7 +18,9 @@
 \usepackage{listings} % pacote para códigos
 \usepackage{pdfsync} % para sincronização automática do PDF
 \usepackage{pdfpages} % para poder adicionar documentos PDF ao arquivo
-\usepackage{epigraph}
+\usepackage{epigraph} % para utilizar epígrafes
+\usepackage{chngcntr}
+\counterwithin{figure}{section}
 
 %\geometry{left=3.0cm,right=1.5cm,top=4cm,bottom=1cm}       Usado para realizar pequenos ajustes das margens.
 
