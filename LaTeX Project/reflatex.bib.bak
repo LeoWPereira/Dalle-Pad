@@ -1,6 +1,8 @@
 %% Possíveis Referências
 
 % http://www.cricte2004.eletrica.ufpr.br/ufpr2/tccs/37.pdf
+% MIDI: a comprehensive introduction
+% http://www.trabalhosfeitos.com/ensaios/Tecnologia-Midi/59699.html
 
 % http://www.djban.com.br/blog/tecnologia/launchpad-novation-controlador-ableton/
 % http://www.globaldjs.com.br/ecommerce_site/produto_23606_5997_Controlador-Sampler-LAUNCHPAD-Novation
@@ -170,12 +172,32 @@
   timestamp = {2015.19.12}
 }
 
+@BOOK{SANTINI2005,
+  title = {Admirável Chip Novo: A música na era da internet},
+  publisher = {Rio de Janeiro: E-Papers Serviços Editoriais},
+  year = {2005},
+  author = {Santini, Rose Marie},
+  address = {Pág. 27 a 29},
+  owner = {Rose Marie Santini},
+  timestamp = {2015.28.12}
+}
+
+@MISC{PPD,
+  author = {PPD},
+  title = {Projetos Pedagógicos Dinâmicos - Música},
+  year = {2011},
+  owner = {Projetos Pedagógicos Dinâmicos},
+  timestamp = {2015.28.12},
+  url = {http://www.projetospedagogicosdinamicos.com/musica.htm},
+  urlaccessdate = {28 de dezembro de 2015}
+}
+
 @MISC{Arduino2014,
   author = {Arduino},
   title = {Arduino Core functions and Libraries},
   year = {2014},
   owner = {Arduino},
-  timestamp = {2014.01.02},
+  timestamp = {2016.01.02},
   url = {http://en.wikipedia.org/wiki/persistence\_of\_vision},
   urlaccessdate = {02 de janeiro de 2014}
 }
@@ -185,7 +207,7 @@
   title = {Arduino Reference},
   year = {2014},
   owner = {Arduino},
-  timestamp = {2014.01.02},
+  timestamp = {2016.01.02},
   url = {http://arduino.cc/en/Reference/HomePage},
   urlaccessdate = {02 de janeiro de 2014}
 }
@@ -316,6 +338,36 @@
   year = {2015},
   owner = {Android},
   timestamp = {2015.19.12},
-  url = {http://developer.android.com/,
+  url = {http://developer.android.com/},
   urlaccessdate = {19 de dezembro de 2015}
+}
+
+@MISC{Rees2001,
+  author = {Rees, Philip},
+  title = {MIDI channels, voices, timbres and Modes},
+  year = {2001},
+  owner = {Philip Rees},
+  timestamp = {2016.04.01},
+  url = {http://www.philrees.co.uk/articles/midimode.htm},
+  urlaccessdate = {04 de janeiro de 2016}
+}
+
+@MISC{Gibson2013,
+  author = {Gibson, John},
+  title = {Introduction to MIDI and Computer Music:  The MIDI Standard},
+  year = {2013},
+  owner = {John Gibson},
+  timestamp = {2016.04.01},
+  url = {http://www.iu.edu/~emusic/361/midi.htm},
+  urlaccessdate = {04 de janeiro de 2016}
+}
+
+@MISC{Gibson2013,
+  author = {Gibson, John},
+  title = {Introduction to MIDI and Computer Music:  The MIDI Standard},
+  year = {2013},
+  owner = {John Gibson},
+  timestamp = {2016.04.01},
+  url = {http://www.iu.edu/~emusic/361/midi.htm},
+  urlaccessdate = {04 de janeiro de 2016}
 }

@@ -32,7 +32,7 @@
 
             Quando o músico deixa de pressionar uma tecla em seu teclado ou de puxar uma corda em seu baixo, o som pára. Com MIDI, quando tal ação é realizada, uma mensagem é enviada para essa nota, para que esta deixe de realizar som. Esta mensagem é conhecida por \textbf{Nota OFF}. A figura ~\ref{fig:MIDI_Nota_ON_e_OFF} demonstra um exemplo destes dois eventos.
 
-            \begin{figure}[!h]
+            \begin{figure}[H]
             	\centering
             	\includegraphics{Imagens/MIDI_Nota_ON_e_OFF.jpg}
             	\caption[Exemplo de transmissão das mensagens de Nota ON e OFF]{Exemplo de transmissão das mensagens de Nota ON e OFF ~\cite{Guerin}}
@@ -45,7 +45,7 @@
 
             O protocolo de comunicação MIDI é transmitido de forma serial ao invés de paralela. Em uma transmissão paralela, como o nome sugere, as informações são transmitidas simultaneamente. A quantidade de dados que podem ser transmitidos simultaneamente depende na capacidade física do fio e da velocidade com que os dispositivos podem enviar suas informações. Na figura ~\ref{fig:Parallel_versus_serial_transmissions}, podemos perceber que um \textit{byte} (oito \textit{bits}) é transmitido simultaneamente utilizando uma transmissão paralela. A transmissão serial, por outro lado, consegue enviar apenas um \textit{bit} após o outro.
 
-            \begin{figure}[!h]
+            \begin{figure}[H]
             	\centering
             	\includegraphics[scale=0.8]{Imagens/Parallel_versus_serial_transmissions.png}
             	\caption[Comparação entre transmissão serial e paralela]{Comparação entre transmissão serial e paralela}
@@ -64,7 +64,7 @@
 
             Informações MIDI são transmitidas através de fios e conectores, e seus cabos podem apresentar até 15 metros de comprimento. Entretanto, por se tratar de um cabo serial, todos os dados são transmitidos através de um único fio principal, e grandes distâncias podem inferir em uma degradação do sinal, ocasionando em possíveis perdas de dados ou mensagens impossíveis de serem lidas.
 
-            \begin{figure}[!h]
+            \begin{figure}[H]
             	\centering
             	\includegraphics[scale=0.8]{Imagens/MIDI_connector.jpg}
             	\caption[Conector MIDI]{Conector MIDI}
@@ -72,11 +72,11 @@
             \end{figure}
 
             O conector MIDI, semelhante ao apresentado na figura ~\ref{fig:MIDI_connector}, apresenta 5 pinos distintos. Entretanto, como já mencionado, MIDI envia informações utilizando um protocolo de transmissão serial. Desta forma, apenas um pino é realmente utilizado para o envio de informações. A tabela ~\ref{table:MIDI_pins} descreve cada pino do conector e sua respectiva função.
-            
+
             \definecolor{darkRed}{rgb}{0.607843137254902, 0.1764705882352941, 0.1215686274509804}
             \definecolor{lightRed}{rgb}{0.9568627450980392, 0.803921568627451, 0.7843137254901961}
-            
-            \begin{table}[h!]
+
+            \begin{table}[H]
                 \centering
                 \begin{tabular}{| c | p{5cm} |}
                     \hline
@@ -97,30 +97,82 @@
                 \label{table:MIDI_pins}
             \end{table}
 
-            Além do conector, outro hardware importante, que vale a pena ser ressaltado, é a versão fêmea do cabo MIDI. Controladores MIDI, como o desenvolvido neste projeto, apresentam normalmente 2 ou 3 destes conectores, rotulados como \textbf{In}, \textbf{Out} e \textbf{~\sigla{Thru}{Through}} (veja a figura ~\ref{fig:MIDI_connector_Female}). Estes conectores são explicados com mais detalhes a seguir.
-            
-            \begin{figure}[!h]
+            Além do conector, outro hardware importante, que vale a pena ser ressaltado, é a versão fêmea do cabo MIDI. Controladores MIDI, como o desenvolvido neste projeto, apresentam normalmente 2 ou 3 destes conectores, rotulados como \textbf{In}, \textbf{Out} e \textbf{~\sigla{Thru}{Through}} (veja a figura ~\ref{fig:MIDI_connector_Female}). O conjunto destes conectores é chamado de \textbf{porta MIDI} e cada uma deles será explicado com mais detalhes a seguir.
+
+            \begin{figure}[H]
             	\centering
             	\includegraphics[scale=0.8]{Imagens/midi_in_out_thru.png}
             	\caption[Conectores fêmeas MIDI]{Conectores fêmeas MIDI}
             	\label{fig:MIDI_connector_Female}
             \end{figure}
 
-            \subsubsection{MIDI IN}
+            \begin{itemize}
+                \item MIDI IN: Através deste conector são recebidas as mensagens MIDI de um determinado dispositivo ou software MIDI. Estas mensagens podem então ser processadas e, caso desejado, enviadas para outro dispositivo através do conector MIDI Thru.
 
-                
+                \item MIDI OUT: Através deste conector são transmitidas as mensagens MIDI que são geradas em um software ou dispositivo MIDI. Esta saída não envia informação de áudio, mas sim simples mensagens MIDI que são interpretadas por um conector MIDI In de um outro dispositivo. Tais mensagens são códigos digitais que representam o que e como músicas e eventos são tocados em um determinado instrumento.
 
-            \subsubsection{MIDI OUT}
-
-                Através deste conector são transmitidas as mensagens MIDI que são geradas em um software ou dispositivo MIDI.
-
-            \subsubsection{MIDI THRU}
-
-
+                \item MIDI THRU: envia uma réplica do sinal recebido na porta In para o componente ligado a ele, seja em cadeia ou somente os dois, desde que sejam componentes MIDI.
+            \end{itemize}
 
         \subsection{Formatos de distribuição}
 
+            Como já dito no início deste capítulo, existe um formato de arquivo padrão para MIDI, o SMF. Este tipo de arquivo armazena todas as informações necessárias para reproduzir todos os parâmetros suportados pelo protocolo. Além disso, ele também adiciona o que chamamos de \textit{time stamp} em cada evento, para que o software MIDI, ou até mesmo o usuário final, saiba o momento correto de realizar cada um destes.
 
+            MIDI tem a vantagem de ser compacto, uma vez que o som tocado por determinado instrumento não é gravado, mas sim apenas as informações de cada evento. Devido a este fato, arquivos MIDI apresentam um tamanho cerca de 300 vezes menor do que um arquivo de música atual (MP3). Entretanto, esse valor pode ser muito maior se compararmos com formatos descompactados de músicas.
+
+            O fato de MIDI não gravar som, entretanto, pode também ser uma desvantagem. Quando o som de um determinado instrumento é gravado, o usuário tem total controle sobre o resultado final, enquanto com MIDI, este mesmo resultado depende do dispositivo ou software que será utilizado para reproduzir este mesmo som.
+
+        \subsection{Canais MIDI}
+
+            Quando trabalhamos com música, muitas vezes desejamos que diversos instrumentos participem da mesma composição. Com MIDI, podemos incluir instruções para cada um deles através dos chamados \textbf{canais MIDI}.
+            
+            Pense em um canal MIDI como um canal de televisão (veja a figura ~\ref{fig:midi-channels}). Um determinado instrumento conecta-se apenas a um único canal, assim como um usuário o faz em sua televisão. Isso não significa que os outros canais não estão disponíveis, mas sim que o conteúdo disponível (no nosso caso, a mensagem MIDI) foi filtrado para processar apenas o relevante para aquele canal.
+            
+            \begin{figure}[H]
+            	\centering
+            	\includegraphics[scale=0.6]{Imagens/midi-channels.png}
+            	\caption[Exemplo de canais MIDI]{Exemplo de canais MIDI ~\cite{Gibson2013}}
+            	\label{fig:midi-channels}
+            \end{figure}
+            
+            Cada porta MIDI suporta até 16 canais simultâneos. Em outras palavras, um usuário pode escolher um determinado canal para transmitir as mensagens MIDI ou possuir até 16 instrumentos conectados simultaneamente, cada um realizando diferentes eventos.
+            
+    \section{Mensagens MIDI}
+
+        Agora que já explicamos o básico sobre o protocolo MIDI, é necessário estudarmos como podemos transmitir informações através de dispositivos. Essas informações são as chamadas \textbf{mensagens MIDI}.
+        
+        O conteúdo de uma mensagem MIDI é bastante simples. Todas elas apresentam um componente chamado de \textit{status byte}. Este componente é acompanhado por um valor que é definido por um ou mais \textit{bytes} de dados. 
+        
+        Durante essa seção, os seguintes tópicos serão abordados:
+        
+        \begin{itemize}
+                \item A estrutura de uma mensagem MIDI.
+
+                \item Diferenças entre os tipos de mensagens MIDI.
+
+                \item O que essas mensagens contêm e o que seus valores representam.
+                
+                \item Como MIDI atribui nomes e números de notas para cada evento.
+                
+                \item Como as mensagens MIDI transmitem e armazenam informações sobre a performance, e então as reproduzem no tempo correto.
+        \end{itemize}
+
+        \subsection{Mensagens de estado e de dados}
+        
+            Como já visto na seção anterior, cada \textit{byte} em uma mensagem MIDI contém 10 \textit{bits}. Destes, 8 são utilizados para a transmissão de informações. Desta forma, cada mensagem pode conter um valor entre 0 e 255. Tais mensagens são divididas em duas categorias: \textit{Estado} e \textit{Dados} (veja a figura ~\ref{fig:Status_and_Data_Bytes}).
+        
+            \begin{figure}[H]
+            	\centering
+            	\includegraphics[scale=0.8]{Imagens/Status_and_Data_Bytes.jpg}
+            	\caption[Byte de estado e de dados]{Byte de estado e de dados ~\cite{Guerin}}
+            	\label{fig:Status_and_Data_Bytes}
+            \end{figure}
+            
+            \begin{itemize}
+                \item A porção referente ao \textit{byte} de estado serve para identificar o tipo de informação que está sendo enviada. Ela informa ao dispositivo receptor a qual canal MIDI determinado evento pertence e o que este evento é. Um evento pode ser, por exemplo, uma Nota On ou uma Nota Off. Outros eventos serão explicados no decorrer do projeto.
+
+                \item A porção referente ao \textit{byte} de dados informa ao dispositivo receptor o valor que está associado ao evento determinado na outra porção da mensagem MIDI. 
+            \end{itemize}
 
     \section{Microcontroladores e Arduino}
 
