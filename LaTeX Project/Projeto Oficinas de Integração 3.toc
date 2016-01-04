@@ -1,44 +1,45 @@
 \select@language {portuges}
-\contentsline {chapter}{\numberline {1}\MakeUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{13}
-\contentsline {section}{\numberline {1.1}\MakeUppercase {Tema}}{13}
-\contentsline {section}{\numberline {1.2}\MakeUppercase {Delimita\IeC {\c c}\IeC {\~a}o do Estudo}}{15}
-\contentsline {section}{\numberline {1.3}\MakeUppercase {Problema}}{15}
-\contentsline {section}{\numberline {1.4}\MakeUppercase {Objetivos}}{15}
-\contentsline {subsection}{\numberline {1.4.1}Objetivos Gerais}{15}
-\contentsline {subsection}{\numberline {1.4.2}Objetivos Espec\IeC {\'\i }ficos}{16}
-\contentsline {section}{\numberline {1.5}\MakeUppercase {Justificativa}}{16}
-\contentsline {section}{\numberline {1.6}\MakeUppercase {Procedimentos Metodol\IeC {\'o}gicos}}{16}
-\contentsline {section}{\numberline {1.7}\MakeUppercase {Embasamento Te\IeC {\'o}rico}}{16}
-\contentsline {section}{\numberline {1.8}\MakeUppercase {Estrutura do Trabalho}}{17}
-\contentsline {section}{\numberline {1.9}\MakeUppercase {Banca Examinadora}}{17}
-\contentsline {chapter}{\numberline {2}\MakeUppercase {Fundamenta\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}}{19}
-\contentsline {section}{\numberline {2.1}\MakeUppercase {MIDI}}{19}
-\contentsline {subsection}{\numberline {2.1.1}O que \IeC {\'e} MIDI}{19}
-\contentsline {subsection}{\numberline {2.1.2}O protocolo de comunica\IeC {\c c}\IeC {\~a}o MIDI}{21}
-\contentsline {subsection}{\numberline {2.1.3}Hardware e conectores}{23}
-\contentsline {subsubsection}{\numberline {2.1.3.1}MIDI OUT}{23}
-\contentsline {subsubsection}{\numberline {2.1.3.2}MIDI IN}{23}
-\contentsline {subsubsection}{\numberline {2.1.3.3}MIDI THRU}{23}
+\contentsline {chapter}{\numberline {1}\MakeUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{12}
+\contentsline {section}{\numberline {1.1}\MakeUppercase {Tema}}{12}
+\contentsline {section}{\numberline {1.2}\MakeUppercase {Delimita\IeC {\c c}\IeC {\~a}o do Estudo}}{14}
+\contentsline {section}{\numberline {1.3}\MakeUppercase {Problema}}{14}
+\contentsline {section}{\numberline {1.4}\MakeUppercase {Objetivos}}{14}
+\contentsline {subsection}{\numberline {1.4.1}Objetivos Gerais}{14}
+\contentsline {subsection}{\numberline {1.4.2}Objetivos Espec\IeC {\'\i }ficos}{15}
+\contentsline {section}{\numberline {1.5}\MakeUppercase {Justificativa}}{15}
+\contentsline {section}{\numberline {1.6}\MakeUppercase {Procedimentos Metodol\IeC {\'o}gicos}}{15}
+\contentsline {section}{\numberline {1.7}\MakeUppercase {Embasamento Te\IeC {\'o}rico}}{15}
+\contentsline {section}{\numberline {1.8}\MakeUppercase {Estrutura do Trabalho}}{16}
+\contentsline {section}{\numberline {1.9}\MakeUppercase {Banca Examinadora}}{16}
+\contentsline {chapter}{\numberline {2}\MakeUppercase {Fundamenta\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}}{18}
+\contentsline {section}{\numberline {2.1}\MakeUppercase {MIDI}}{18}
+\contentsline {subsection}{\numberline {2.1.1}O que \IeC {\'e} MIDI}{18}
+\contentsline {subsection}{\numberline {2.1.2}O protocolo de comunica\IeC {\c c}\IeC {\~a}o MIDI}{20}
+\contentsline {subsection}{\numberline {2.1.3}Hardware e conectores}{22}
 \contentsline {subsection}{\numberline {2.1.4}Formatos de distribui\IeC {\c c}\IeC {\~a}o}{23}
-\contentsline {section}{\numberline {2.2}\MakeUppercase {Microcontroladores e Arduino}}{23}
-\contentsline {subsection}{\numberline {2.2.1}Microcontroladores}{23}
-\contentsline {subsection}{\numberline {2.2.2}Arduino}{23}
-\contentsline {chapter}{\numberline {3}\MakeUppercase {Desenvolvimento}}{24}
-\contentsline {section}{\numberline {3.1}\MakeUppercase {Hardware}}{24}
-\contentsline {section}{\numberline {3.2}\MakeUppercase {Esta\IeC {\c c}\IeC {\~a}o Base Principal}}{24}
-\contentsline {subsection}{\numberline {3.2.1}Interface}{24}
-\contentsline {subsection}{\numberline {3.2.2}L\IeC {\'o}gica}{24}
-\contentsline {section}{\numberline {3.3}\MakeUppercase {Esta\IeC {\c c}\IeC {\~a}o Base Secund\IeC {\'a}ria}}{24}
-\contentsline {subsection}{\numberline {3.3.1}Interface}{24}
-\contentsline {subsection}{\numberline {3.3.2}L\IeC {\'o}gica}{24}
-\contentsline {section}{\numberline {3.4}\MakeUppercase {Comunica\IeC {\c c}\IeC {\~a}o entre Hardware e Software}}{24}
-\contentsline {section}{\numberline {3.5}\MakeUppercase {Projeto Mec\IeC {\^a}nico - Inv\IeC {\'o}lucro}}{24}
-\contentsline {subsection}{\numberline {3.5.1}Programas Utilizados para a execu\IeC {\c c}\IeC {\~a}o do Projeto}{24}
-\contentsline {chapter}{\numberline {4}\MakeUppercase {Resultados e Discuss\IeC {\~o}es}}{25}
-\contentsline {chapter}{\numberline {5}\MakeUppercase {Considera\IeC {\c c}\IeC {\~o}es Finais}}{26}
-\contentsline {section}{\numberline {5.1}\MakeUppercase {Sugest\IeC {\~o}es para trabalhos futuros}}{26}
-\contentsline {chapter}{REFER\^ENCIAS}{27}
-\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Nome do Ap\IeC {\^e}ndice}}{28}
-\contentsline {chapter}{Anexo{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Datasheets}}{29}
-\contentsline {section}{\numberline {A.1}\MakeUppercase {Potenci\IeC {\^o}metro rotativo}}{30}
-\contentsline {section}{\numberline {A.2}\MakeUppercase {Potenci\IeC {\^o}metro linear}}{32}
+\contentsline {subsection}{\numberline {2.1.5}Canais MIDI}{24}
+\contentsline {section}{\numberline {2.2}\MakeUppercase {Mensagens MIDI}}{25}
+\contentsline {subsection}{\numberline {2.2.1}Mensagens de estado e de dados}{25}
+\contentsline {section}{\numberline {2.3}\MakeUppercase {Microcontroladores e Arduino}}{26}
+\contentsline {subsection}{\numberline {2.3.1}Microcontroladores}{26}
+\contentsline {subsection}{\numberline {2.3.2}Arduino}{26}
+\contentsline {chapter}{\numberline {3}\MakeUppercase {Desenvolvimento}}{27}
+\contentsline {section}{\numberline {3.1}\MakeUppercase {Hardware}}{27}
+\contentsline {section}{\numberline {3.2}\MakeUppercase {Esta\IeC {\c c}\IeC {\~a}o Base Principal}}{27}
+\contentsline {subsection}{\numberline {3.2.1}Interface}{27}
+\contentsline {subsection}{\numberline {3.2.2}L\IeC {\'o}gica}{27}
+\contentsline {section}{\numberline {3.3}\MakeUppercase {Esta\IeC {\c c}\IeC {\~a}o Base Secund\IeC {\'a}ria}}{27}
+\contentsline {subsection}{\numberline {3.3.1}Interface}{27}
+\contentsline {subsection}{\numberline {3.3.2}L\IeC {\'o}gica}{27}
+\contentsline {section}{\numberline {3.4}\MakeUppercase {Comunica\IeC {\c c}\IeC {\~a}o entre Hardware e Software}}{27}
+\contentsline {section}{\numberline {3.5}\MakeUppercase {Projeto Mec\IeC {\^a}nico - Inv\IeC {\'o}lucro}}{27}
+\contentsline {subsection}{\numberline {3.5.1}Programas Utilizados para a execu\IeC {\c c}\IeC {\~a}o do Projeto}{27}
+\contentsline {chapter}{\numberline {4}\MakeUppercase {Resultados e Discuss\IeC {\~o}es}}{28}
+\contentsline {chapter}{\numberline {5}\MakeUppercase {Considera\IeC {\c c}\IeC {\~o}es Finais}}{29}
+\contentsline {section}{\numberline {5.1}\MakeUppercase {Sugest\IeC {\~o}es para trabalhos futuros}}{29}
+\contentsline {chapter}{REFER\^ENCIAS}{30}
+\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Nome do Ap\IeC {\^e}ndice}}{32}
+\contentsline {section}{\numberline {A.1}\MakeUppercase {Notas musicais em MIDI}}{32}
+\contentsline {chapter}{Anexo{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Datasheets}}{33}
+\contentsline {section}{\numberline {A.1}\MakeUppercase {Potenci\IeC {\^o}metro rotativo}}{34}
+\contentsline {section}{\numberline {A.2}\MakeUppercase {Potenci\IeC {\^o}metro linear}}{36}

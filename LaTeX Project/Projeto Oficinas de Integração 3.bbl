@@ -11,7 +11,9 @@
 
 \bibitem[Android 2015]{AndroidDeveloper}
 \abntrefinfo{Android}{ANDROID}{2015}
-{ANDROID. \textbf{Android Reference}. 2015.}
+{ANDROID. \textbf{Android Reference}. 2015.
+Dispon{\'\i}vel em: $<$http://developer.android.com/$>$. Acesso em: 19 de
+  dezembro de 2015.}
 
 \bibitem[Arduino 2014]{Arduino2014}
 \abntrefinfo{Arduino}{ARDUINO}{2014a}
@@ -44,6 +46,13 @@ Dispon{\'\i}vel em: $<$http://arduino.cc/en/Reference/HomePage$>$. Acesso em:
 Dispon{\'\i}vel em:
   $<$http://www.instructables.com/id/Send-and-Receive-MIDI-with-Arduino/?ALLSTEPS$>$.
   Acesso em: 19 de dezembro de 2015.}
+
+\bibitem[Gibson 2013]{Gibson2013}
+\abntrefinfo{Gibson}{GIBSON}{2013}
+{GIBSON, J. \textbf{Introduction to MIDI and Computer Music: The MIDI
+  Standard}. 2013.
+Dispon{\'\i}vel em: $<$http://www.iu.edu/~emusic/361/midi.htm$>$. Acesso em: 04
+  de janeiro de 2016.}
 
 \bibitem[Gregoire 2014]{Gregoire}
 \abntrefinfo{Gregoire}{GREGOIRE}{2014}
@@ -93,5 +102,11 @@ Dispon{\'\i}vel em:
 \bibitem[Wheat 2011]{Wheat}
 \abntrefinfo{Wheat}{WHEAT}{2011}
 {WHEAT, D. \textbf{Arduino Internals}. 368: Apress, 2011.}
+
+\bibitem[Wikipedia 2016]{WikipediaOitava}
+\abntrefinfo{Wikipedia}{WIKIPEDIA}{2016}
+{WIKIPEDIA. \textbf{Oitava}. 2016.
+Dispon{\'\i}vel em: $<$https://pt.wikipedia.org/wiki/Oitava$>$. Acesso em: 04
+  de janeiro de 2016.}
 
 \end{thebibliography}
