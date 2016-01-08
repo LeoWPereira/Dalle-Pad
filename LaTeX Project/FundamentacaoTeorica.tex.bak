@@ -125,58 +125,64 @@
         \subsection{Canais MIDI}
 
             Quando trabalhamos com música, muitas vezes desejamos que diversos instrumentos participem da mesma composição. Com MIDI, podemos incluir instruções para cada um deles através dos chamados \textbf{canais MIDI}.
-            
+
             Pense em um canal MIDI como um canal de televisão (veja a figura ~\ref{fig:midi-channels}). Um determinado instrumento conecta-se apenas a um único canal, assim como um usuário o faz em sua televisão. Isso não significa que os outros canais não estão disponíveis, mas sim que o conteúdo disponível (no nosso caso, a mensagem MIDI) foi filtrado para processar apenas o relevante para aquele canal.
-            
+
             \begin{figure}[H]
             	\centering
             	\includegraphics[scale=0.6]{Imagens/midi-channels.png}
             	\caption[Exemplo de canais MIDI]{Exemplo de canais MIDI ~\cite{Gibson2013}}
             	\label{fig:midi-channels}
             \end{figure}
-            
+
             Cada porta MIDI suporta até 16 canais simultâneos. Em outras palavras, um usuário pode escolher um determinado canal para transmitir as mensagens MIDI ou possuir até 16 instrumentos conectados simultaneamente, cada um realizando diferentes eventos.
-            
+
     \section{Mensagens MIDI}
 
         Agora que já explicamos o básico sobre o protocolo MIDI, é necessário estudarmos como podemos transmitir informações através de dispositivos. Essas informações são as chamadas \textbf{mensagens MIDI}.
-        
-        O conteúdo de uma mensagem MIDI é bastante simples. Todas elas apresentam um componente chamado de \textit{status byte}. Este componente é acompanhado por um valor que é definido por um ou mais \textit{bytes} de dados. 
-        
+
+        O conteúdo de uma mensagem MIDI é bastante simples. Todas elas apresentam um componente chamado de \textit{status byte}. Este componente é acompanhado por um valor que é definido por um ou mais \textit{bytes} de dados.
+
         Durante essa seção, os seguintes tópicos serão abordados:
-        
+
         \begin{itemize}
                 \item A estrutura de uma mensagem MIDI.
 
                 \item Diferenças entre os tipos de mensagens MIDI.
 
                 \item O que essas mensagens contêm e o que seus valores representam.
-                
+
                 \item Como MIDI atribui nomes e números de notas para cada evento.
-                
+
                 \item Como as mensagens MIDI transmitem e armazenam informações sobre a performance, e então as reproduzem no tempo correto.
         \end{itemize}
 
         \subsection{Mensagens de estado e de dados}
-        
+
             Como já visto na seção anterior, cada \textit{byte} em uma mensagem MIDI contém 10 \textit{bits}. Destes, 8 são utilizados para a transmissão de informações. Desta forma, cada mensagem pode conter um valor entre 0 e 255. Tais mensagens são divididas em duas categorias: \textit{Estado} e \textit{Dados} (veja a figura ~\ref{fig:Status_and_Data_Bytes}).
-        
+
             \begin{figure}[H]
             	\centering
             	\includegraphics[scale=0.8]{Imagens/Status_and_Data_Bytes.jpg}
             	\caption[Byte de estado e de dados]{Byte de estado e de dados ~\cite{Guerin}}
             	\label{fig:Status_and_Data_Bytes}
             \end{figure}
-            
+
             \begin{itemize}
                 \item A porção referente ao \textit{byte} de estado serve para identificar o tipo de informação que está sendo enviada. Ela informa ao dispositivo receptor a qual canal MIDI determinado evento pertence e o que este evento é. Um evento pode ser, por exemplo, uma Nota On ou uma Nota Off. Outros eventos serão explicados no decorrer do projeto.
 
-                \item A porção referente ao \textit{byte} de dados informa ao dispositivo receptor o valor que está associado ao evento determinado na outra porção da mensagem MIDI. 
+                \item A porção referente ao \textit{byte} de dados informa ao dispositivo receptor o valor que está associado ao evento determinado na outra porção da mensagem MIDI. Por exemplo, se o usuário decidir tocar um \textit{Dó} mediano com uma força também mediana, o \textit{byte} de estado irá enviar um evento "Nota On", enquanto o \textit{byte} de dados irá passar o valor correspondente à essa nota e à velocidade que esta foi tocada. No nosso exemplo, a nota C4 tem o valor correspondente a 60 (veja a tabela ~\ref{table:MIDI_notes}) e a velocidade de aproximadamente 64.
             \end{itemize}
+
+            Os valores utilizados pelo \textit{byte} de estado variam entre 128 e 255 (1000 0000 a 1111 1111 em números binários), enquanto para o \textit{byte} de dados estes variam entre 0 a 127 (0000 0000 a 0111 1111 em números binários). É fácil perceber que, para um dispositivo MIDI reconhecer qual o tipo de mensagem que se está sendo transmitida, basta verificar o \sigla{MSB}{Most Significant Bit} (\textit{Bit} mais significativo, do inglês). Se este valor for 1, trata-se de um \textit{byte} de estado. Caso contrário, de um \textit{byte} de dados. Simples assim.
+
+            Digamos que um dispositivo MIDI receba três valores: 175, 43 e 125. Ele saberá que 175 é um \textit{byte} de estado, enquanto os outros dois valores são os \textit{bytes} de dados que estão acompanhando o \textit{byte} de estado. Caso este dispositivo receba outros valores, digamos: 200, 220 e 90. Ele saberá que os dois primeiros valores são \textit{bytes} de estados, enquanto o último é um \textit{byte} de dados que acompanha apenas o último \textit{byte} de estado, não ambos.
+
+            Mensagens MIDI são normalmente representadas em um dos três mais comuns formatos digitais: decimais; binários; e hexadecimais. Explicar a conversão entre estes formatos (e os formatos em si) jazem fora do escopo deste projeto, mas podem ser consultados no livro \textit{MIDI Power!}~\cite{Guerin}.
 
     \section{Microcontroladores e Arduino}
 
-
+        ~\ref{table:MIDI_noteOFF}
 
         \subsection{Microcontroladores}
 

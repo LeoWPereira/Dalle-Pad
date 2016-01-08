@@ -19,10 +19,16 @@
 \usepackage{pdfsync} % para sincronização automática do PDF
 \usepackage{pdfpages} % para poder adicionar documentos PDF ao arquivo
 \usepackage{epigraph} % para utilizar epígrafes
-
+\usepackage{array} % para poder utilizar comprimentos pré-definidos em uma tabela
+\usepackage{xcolor,colortbl} % para poder utilizar cores em uma tabela
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{multirow} % para poder usar Linhas e Colunas multiplas em tabelas
+\usepackage{color} % para poder usar cores diferentes no documento
+\usepackage{float} % para controlar a posição de figuras no documento
 \usepackage{chngcntr} % para utilizar enumeração não-contínua de figuras
 \counterwithin{figure}{chapter} % a enumeração de figuras será separado por capítulos
-\counterwithin{table}{chapter} % a enumeração de figuras será separado por capítulos
+\counterwithin{table}{chapter} % a enumeração de tabelas será separado por capítulos
 
 %\geometry{left=3.0cm,right=1.5cm,top=4cm,bottom=1cm}       Usado para realizar pequenos ajustes das margens.
 
@@ -88,7 +94,7 @@
     \listadefiguras % Geração automática da lista de figuras
     \listadetabelas % Geração automática da lista de tabelas
     \listadesiglas % Geração automática da lista de siglas
-    \listadesimbolos % Geração automática da lista de símbolos
+    %\listadesimbolos % Geração automática da lista de símbolos
 
     % Sumário
     \sumario % Geração automática do sumário

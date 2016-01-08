@@ -1,3 +1,7 @@
 \select@language {portuges}
 \contentsline {table}{\numberline {2.1}{\ignorespaces Pinos em um conector MIDI}}{22}
 \contentsline {table}{\numberline {A.1}{\ignorespaces Notas musicais em MIDI}}{32}
+\contentsline {table}{\numberline {B.1}{\ignorespaces Lista de Bytes de estado para a fun\IeC {\c c}\IeC {\~a}o Note Off }}{34}
+\contentsline {table}{\numberline {B.2}{\ignorespaces Lista de Bytes de estado para a fun\IeC {\c c}\IeC {\~a}o Note On }}{34}
+\contentsline {table}{\numberline {B.3}{\ignorespaces Lista de Bytes de estado para a fun\IeC {\c c}\IeC {\~a}o Polyphonic Aftertouch }}{35}
+\contentsline {table}{\numberline {B.4}{\ignorespaces Lista de Bytes de estado para mudan\IeC {\c c}a de controle / modo de canal }}{36}
