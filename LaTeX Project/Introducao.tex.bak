@@ -8,13 +8,6 @@
 \chapter{Introdução}
 \label{chap:introducao}
 
-    \begin{figure}[!h]
-            	\centering
-            	\includegraphics{Imagens/MIDI_Nota_ON_e_OFF.jpg}
-            	\caption[Exemplo de transmissão das mensagens de Nota ON e OFF]{Exemplo de transmissão das mensagens de Nota ON e OFF ~\cite{Guerin}}
-            	\label{fig:MIDI_Nota_ON_e_OFF}
-            \end{figure}
-
     \textbf{DALLE PAD - O Gadget que te transforma em um DJ} foi desenvolvido para a disciplina de Oficina de Integração 3 (IF66J - S71), do curso de Engenharia de Computação da Universidade Tecnológica Federal do Paraná.
 
     Como proposto pela disciplina, o sistema é composto por uma estação base principal (desenvolvida para \textit{Desktop e notebook}) e outra secundária (desenvolvida para \textit{mobile}), um sistema de comunicação e um sistema embarcado. Em ambas as estações base encontram-se os softwares de interface com o usuário; o sistema de comunicação é baseado em tecnologia sem fio, além de conexão \sigla{USB}{Universal Serial Bus} e \sigla{MIDI}{Musical Instrument Digital Interface}; o sistema embarcado consiste em um sistema microcontrolado e a estrutura física do produto é composta por um invólucro mecânico contendo todo o sistema microcontrolado e toda a estrutura física necessária para que o usuário final possa utilizar tudo o que o \textbf{DALLE PAD} permite.
@@ -75,7 +68,9 @@
 
     \section{Justificativa}
 
+        O controlador MIDI surgiu para conectar instrumentos musicais eletrônicos, computadores e outros dispositivos relacionados através de uma simples conexão MIDI. Esse produto auxilia músicos amadores e profissionais na edição e criação de músicas, incentivando-os à utilizar sua criatividade com os novos tipos de efeitos e funcionalidades que estão contidos no software utilizado.
 
+        O desenvolvimento desse produto no Brasil é limitado e seu preço no mercado pode ser alto para usuários amadores. Ao inserirmos um novo tipo de comunicação no dispositivo, permitimos outra maneira de acessá-lo e um software para controle básico de suas funções. Ao mesmo tempo, procuramos diminuir o custo do projeto, tornando-o acessível para o mercado e, principalmente, às pessoas que desejam começar a aprender esse ramo da música.
 
     \section{Procedimentos Metodológicos}
 
