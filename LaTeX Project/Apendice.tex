@@ -56,17 +56,17 @@
 \chapter{Especificação MIDI}
 
     As seguintes tabelas representam a especificação MIDI, atualizada em 1995 pela \sigla{MMA}{MIDI Manufacturers Association} (Associação dos Fabricantes de MIDI, em inglês), que define o protocolo MIDI.
-    
+
     \section{Bytes de estado}
-    
+
         Nas tabelas a seguir, separadas entre os possíveis estados de uma mensagem MIDI, serão citados todos os possíveis valores de \textit{bytes} de estado e o que cada um deles representa.
-        
+
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         %                                       %
         %             Tabela B.1                %
         %                                       %
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        
+
         \begin{center}
         \tablefirsthead{%
           \hline
@@ -109,7 +109,7 @@
             \rowcolor{white}    10001111 & 8F & 143 & Chan 16  &                   "                    &                    "                       \\
         \end{supertabular}
         \end{center}
-        
+
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         %                                       %
         %             Tabela B.2                %
@@ -234,11 +234,11 @@
           \multicolumn{6}{|r|}{\small\sl continua na próxima página} \\
           \hline}
         \tablelasttail{\hline}
-        \bottomcaption{Lista de Bytes de estado para mudança de controle / modo de canal 
+        \bottomcaption{Lista de Bytes de estado para mudança de controle / modo de canal
         \label{table:MIDI_polyphonic_controlChange_and_Channel}}
         %
         \begin{supertabular}{| c | c | c | c | c | c |}
-            \rowcolor{lightRed} 10110000 & B0 & 176 & Chan 1   &    \shortstack{Veja tabela \\ (0-127)} &         \shortstack{Veja tabela \\ (0-127)} \\
+            \rowcolor{lightRed} 10110000 & B0 & 176 & Chan 1   &    \shortstack{Veja tabela ~\ref{table:MIDI_control_and_channel_messages} \\ (0-127)} &         \shortstack{Veja  ~\ref{table:MIDI_control_and_channel_messages} \\ (0-127)} \\
             \rowcolor{white}    10110001 & B1 & 177 & Chan 2   &                   "                    &                    "                        \\
             \rowcolor{lightRed} 10110010 & B2 & 178 & Chan 3   &                   "                    &                    "                        \\
             \rowcolor{white}    10110011 & B3 & 179 & Chan 4   &                   "                    &                    "                        \\
@@ -257,187 +257,359 @@
         \end{supertabular}
         \end{center}
 
-%% ---------------- 4 -------------------
-%% O Gerenciamento da Integração do Projeto descreve os processos necessários para assegurar que os diversos elementos do projeto sejam adequadamente coordenados.
-%% A integração envolve tomada de decisão e escolhas diretamente ligadas aos objetivos do projeto e aos processos das etapas de desenvolvimento e execução do plano do projeto, assim como ao processo de controle de alterações.
-%% O gerenciamento da integração é composto pelos processos: desenvolvimento do plano do projeto, execução do plano do projeto e controle integrado de mudanças
-%\chapter{Gerenciamento de Integração do Projeto}
-
-
-
-    %% ---------------- 4.1 -------------------
-%    \section{Termo de Abertura do Projeto}
-
-%    \includepdf[pages={-}]{Documentos/Termo_de_Abertura_de_Projeto.pdf}
-
-    %% ---------------- 4.2 -------------------
-%    \section{Declaração do Escopo Preliminar do Projeto}
-
-
-
-    %% ---------------- 4.3 -------------------
-%    \section{Plano de Gerenciamento do Projeto}
-
-%    \includepdf[pages={-}]{Documentos/Plano_de_Projeto.pdf}
-
-%% ---------------- 5 -------------------
-%% O Gerenciamento do Escopo do Projeto descreve os processos necessários para assegurar que o projeto contemple todo o trabalho requerido, e nada mais que o trabalho requerido, para completar o projeto com sucesso.
-%% A preocupação fundamental é definir e controlar o que está ou não, incluído no projeto.
-%% Ele é composto pelos processos: iniciação, planejamento do escopo, detalhamento do escopo, verificação do escopo e controle de mudanças do escopo.
-%\chapter{Gerenciamento de Escopo do Projeto}
-
-
-
-    %% ---------------- 5.1 -------------------
-%    \section{Planejamento do Escopo}
-
-
-
-    %% ---------------- 5.2 -------------------
-%    \section{Definição do Escopo}
-
-
-
-    %% ---------------- 5.3 -------------------
-%    \section{Estrutura Analítica do Projeto}
-
-
-
-%% ---------------- 6 -------------------
-%% O Gerenciamento do Tempo do Projeto descreve os processos necessários para assegurar que o projeto termine dentro do prazo previsto.
-%% Ele é composto pelos processos: definição das atividades, sequenciamento das atividades, estimativa da duração das atividades, desenvolvimento do cronograma e controle do cronograma.
-%\chapter{Gerenciamento do Tempo do Projeto}
-
-
-
-    %% ---------------- 6.1 -------------------
-%    \section{Definição da Atividade}
-
-
-
-    %% ---------------- 6.2 -------------------
-%    \section{Sequenciamento de Atividades}
-
-
-
-    %% ---------------- 6.3 -------------------
-%    \section{Estimativa de recursos de atividade}
-
-
-
-    %% ---------------- 6.4 -------------------
-%    \section{Estimativa de duração de atividade}
-
-
-
-    %% ---------------- 6.5 -------------------
-%    \section{Desenvolvimento do Cronograma}
-
-
-
-%% ---------------- 7 -------------------
-%% O Gerenciamento do Custo do Projeto descreve os processos necessários para assegurar que o projeto termine dentro do orçamento aprovado.
-%% Ele é composto pelos processos: planejamento dos recursos, estimativa dos custos, orçamento dos custos e controle dos custos.
-%% No projeto, várias atividades afetam os custos do projeto e desta forma, o planejamento e controle dos custos são fundamentais.
-%\chapter{Gerenciamento do Custo do Projeto}
-
-
-
-    %% ---------------- 7.1 -------------------
-%    \section{Estimativa de custos}
-
-
-
-    %% ---------------- 7.2 -------------------
-%    \section{Orçamentação}
-
-
-
-%% ---------------- 8 -------------------
-%% O Gerenciamento da Qualidade do Projeto descreve os processos necessários para assegurar que as necessidades que originaram o desenvolvimento do projeto serão satisfeitas.
-%% O projeto tem qualidade quando é concluído de acordo com os requisitos, especificações (o projeto deve produzir o que foi definido) e adequação ao uso (deve satisfazer às reais necessidades dos clientes).
-%% O gerenciamento da qualidade é composto pelos processos: planejamento da qualidade, garantia da qualidade e controle da qualidade.
-%\chapter{Gerenciamento da Qualidade do Projeto}
-
-
-
-    %% ---------------- 8.1 -------------------
-%    \section{Planejamento da qualidade}
-
-
-
-%% ---------------- 9 -------------------
-%% O Gerenciamento dos Recursos Humanos do Projeto descreve os processos necessários para proporcionar a melhor utilização das pessoas envolvidas no projeto. Embora seja uma área de conhecimento, na maioria das vezes, complexa e subjetiva exige constante pesquisa, sensibilidade e muita vivência do dia-a-dia para saber lidar com o ser humano.
-%% É composta pelos processos: planejamento organizacional, montagem da equipe e desenvolvimento da equipe.
-%\chapter{Gerenciamento de Recursos Humanos do Projeto}
-
-
-
-    %% ---------------- 9.1 -------------------
-%    \section{Planejamento de recursos humanos}
-
-
-
-%% ---------------- 10 -------------------
-%% O Gerenciamento das Comunicações do Projeto descreve os processos necessários para assegurar a geração, captura, distribuição, armazenamento e pronta apresentação das informações do projeto para que sejam feitas de forma adequada e no tempo certo.
-%% A gestão da comunicação é frequentemente ignorada pelos gerentes de projeto, no entanto nos projetos concluídos com sucesso o gerente gasta 90% do seu tempo envolvido com algum tipo de comunicação (formal, informal, verbal, escrita).
-%% Este gerenciamento é composto pelos processos: planejamento das comunicações, distribuição das informações, relato de desempenho e encerramento administrativo
-%\chapter{Gerenciamento de Comunicação do Projeto}
-
-
-
-    %% ---------------- 10.1 -------------------
-%    \section{Planejamento das comunicações}
-
-
-
-%% ---------------- 11 -------------------
-%% O Gerenciamento dos Riscos do Projeto descreve os processos que dizem respeito à identificação, análise e resposta aos riscos do projeto.
-%% A prática deste gerenciamento não é ainda muito comum na maioria das organizações e alguns autores citam que gerenciar projetos é gerenciar riscos.
-%% O gerenciamento de riscos é muito importante para o sucesso do projeto e é composto pelos seguintes processos: Planejamento da Gerência de Risco, identificação dos riscos, análise qualitativa de riscos, análise quantitativa de riscos, desenvolvimento das respostas aos riscos e controle e monitoração de riscos.
-%\chapter{Gerenciamento do Risco do Projeto}
-
-
-
-    %% ---------------- 11.1 -------------------
-%    \section{Planejamento do gerenciamento de riscos}
-
-
-
-    %% ---------------- 11.2 -------------------
-%    \section{Identificação de riscos}
-
-
-
-    %% ---------------- 11.3 -------------------
-%    \section{Análise Qualitativa de riscos}
-
-
-
-    %% ---------------- 11.4 -------------------
-%    \section{Planejamento de respostas a riscos}
-
-
-
-%% ---------------- 12 -------------------
-%% O Gerenciamento das Aquisições do Projeto descreve os processos necessários para a aquisição de mercadorias e serviços fora da organização que desenvolve o projeto.
-%% Este gerenciamento é discutido do ponto de vista do comprador na relação comprador-fornecedor.
-%% Ele é composto pelos processos: planejamento das aquisições, preparação das aquisições, obtenção de propostas, seleção de fornecedores, administração dos contratos e encerramento do contrato.
-%\chapter{Gerenciamento das Aquisições do Projeto}
-
-
-
-    %% ---------------- 12.1 -------------------
-%    \section{Planejar compras e aquisições}
-
-
-
-    %% ---------------- 12.2 -------------------
-%    \section{Planejar contratações}
-
-
-
-%% Atas de Reunião são importantes pois definem exatamente o que foi / será discutido em cada reunião da Equipe Dalle Pad!
-%\chapter{Atas de Reunião}
-
-
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %                                       %
+        %             Tabela B.5                %
+        %                                       %
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+        \begin{center}
+        \tablefirsthead{%
+          \hline
+          \rowcolor{darkRed} \multicolumn{4}{c}{\textcolor{white}{\textbf{Byte de estado}}} & \multicolumn{2}{c}{\textcolor{white}{\textbf{Byte de dados}}} \\
+          \hline
+          \rowcolor{darkRed} \textcolor{white}{\textbf{\shortstack{1$^\circ$ Byte \\ Binário}}} & \textcolor{white}{\textbf{\shortstack{1$^\circ$ Byte \\ Hexa}}} & \textcolor{white}{\textbf{\shortstack{1$^\circ$ Byte \\ Decimal}}} & \textcolor{white}{\textbf{\shortstack{Função \\ Mudança de Programa}}} & \textcolor{white}{\textbf{2$^\circ$ Byte}} & \textcolor{white}{\textbf{3$^\circ$ Byte}} \\
+          \hline}
+        \tablehead{%
+          \hline
+          \multicolumn{6}{|l|}{\small\sl continuação da página anterior} \\
+          \hline
+          \rowcolor{darkRed} \multicolumn{4}{c|}{\textcolor{white}{\textbf{Byte de estado}}} & \multicolumn{2}{c|}{\textcolor{white}{\textbf{Byte de dados}}} \\
+          \hline
+          \rowcolor{darkRed} \textcolor{white}{\textbf{\shortstack{1$^\circ$ Byte \\ Binário}}} & \textcolor{white}{\textbf{\shortstack{1$^\circ$ Byte \\ Hexa}}} & \textcolor{white}{\textbf{\shortstack{1$^\circ$ Byte \\ Decimal}}} & \textcolor{white}{\textbf{\shortstack{Função \\ Mudança de Programa}}} & \textcolor{white}{\textbf{2$^\circ$ Byte}} & \textcolor{white}{\textbf{3$^\circ$ Byte}} \\
+          \hline}
+        \tabletail{%
+          \hline
+          \multicolumn{6}{|r|}{\small\sl continua na próxima página} \\
+          \hline}
+        \tablelasttail{\hline}
+        \bottomcaption{Lista de Bytes de estado para a função mudança de programa
+        \label{table:MIDI_program_change}}
+        %
+        \begin{supertabular}{| c | c | c | c | c | c |}
+            \rowcolor{lightRed} 11000000 & C0 & 192 & Chan 1   &    \shortstack{Programa \\ (0-127)}    &                   Nulo                      \\
+            \rowcolor{white}    11000001 & C1 & 193 & Chan 2   &                   "                    &                    "                        \\
+            \rowcolor{lightRed} 11000010 & C2 & 194 & Chan 3   &                   "                    &                    "                        \\
+            \rowcolor{white}    11000011 & C3 & 195 & Chan 4   &                   "                    &                    "                        \\
+            \rowcolor{lightRed} 11000100 & C4 & 196 & Chan 5   &                   "                    &                    "                        \\
+            \rowcolor{white}    11000101 & C5 & 197 & Chan 6   &                   "                    &                    "                        \\
+            \rowcolor{lightRed} 11000110 & C6 & 198 & Chan 7   &                   "                    &                    "                        \\
+            \rowcolor{white}    11000111 & C7 & 199 & Chan 8   &                   "                    &                    "                        \\
+            \rowcolor{lightRed} 11001000 & C8 & 200 & Chan 9   &                   "                    &                    "                        \\
+            \rowcolor{white}    11001001 & C9 & 201 & Chan 10  &                   "                    &                    "                        \\
+            \rowcolor{lightRed} 11001010 & CA & 202 & Chan 11  &                   "                    &                    "                        \\
+            \rowcolor{white}    11001011 & CB & 203 & Chan 12  &                   "                    &                    "                        \\
+            \rowcolor{lightRed} 11001100 & CC & 204 & Chan 13  &                   "                    &                    "                        \\
+            \rowcolor{white}    11001101 & CD & 205 & Chan 14  &                   "                    &                    "                        \\
+            \rowcolor{lightRed} 11001110 & CE & 206 & Chan 15  &                   "                    &                    "                        \\
+            \rowcolor{white}    11001111 & CF & 207 & Chan 16  &                   "                    &                    "                        \\
+        \end{supertabular}
+        \end{center}
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %                                       %
+        %             Tabela B.6                %
+        %                                       %
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+        \begin{center}
+        \tablefirsthead{%
+          \hline
+          \rowcolor{darkRed} \multicolumn{4}{c}{\textcolor{white}{\textbf{Byte de estado}}} & \multicolumn{2}{c}{\textcolor{white}{\textbf{Byte de dados}}} \\
+          \hline
+          \rowcolor{darkRed} \textcolor{white}{\textbf{\shortstack{1$^\circ$ Byte \\ Binário}}} & \textcolor{white}{\textbf{\shortstack{1$^\circ$ Byte \\ Hexa}}} & \textcolor{white}{\textbf{\shortstack{1$^\circ$ Byte \\ Decimal}}} & \textcolor{white}{\textbf{\shortstack{Função \\ Channel Aftertouch}}} & \textcolor{white}{\textbf{2$^\circ$ Byte}} & \textcolor{white}{\textbf{3$^\circ$ Byte}} \\
+          \hline}
+        \tablehead{%
+          \hline
+          \multicolumn{6}{|l|}{\small\sl continuação da página anterior} \\
+          \hline
+          \rowcolor{darkRed} \multicolumn{4}{c|}{\textcolor{white}{\textbf{Byte de estado}}} & \multicolumn{2}{c|}{\textcolor{white}{\textbf{Byte de dados}}} \\
+          \hline
+          \rowcolor{darkRed} \textcolor{white}{\textbf{\shortstack{1$^\circ$ Byte \\ Binário}}} & \textcolor{white}{\textbf{\shortstack{1$^\circ$ Byte \\ Hexa}}} & \textcolor{white}{\textbf{\shortstack{1$^\circ$ Byte \\ Decimal}}} & \textcolor{white}{\textbf{\shortstack{Função \\ Channel Aftertouch}}} & \textcolor{white}{\textbf{2$^\circ$ Byte}} & \textcolor{white}{\textbf{3$^\circ$ Byte}} \\
+          \hline}
+        \tabletail{%
+          \hline
+          \multicolumn{6}{|r|}{\small\sl continua na próxima página} \\
+          \hline}
+        \tablelasttail{\hline}
+        \bottomcaption{Lista de Bytes de estado para a função Channel Aftertouch
+        \label{table:MIDI_channel_aftertouch}}
+        %
+        \begin{supertabular}{| c | c | c | c | c | c |}
+            \rowcolor{lightRed} 11010000 & D0 & 208 & Chan 1   &    \shortstack{Valor do aftertouch \\ (0-127)}    &                   Nulo                      \\
+            \rowcolor{white}    11010000 & D1 & 209 & Chan 2   &                              "                    &                    "                        \\
+            \rowcolor{lightRed} 11010000 & D2 & 210 & Chan 3   &                              "                    &                    "                        \\
+            \rowcolor{white}    11010000 & D3 & 211 & Chan 4   &                              "                    &                    "                        \\
+            \rowcolor{lightRed} 11010000 & D4 & 212 & Chan 5   &                              "                    &                    "                        \\
+            \rowcolor{white}    11010000 & D5 & 213 & Chan 6   &                              "                    &                    "                        \\
+            \rowcolor{lightRed} 11010000 & D6 & 214 & Chan 7   &                              "                    &                    "                        \\
+            \rowcolor{white}    11010000 & D7 & 215 & Chan 8   &                              "                    &                    "                        \\
+            \rowcolor{lightRed} 11010000 & D8 & 216 & Chan 9   &                              "                    &                    "                        \\
+            \rowcolor{white}    11010000 & D9 & 217 & Chan 10  &                              "                    &                    "                        \\
+            \rowcolor{lightRed} 11010000 & DA & 218 & Chan 11  &                              "                    &                    "                        \\
+            \rowcolor{white}    11010000 & DB & 219 & Chan 12  &                              "                    &                    "                        \\
+            \rowcolor{lightRed} 11010000 & DC & 220 & Chan 13  &                              "                    &                    "                        \\
+            \rowcolor{white}    11010000 & DD & 221 & Chan 14  &                              "                    &                    "                        \\
+            \rowcolor{lightRed} 11010000 & DE & 222 & Chan 15  &                              "                    &                    "                        \\
+            \rowcolor{white}    11010000 & DF & 223 & Chan 16  &                              "                    &                    "                        \\
+        \end{supertabular}
+        \end{center}
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %                                       %
+        %             Tabela B.7                %
+        %                                       %
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+        \begin{center}
+        \tablefirsthead{%
+          \hline
+          \rowcolor{darkRed} \multicolumn{4}{c}{\textcolor{white}{\textbf{Byte de estado}}} & \multicolumn{2}{c}{\textcolor{white}{\textbf{Byte de dados}}} \\
+          \hline
+          \rowcolor{darkRed} \textcolor{white}{\textbf{\shortstack{1$^\circ$ Byte \\ Binário}}} & \textcolor{white}{\textbf{\shortstack{1$^\circ$ Byte \\ Hexa}}} & \textcolor{white}{\textbf{\shortstack{1$^\circ$ Byte \\ Decimal}}} & \textcolor{white}{\textbf{\shortstack{Função \\ Pitch Wheel}}} & \textcolor{white}{\textbf{2$^\circ$ Byte}} & \textcolor{white}{\textbf{3$^\circ$ Byte}} \\
+          \hline}
+        \tablehead{%
+          \hline
+          \multicolumn{6}{|l|}{\small\sl continuação da página anterior} \\
+          \hline
+          \rowcolor{darkRed} \multicolumn{4}{c|}{\textcolor{white}{\textbf{Byte de estado}}} & \multicolumn{2}{c|}{\textcolor{white}{\textbf{Byte de dados}}} \\
+          \hline
+          \rowcolor{darkRed} \textcolor{white}{\textbf{\shortstack{1$^\circ$ Byte \\ Binário}}} & \textcolor{white}{\textbf{\shortstack{1$^\circ$ Byte \\ Hexa}}} & \textcolor{white}{\textbf{\shortstack{1$^\circ$ Byte \\ Decimal}}} & \textcolor{white}{\textbf{\shortstack{Função \\ Pitch Wheel}}} & \textcolor{white}{\textbf{2$^\circ$ Byte}} & \textcolor{white}{\textbf{3$^\circ$ Byte}} \\
+          \hline}
+        \tabletail{%
+          \hline
+          \multicolumn{6}{|r|}{\small\sl continua na próxima página} \\
+          \hline}
+        \tablelasttail{\hline}
+        \bottomcaption{Lista de Bytes de estado para a função de controle do Pitch Wheel
+        \label{table:MIDI_pitch_wheel}}
+        %
+        \begin{supertabular}{| c | c | c | c | c | c |}
+            \rowcolor{lightRed} 11100000 & E0 & 224 & Chan 1   &    \shortstack{LSB Pitch \\ Wheel (0-127)}    &     \shortstack{MSB Pitch \\ Wheel (0-127)} \\
+            \rowcolor{white}    11100001 & E1 & 225 & Chan 2   &                   "                              &                   "                            \\
+            \rowcolor{lightRed} 11100010 & E2 & 226 & Chan 3   &                   "                              &                   "                            \\
+            \rowcolor{white}    11100011 & E3 & 227 & Chan 4   &                   "                              &                   "                            \\
+            \rowcolor{lightRed} 11100100 & E4 & 228 & Chan 5   &                   "                              &                   "                            \\
+            \rowcolor{white}    11100101 & E5 & 229 & Chan 6   &                   "                              &                   "                            \\
+            \rowcolor{lightRed} 11100110 & E6 & 230 & Chan 7   &                   "                              &                   "                            \\
+            \rowcolor{white}    11100111 & E7 & 231 & Chan 8   &                   "                              &                   "                            \\
+            \rowcolor{lightRed} 11101000 & E8 & 232 & Chan 9   &                   "                              &                   "                            \\
+            \rowcolor{white}    11101001 & E9 & 233 & Chan 10  &                   "                              &                   "                            \\
+            \rowcolor{lightRed} 11101010 & EA & 234 & Chan 11  &                   "                              &                   "                            \\
+            \rowcolor{white}    11101011 & EB & 235 & Chan 12  &                   "                              &                   "                            \\
+            \rowcolor{lightRed} 11101100 & EC & 236 & Chan 13  &                   "                              &                   "                            \\
+            \rowcolor{white}    11101101 & ED & 237 & Chan 14  &                   "                              &                   "                            \\
+            \rowcolor{lightRed} 11101110 & EE & 239 & Chan 15  &                   "                              &                   "                            \\
+            \rowcolor{white}    11101111 & EF & 239 & Chan 16  &                   "                              &                   "                            \\
+        \end{supertabular}
+        \end{center}
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %                                       %
+        %             Tabela B.8                %
+        %                                       %
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+        \begin{center}
+        \tablefirsthead{%
+          \hline
+          \rowcolor{darkRed} \multicolumn{4}{c}{\textcolor{white}{\textbf{Byte de estado}}} & \multicolumn{2}{c}{\textcolor{white}{\textbf{Byte de dados}}} \\
+          \hline
+          \rowcolor{darkRed} \textcolor{white}{\textbf{\shortstack{1$^\circ$ Byte \\ Binário}}} & \textcolor{white}{\textbf{\shortstack{1$^\circ$ Byte \\ Hexa}}} & \textcolor{white}{\textbf{\shortstack{1$^\circ$ Byte \\ Decimal}}} & \textcolor{white}{\textbf{\shortstack{Função \\ Mensagem}}} & \textcolor{white}{\textbf{2$^\circ$ Byte}} & \textcolor{white}{\textbf{3$^\circ$ Byte}} \\
+          \hline}
+        \tablehead{%
+          \hline
+          \multicolumn{6}{|l|}{\small\sl continuação da página anterior} \\
+          \hline
+          \rowcolor{darkRed} \multicolumn{4}{c|}{\textcolor{white}{\textbf{Byte de estado}}} & \multicolumn{2}{c|}{\textcolor{white}{\textbf{Byte de dados}}} \\
+          \hline
+          \rowcolor{darkRed} \textcolor{white}{\textbf{\shortstack{1$^\circ$ Byte \\ Binário}}} & \textcolor{white}{\textbf{\shortstack{1$^\circ$ Byte \\ Hexa}}} & \textcolor{white}{\textbf{\shortstack{1$^\circ$ Byte \\ Decimal}}} & \textcolor{white}{\textbf{\shortstack{Função \\ Mensagem}}} & \textcolor{white}{\textbf{2$^\circ$ Byte}} & \textcolor{white}{\textbf{3$^\circ$ Byte}} \\
+          \hline}
+        \tabletail{%
+          \hline
+          \multicolumn{6}{|r|}{\small\sl continua na próxima página} \\
+          \hline}
+        \tablelasttail{\hline}
+        \bottomcaption{Lista de Bytes de estado para as funções de sistema
+        \label{table:MIDI_message}}
+        %
+        \begin{supertabular}{| c | c | c | c | c | c |}
+            \rowcolor{lightRed} 11110000 & F0 & 240 &            Exclusivo do sistema                 & \shortstack{Mensagem SysEx \\ Atual} & \shortstack{Mensagem SysEx \\ Atual} \\
+            \rowcolor{white}    11110001 & F1 & 241 &            Código de tempo MIDI                 & \shortstack{Mensagem tempo \\ Atual} & \shortstack{Mensagem tempo \\ Atual} \\
+            \rowcolor{lightRed} 11110010 & F2 & 242 & \shortstack{Ponteiro de Posição \\ da música}   &               LSB                    &                 MSB                  \\
+            \rowcolor{white}    11110011 & F3 & 243 & \shortstack{Seleção da música \\ (música \#)}   &     \shortstack{Valores \\ (0-127)}  &                 Nulo                 \\
+            \rowcolor{lightRed} 11110100 & F4 & 244 &                Indefinido                       &                N/A                   &                  N/A                 \\
+            \rowcolor{white}    11110101 & F5 & 245 &                Indefinido                       &                N/A                   &                  N/A                 \\
+            \rowcolor{lightRed} 11110110 & F6 & 246 &            Pedido de Afinação                   &               Nulo                   &                 Nulo                 \\
+            \rowcolor{white}    11110111 & F7 & 247 &     \shortstack{Final da SysEx \\ (EOX)}        &                 "                    &                   "                  \\
+            \rowcolor{lightRed} 11111000 & F8 & 248 &                Cronômetro                       &                 "                    &                   "                  \\
+            \rowcolor{white}    11111001 & F9 & 249 &                Indefinido                       &                 "                    &                   "                  \\
+            \rowcolor{lightRed} 11111010 & FA & 250 &                  Iniciar                        &                 "                    &                   "                  \\
+            \rowcolor{white}    11111011 & FB & 251 &                 Continuar                       &                 "                    &                   "                  \\
+            \rowcolor{lightRed} 11111100 & FC & 252 &                  Pausar                         &                 "                    &                   "                  \\
+            \rowcolor{white}    11111101 & FD & 253 &                 Indefinido                      &                 "                    &                   "                  \\
+            \rowcolor{lightRed} 11111110 & FE & 254 &             Sensoriamento ativo                 &                 "                    &                   "                  \\
+            \rowcolor{white}    11111111 & FF & 255 &               Reset do Sistema                  &                 "                    &                   "                  \\
+        \end{supertabular}
+        \end{center}
+        
+    \section{Bytes de dados}
+    
+        A seguinte tabela é uma referência de todas os possíveis mensagens de controle e modos de canais, além de citar o que cada uma delas representa.
+        
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %                                       %
+        %             Tabela B.9                %
+        %                                       %
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+        \begin{center}
+        \tablefirsthead{%
+          \hline
+          \rowcolor{darkRed} \textcolor{white}{\textbf{\shortstack{2$^\circ$ Byte \\ Binário}}} & \textcolor{white}{\textbf{\shortstack{2$^\circ$ Byte \\ Hexa}}} & \textcolor{white}{\textbf{\shortstack{2$^\circ$ Byte \\ Decimal}}} & \textcolor{white}{\textbf{Função}} & \textcolor{white}{\textbf{\shortstack{3$^\circ$ Byte \\ Valor}}} & \textcolor{white}{\textbf{\shortstack{3$^\circ$ Byte \\ Uso}}} \\
+          \hline}
+        \tablehead{%
+          \hline
+          \multicolumn{6}{|l|}{\small\sl continuação da página anterior} \\
+          \hline
+          \rowcolor{darkRed} \textcolor{white}{\textbf{\shortstack{2$^\circ$ Byte \\ Binário}}} & \textcolor{white}{\textbf{\shortstack{2$^\circ$ Byte \\ Hexa}}} & \textcolor{white}{\textbf{\shortstack{2$^\circ$ Byte \\ Decimal}}} & \textcolor{white}{\textbf{Função}} & \textcolor{white}{\textbf{\shortstack{3$^\circ$ Byte \\ Valor}}} & \textcolor{white}{\textbf{\shortstack{3$^\circ$ Byte \\ Uso}}} \\
+          \hline}
+        \tabletail{%
+          \hline
+          \multicolumn{6}{|r|}{\small\sl continua na próxima página} \\
+          \hline}
+        \tablelasttail{\hline}
+        \bottomcaption{Lista de mensagens de mudança de controle / modo de canal
+        \label{table:MIDI_control_and_channel_messages}}
+        %
+        \begin{supertabular}{| c | c | c | c | c | c |}
+            \rowcolor{lightRed} 00000000 & 00 &  0  & Chan 1   & 0-127 & LSB \\
+            \rowcolor{white}    00000001 & 01 &  1  & Chan 2   & 0-127 & LSB \\
+            \rowcolor{lightRed} 00000010 & 02 &  2  & Chan 3   & 0-127 & LSB \\
+            \rowcolor{white}    00000011 & 03 &  3  & Chan 4   & 0-127 & LSB \\
+            \rowcolor{lightRed} 00000100 & 04 &  4  & Chan 5   & 0-127 & LSB \\
+            \rowcolor{white}    00000101 & 05 &  5  & Chan 6   & 0-127 & LSB \\
+            \rowcolor{lightRed} 00000110 & 06 &  6  & Chan 7   & 0-127 & LSB \\
+            \rowcolor{white}    00000111 & 07 &  7  & Chan 8   & 0-127 & LSB \\
+            \rowcolor{lightRed} 00001000 & 08 &  8  & Chan 9   & 0-127 & LSB \\
+            \rowcolor{white}    00001001 & 09 &  9  & Chan 10  & 0-127 & LSB \\
+            \rowcolor{lightRed} 00001010 & 0A & 10  & Chan 11  & 0-127 & LSB \\
+            \rowcolor{white}    00001011 & 0B & 11  & Chan 12  & 0-127 & LSB \\
+            \rowcolor{lightRed} 00001100 & 0C & 12  & Chan 13  & 0-127 & LSB \\
+            \rowcolor{white}    00001101 & 0D & 13  & Chan 14  & 0-127 & LSB \\
+            \rowcolor{lightRed} 00001110 & 0E & 14  & Chan 15  & 0-127 & LSB \\
+            \rowcolor{white}    00001111 & 0F & 15  & Chan 16  & 0-127 & LSB \\
+            \rowcolor{lightRed} 00010000 & 10 & 16  & Chan 1   & 0-127 & LSB \\
+            \rowcolor{white}    00010001 & 11 & 17  & Chan 2   & 0-127 & LSB \\
+            \rowcolor{lightRed} 00010010 & 12 & 18  & Chan 3   & 0-127 & LSB \\
+            \rowcolor{white}    00010011 & 13 & 19  & Chan 4   & 0-127 & LSB \\
+            \rowcolor{lightRed} 00010100 & 14 & 20  & Chan 5   & 0-127 & LSB \\
+            \rowcolor{white}    00010101 & 15 & 21  & Chan 6   & 0-127 & LSB \\
+            \rowcolor{lightRed} 00010110 & 16 & 22  & Chan 7   & 0-127 & LSB \\
+            \rowcolor{white}    00010111 & 17 & 23  & Chan 8   & 0-127 & LSB \\
+            \rowcolor{lightRed} 00011000 & 18 & 24  & Chan 9   & 0-127 & LSB \\
+            \rowcolor{white}    00011001 & 19 & 25  & Chan 10  & 0-127 & LSB \\
+            \rowcolor{lightRed} 00011010 & 1A & 26  & Chan 11  & 0-127 & LSB \\
+            \rowcolor{white}    00011011 & 1B & 27  & Chan 12  & 0-127 & LSB \\
+            \rowcolor{lightRed} 00011100 & 1C & 28  & Chan 13  & 0-127 & LSB \\
+            \rowcolor{white}    00011101 & 1D & 29  & Chan 14  & 0-127 & LSB \\
+            \rowcolor{lightRed} 00011110 & 1E & 30  & Chan 15  & 0-127 & LSB \\
+            \rowcolor{white}    00011111 & 1F & 31  & Chan 16  & 0-127 & LSB \\
+            \rowcolor{lightRed} 00100000 & 20 & 32  & Chan 1   & 0-127 & LSB \\
+            \rowcolor{white}    00100001 & 21 & 33  & Chan 2   & 0-127 & LSB \\
+            \rowcolor{lightRed} 00100010 & 22 & 34  & Chan 3   & 0-127 & LSB \\
+            \rowcolor{white}    00100011 & 23 & 35  & Chan 4   & 0-127 & LSB \\
+            \rowcolor{lightRed} 00100100 & 24 & 36  & Chan 5   & 0-127 & LSB \\
+            \rowcolor{white}    00100101 & 25 & 37  & Chan 6   & 0-127 & LSB \\
+            \rowcolor{lightRed} 00100110 & 26 & 38  & Chan 7   & 0-127 & LSB \\
+            \rowcolor{white}    00100111 & 27 & 39  & Chan 8   & 0-127 & LSB \\
+            \rowcolor{lightRed} 00101000 & 28 & 40  & Chan 9   & 0-127 & LSB \\
+            \rowcolor{white}    00101001 & 29 & 41  & Chan 10  & 0-127 & LSB \\
+            \rowcolor{lightRed} 00101010 & 2A & 42  & Chan 11  & 0-127 & LSB \\
+            \rowcolor{white}    00101011 & 2B & 43  & Chan 12  & 0-127 & LSB \\
+            \rowcolor{lightRed} 00101100 & 2C & 44  & Chan 13  & 0-127 & LSB \\
+            \rowcolor{white}    00101101 & 2D & 45  & Chan 14  & 0-127 & LSB \\
+            \rowcolor{lightRed} 00101110 & 2E & 46  & Chan 15  & 0-127 & LSB \\
+            \rowcolor{white}    00101111 & 2F & 47  & Chan 16  & 0-127 & LSB \\
+            \rowcolor{lightRed} 00110000 & 30 & 48  & Chan 1   & 0-127 & LSB \\
+            \rowcolor{white}    00110001 & 31 & 49  & Chan 2   & 0-127 & LSB \\
+            \rowcolor{lightRed} 00110010 & 32 & 50  & Chan 3   & 0-127 & LSB \\
+            \rowcolor{white}    00110011 & 33 & 51  & Chan 4   & 0-127 & LSB \\
+            \rowcolor{lightRed} 00110100 & 34 & 52  & Chan 5   & 0-127 & LSB \\
+            \rowcolor{white}    00110101 & 35 & 53  & Chan 6   & 0-127 & LSB \\
+            \rowcolor{lightRed} 00110110 & 36 & 54  & Chan 7   & 0-127 & LSB \\
+            \rowcolor{white}    00110111 & 37 & 55  & Chan 8   & 0-127 & LSB \\
+            \rowcolor{lightRed} 00111000 & 38 & 56  & Chan 9   & 0-127 & LSB \\
+            \rowcolor{white}    00111001 & 39 & 57  & Chan 10  & 0-127 & LSB \\
+            \rowcolor{lightRed} 00111010 & 3A & 58  & Chan 11  & 0-127 & LSB \\
+            \rowcolor{white}    00111011 & 3B & 59  & Chan 12  & 0-127 & LSB \\
+            \rowcolor{lightRed} 00111100 & 3C & 60  & Chan 13  & 0-127 & LSB \\
+            \rowcolor{white}    00111101 & 3D & 61  & Chan 14  & 0-127 & LSB \\
+            \rowcolor{lightRed} 00111110 & 3E & 62  & Chan 15  & 0-127 & LSB \\
+            \rowcolor{white}    00111111 & 3F & 63  & Chan 16  & 0-127 & LSB \\
+            \rowcolor{lightRed} 01000000 & 40 & 64  & Chan 1   & 0-127 & LSB \\
+            \rowcolor{white}    01000001 & 41 & 65  & Chan 2   & $< 63 =$  Off &  $\geq 64 =$ On \\
+            \rowcolor{lightRed} 01000010 & 42 & 66  & Chan 3   & $< 63 =$  Off &  $\geq 64 =$ On \\
+            \rowcolor{white}    01000011 & 43 & 67  & Chan 4   & $< 63 =$  Off &  $\geq 64 =$ On \\
+            \rowcolor{lightRed} 01000100 & 44 & 68  & Chan 5   & $< 63 =$  Off &  $\geq 64 =$ On \\
+            \rowcolor{white}    01000101 & 45 & 69  & Chan 6   & $< 63 =$  Off &  $\geq 64 =$ On \\
+            \rowcolor{lightRed} 01000110 & 46 & 70  & Chan 7   & 0-127 & LSB \\
+            \rowcolor{white}    01000111 & 47 & 71  & Chan 8   & 0-127 & LSB \\
+            \rowcolor{lightRed} 01001000 & 48 & 72  & Chan 9   & 0-127 & LSB \\
+            \rowcolor{white}    01001001 & 49 & 73  & Chan 10  & 0-127 & LSB \\
+            \rowcolor{lightRed} 01001010 & 4A & 74  & Chan 11  & 0-127 & LSB \\
+            \rowcolor{white}    01001011 & 4B & 75  & Chan 12  & 0-127 & LSB \\
+            \rowcolor{lightRed} 01001100 & 4C & 76  & Chan 13  & 0-127 & LSB \\
+            \rowcolor{white}    01001101 & 4D & 77  & Chan 14  & 0-127 & LSB \\
+            \rowcolor{lightRed} 01001110 & 4E & 78  & Chan 15  & 0-127 & LSB \\
+            \rowcolor{white}    01001111 & 4F & 79  & Chan 16  & 0-127 & LSB \\
+            \rowcolor{lightRed} 01010000 & 50 & 80  & Chan 1   & 0-127 & LSB \\
+            \rowcolor{white}    01010001 & 51 & 81  & Chan 2   & 0-127 & LSB \\
+            \rowcolor{lightRed} 01010010 & 52 & 82  & Chan 3   & 0-127 & LSB \\
+            \rowcolor{white}    01010011 & 53 & 83  & Chan 4   & 0-127 & LSB \\
+            \rowcolor{lightRed} 01010100 & 54 & 84  & Chan 5   & 0-127 & Nota de origem \\
+            \rowcolor{white}    01010101 & 55 & 85  & Chan 6   & 0-127 & LSB \\
+            \rowcolor{lightRed} 01010110 & 56 & 86  & Chan 7   & 0-127 & LSB \\
+            \rowcolor{white}    01010111 & 57 & 87  & Chan 8   & 0-127 & LSB \\
+            \rowcolor{lightRed} 01011000 & 58 & 88  & Chan 9   & 0-127 & LSB \\
+            \rowcolor{white}    01011001 & 59 & 89  & Chan 10  & 0-127 & LSB \\
+            \rowcolor{lightRed} 01011010 & 5A & 90  & Chan 11  & 0-127 & LSB \\
+            \rowcolor{white}    01011011 & 5B & 91  & Chan 12  & 0-127 & LSB \\
+            \rowcolor{lightRed} 01011100 & 5C & 92  & Chan 13  & 0-127 & LSB \\
+            \rowcolor{white}    01011101 & 5D & 93  & Chan 14  & 0-127 & LSB \\
+            \rowcolor{lightRed} 01011110 & 5E & 94  & Chan 15  & 0-127 & LSB \\
+            \rowcolor{white}    01011111 & 5F & 95  & Chan 16  & 0-127 & LSB \\
+            \rowcolor{lightRed} 01100000 & 60 & 96  & Chan 1   & N/A & N/A \\
+            \rowcolor{white}    01100001 & 61 & 97  & Chan 2   & N/A & N/A \\
+            \rowcolor{lightRed} 01100010 & 62 & 98  & Chan 3   & 0-127 & LSB \\
+            \rowcolor{white}    01100011 & 63 & 99  & Chan 4   & 0-127 & MSB \\
+            \rowcolor{lightRed} 01100100 & 64 & 100 & Chan 5   & 0-127 & LSB \\
+            \rowcolor{white}    01100101 & 65 & 101 & Chan 6   & 0-127 & MSB \\
+            \rowcolor{lightRed} 01100110 & 66 & 102 & Chan 7   & N/A & N/A \\
+            \rowcolor{white}    01100111 & 67 & 103 & Chan 8   & N/A & N/A \\
+            \rowcolor{lightRed} 01101000 & 68 & 104 & Chan 9   & N/A & N/A \\
+            \rowcolor{white}    01101001 & 69 & 105 & Chan 10  & N/A & N/A \\
+            \rowcolor{lightRed} 01101010 & 6A & 106 & Chan 11  & N/A & N/A \\
+            \rowcolor{white}    01101011 & 6B & 107 & Chan 12  & N/A & N/A \\
+            \rowcolor{lightRed} 01101100 & 6C & 108 & Chan 13  & N/A & N/A \\
+            \rowcolor{white}    01101101 & 6D & 109 & Chan 14  & N/A & N/A \\
+            \rowcolor{lightRed} 01101110 & 6E & 110 & Chan 15  & N/A & N/A \\
+            \rowcolor{white}    01101111 & 6F & 111 & Chan 16  & N/A & N/A \\
+            \rowcolor{lightRed} 01110000 & 70 & 112 & Chan 1   & N/A & N/A \\
+            \rowcolor{white}    01110001 & 71 & 113 & Chan 2   & N/A & N/A \\
+            \rowcolor{lightRed} 01110010 & 72 & 114 & Chan 3   & N/A & N/A \\
+            \rowcolor{white}    01110011 & 73 & 115 & Chan 4   & N/A & N/A \\
+            \rowcolor{lightRed} 01110100 & 74 & 116 & Chan 5   & N/A & N/A \\
+            \rowcolor{white}    01110101 & 75 & 117 & Chan 6   & N/A & N/A \\
+            \rowcolor{lightRed} 01110110 & 76 & 118 & Chan 7   & N/A & N/A \\
+            \rowcolor{white}    01110111 & 77 & 119 & Chan 8   & N/A & N/A \\
+            \rowcolor{lightRed} 01111000 & 78 & 120 & Chan 9   & 0 & 0 \\
+            \rowcolor{white}    01111001 & 79 & 121 & Chan 10  & 0 & 0 \\
+            \rowcolor{lightRed} 01111010 & 7A & 122 & Chan 11  & 0 = Off & 127 = On \\
+            \rowcolor{white}    01111011 & 7B & 123 & Chan 12  & 0 & 0 \\
+            \rowcolor{lightRed} 01111100 & 7C & 124 & Chan 13  & 0 & 0 \\
+            \rowcolor{white}    01111101 & 7D & 125 & Chan 14  & 0 & 0 \\
+            \rowcolor{lightRed} 01111110 & 7E & 126 & Chan 15  & N/A & N/A \\
+            \rowcolor{white}    01111111 & 7F & 127 & Chan 16  & 0 & 0 \\
+        \end{supertabular}
+        \end{center}
