@@ -42,6 +42,7 @@
 \contentsline {chapter}{Ap\^endice{} B{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Especifica\IeC {\c c}\IeC {\~a}o MIDI}}{33}
 \contentsline {section}{\numberline {B.1}\MakeUppercase {Bytes de estado}}{33}
 \contentsline {section}{\numberline {B.2}\MakeUppercase {Bytes de dados}}{39}
-\contentsline {chapter}{Anexo{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Datasheets}}{44}
-\contentsline {section}{\numberline {A.1}\MakeUppercase {Potenci\IeC {\^o}metro rotativo}}{45}
-\contentsline {section}{\numberline {A.2}\MakeUppercase {Potenci\IeC {\^o}metro linear}}{47}
+\contentsline {section}{\numberline {B.3}\MakeUppercase {Mensagens MIDI}}{43}
+\contentsline {chapter}{Anexo{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Datasheets}}{48}
+\contentsline {section}{\numberline {A.1}\MakeUppercase {Potenci\IeC {\^o}metro rotativo}}{49}
+\contentsline {section}{\numberline {A.2}\MakeUppercase {Potenci\IeC {\^o}metro linear}}{51}

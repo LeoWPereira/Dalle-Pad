@@ -9,4 +9,8 @@
 \contentsline {table}{\numberline {B.6}{\ignorespaces Lista de Bytes de estado para a fun\IeC {\c c}\IeC {\~a}o Channel Aftertouch }}{37}
 \contentsline {table}{\numberline {B.7}{\ignorespaces Lista de Bytes de estado para a fun\IeC {\c c}\IeC {\~a}o de controle do Pitch Wheel }}{38}
 \contentsline {table}{\numberline {B.8}{\ignorespaces Lista de Bytes de estado para as fun\IeC {\c c}\IeC {\~o}es de sistema }}{38}
-\contentsline {table}{\numberline {B.9}{\ignorespaces Lista de mensagens de mudan\IeC {\c c}a de controle / modo de canal }}{43}
+\contentsline {table}{\numberline {B.9}{\ignorespaces Lista de mensagens de mudan\IeC {\c c}a de controle / modo de canal (Bytes de estado 176-191) }}{43}
+\contentsline {table}{\numberline {B.10}{\ignorespaces Lista de mensagens de voz de canal }}{44}
+\contentsline {table}{\numberline {B.11}{\ignorespaces Lista de mensagens de modo de canal }}{45}
+\contentsline {table}{\numberline {B.12}{\ignorespaces Lista de mensagens comuns do sistema }}{46}
+\contentsline {table}{\numberline {B.13}{\ignorespaces Lista de mensagens em tempo real }}{47}
