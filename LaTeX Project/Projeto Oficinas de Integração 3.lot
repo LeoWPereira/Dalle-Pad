@@ -1,16 +1,16 @@
 \select@language {portuges}
-\contentsline {table}{\numberline {2.1}{\ignorespaces Pinos em um conector MIDI}}{22}
-\contentsline {table}{\numberline {A.1}{\ignorespaces Notas musicais em MIDI}}{32}
-\contentsline {table}{\numberline {B.1}{\ignorespaces Lista de Bytes de estado para a fun\IeC {\c c}\IeC {\~a}o Note Off }}{34}
-\contentsline {table}{\numberline {B.2}{\ignorespaces Lista de Bytes de estado para a fun\IeC {\c c}\IeC {\~a}o Note On }}{34}
-\contentsline {table}{\numberline {B.3}{\ignorespaces Lista de Bytes de estado para a fun\IeC {\c c}\IeC {\~a}o Polyphonic Aftertouch }}{35}
-\contentsline {table}{\numberline {B.4}{\ignorespaces Lista de Bytes de estado para mudan\IeC {\c c}a de controle / modo de canal }}{36}
-\contentsline {table}{\numberline {B.5}{\ignorespaces Lista de Bytes de estado para a fun\IeC {\c c}\IeC {\~a}o mudan\IeC {\c c}a de programa }}{36}
-\contentsline {table}{\numberline {B.6}{\ignorespaces Lista de Bytes de estado para a fun\IeC {\c c}\IeC {\~a}o Channel Aftertouch }}{37}
-\contentsline {table}{\numberline {B.7}{\ignorespaces Lista de Bytes de estado para a fun\IeC {\c c}\IeC {\~a}o de controle do Pitch Wheel }}{38}
-\contentsline {table}{\numberline {B.8}{\ignorespaces Lista de Bytes de estado para as fun\IeC {\c c}\IeC {\~o}es de sistema }}{38}
-\contentsline {table}{\numberline {B.9}{\ignorespaces Lista de mensagens de mudan\IeC {\c c}a de controle / modo de canal (Bytes de estado 176-191) }}{43}
-\contentsline {table}{\numberline {B.10}{\ignorespaces Lista de mensagens de voz de canal }}{44}
-\contentsline {table}{\numberline {B.11}{\ignorespaces Lista de mensagens de modo de canal }}{45}
-\contentsline {table}{\numberline {B.12}{\ignorespaces Lista de mensagens comuns do sistema }}{46}
-\contentsline {table}{\numberline {B.13}{\ignorespaces Lista de mensagens em tempo real }}{47}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Pinos em um conector MIDI }}{23}
+\contentsline {table}{\numberline {B.1}{\ignorespaces Notas musicais em MIDI}}{34}
+\contentsline {table}{\numberline {C.1}{\ignorespaces Lista de Bytes de estado para a fun\IeC {\c c}\IeC {\~a}o Note Off }}{36}
+\contentsline {table}{\numberline {C.2}{\ignorespaces Lista de Bytes de estado para a fun\IeC {\c c}\IeC {\~a}o Note On }}{36}
+\contentsline {table}{\numberline {C.3}{\ignorespaces Lista de Bytes de estado para a fun\IeC {\c c}\IeC {\~a}o Polyphonic Aftertouch }}{37}
+\contentsline {table}{\numberline {C.4}{\ignorespaces Lista de Bytes de estado para mudan\IeC {\c c}a de controle / modo de canal }}{38}
+\contentsline {table}{\numberline {C.5}{\ignorespaces Lista de Bytes de estado para a fun\IeC {\c c}\IeC {\~a}o mudan\IeC {\c c}a de programa }}{39}
+\contentsline {table}{\numberline {C.6}{\ignorespaces Lista de Bytes de estado para a fun\IeC {\c c}\IeC {\~a}o Channel Aftertouch }}{40}
+\contentsline {table}{\numberline {C.7}{\ignorespaces Lista de Bytes de estado para a fun\IeC {\c c}\IeC {\~a}o de controle do Pitch Wheel }}{40}
+\contentsline {table}{\numberline {C.8}{\ignorespaces Lista de Bytes de estado para as fun\IeC {\c c}\IeC {\~o}es de sistema }}{41}
+\contentsline {table}{\numberline {C.9}{\ignorespaces Lista de mensagens de mudan\IeC {\c c}a de controle / modo de canal (Bytes de estado 176-191) }}{46}
+\contentsline {table}{\numberline {C.10}{\ignorespaces Lista de mensagens de voz de canal }}{48}
+\contentsline {table}{\numberline {C.11}{\ignorespaces Lista de mensagens de modo de canal }}{49}
+\contentsline {table}{\numberline {C.12}{\ignorespaces Lista de mensagens comuns do sistema }}{50}
+\contentsline {table}{\numberline {C.13}{\ignorespaces Lista de mensagens em tempo real }}{50}

@@ -25,18 +25,19 @@
         \subsection{Lógica}
 
 
+
     \section{Estação Base Secundária}
-    
-        
-        
+
+
+
         \subsection{Interface}
-        
-        
-        
+
+
+
         \subsection{Lógica}
-        
-        
-        
+
+
+
     \section{Comunicação entre Hardware e Software}
 
         Nesta seção discutiremos como foi realizada a comunicação entre o Hardware e o Software do Dalle Pad.
@@ -46,4 +47,5 @@
 
 
         \subsection{Programas Utilizados para a execução do Projeto}
+
 

@@ -12,6 +12,8 @@
 \definecolor{darkRed}{rgb}{0.607843137254902, 0.1764705882352941, 0.1215686274509804}
 \definecolor{lightRed}{rgb}{0.9568627450980392, 0.803921568627451, 0.7843137254901961}
 
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
 \chapter{Notas musicais em MIDI}
 
     O estudo da música em si está fora do escopo deste projeto. Entretanto, é imprescindível entender o que é uma oitava. Segue uma breve definição: \epigraph{Uma oitava é o intervalo entre uma nota musical e outra com a metade ou o dobro de sua frequência.}{~\cite{WikipediaOitava}}
@@ -669,14 +671,14 @@
         \bottomcaption{Lista de mensagens de voz de canal
         \label{table:MIDI_message_channel_voice}}
         %
-        \begin{supertabular}{| c | c | c | c |}
-            \rowcolor{lightRed} 1000cccc & 0nnnnnnn & 0vvvvvvv & \shortstack{Note Off event: This message is sent \\ when a note is released (ended).} \\
-            \rowcolor{white}    1001cccc & 0nnnnnnn & 0vvvvvvv & \shortstack{Note On event: This message is sent \\ when a note is depressed (started).} \\
-            \rowcolor{lightRed} 1010cccc & 0nnnnnnn & 0vvvvvvv & \shortstack{Polyphonic Key Pressure (Aftertouch): \\ This message is sent when the \\ pressure (velocity) of a previously \\ triggered note changes.} \\
-            \rowcolor{white}    1011cccc & 0\#\#\#\#\#\#\# & 0VVVVVVV & \shortstack{Control Change: This message is \\ sent when a controller value \\ changes. Controllers include devices \\ such as pedals and levers. Certain controller \\ numbers are reserved for specific purposes. \\ See Channel Mode Messages.} \\
-            \rowcolor{lightRed} 1100cccc & 0ppppppp &  & \shortstack{Program Change: This message is sent \\ when the patch number changes.} \\
-            \rowcolor{white}    1101cccc & 0PPPPPPP &  & \shortstack{Channel Pressure (Aftertouch): This \\ message is sent when the channel pressure \\ changes. Some velocity-sensing keyboards \\ do not support polyphonic \\ aftertouch. Use this message to \\ send the single greatest velocity \\ (of all the current depressed keys).} \\
-            \rowcolor{lightRed} 1110cccc & 0lllllll & 0mmmmmmm & \shortstack{Pitch Wheel Change: This message \\ is sent to indicate a change in the pitch \\ wheel. The pitch wheel is measured \\ by a 14-bit value. Center (no pitch change) \\ is 2000H. Sensitivity is a function \\ of the transmitter.} \\
+        \begin{supertabular}{| C{2cm} | C{2cm} | C{2.3cm} | C{8cm} |}
+            \rowcolor{lightRed} 1000cccc & 0nnnnnnn & 0vvvvvvv & Note Off event: Sent when a note is released (ended). \\
+            \rowcolor{white}    1001cccc & 0nnnnnnn & 0vvvvvvv & Note On event: Sent when a note is depressed (started). \\
+            \rowcolor{lightRed} 1010cccc & 0nnnnnnn & 0vvvvvvv & Polyphonic Key Pressure (Aftertouch): Sent when the pressure (velocity) of a previously triggered note changes. \\
+            \rowcolor{white}    1011cccc & 0\#\#\#\#\#\#\# & 0VVVVVVV & Control Change: Sent when a controller value changes. Controllers include devices such as pedals and levers. Certain controller numbers are reserved for specific purposes. \\
+            \rowcolor{lightRed} 1100cccc & 0ppppppp &  & Program Change: Sent when the patch number changes. \\
+            \rowcolor{white}    1101cccc & 0PPPPPPP &  & Channel Pressure (Aftertouch): Sent when the channel pressure changes. Use this to send the single greatest velocity (of all the current depressed keys). \\
+            \rowcolor{lightRed} 1110cccc & 0lllllll & 0mmmmmmm & Pitch Wheel Change: Sent to indicate a change in the pitch wheel. The pitch wheel is measured by a 14-bit value. Center (no pitch change) is 2000H. Sensitivity is a function of the transmitter. \\
         \end{supertabular}
         \end{center}
 
@@ -705,15 +707,17 @@
         \bottomcaption{Lista de mensagens de modo de canal
         \label{table:MIDI_message_channel_mode}}
         %
-        \begin{supertabular}{| c | c | c | c |}
-            \rowcolor{lightRed} 1011cccc & 0\#\#\#\#\#\#\# & 0VVVVVVV & \shortstack{Channel Mode Messages: This is the \\ same code as the Control Change (~\ref{table:MIDI_message_channel_voice}) \\ but implements Mode control by using reserved \\ controller numbers. The numbers are} \\
-            \rowcolor{white}    1011cccc & 01111010 & 00000000 & Código de tempo MIDI \\
-            \rowcolor{lightRed} 1011cccc & 01111010 & 01111111 & Ponteiro de Posição  \\
-            \rowcolor{white}    1011cccc & 01111011 & 00000000 & Seleção da música    \\
-            \rowcolor{lightRed} 1011cccc & 01111100 & 00000000 & Indefinido           \\
-            \rowcolor{white}    1011cccc & 01111101 & 00000000 & Indefinido           \\
-            \rowcolor{lightRed} 1011cccc & 00000000 & 00000000 & Indefinido           \\
-            \rowcolor{white}    1011cccc & 01111111 & 00000000 & Indefinido           \\
+        \begin{supertabular}{| C{2cm} | C{2cm} | C{2.3cm} | C{8cm} |}
+            \rowcolor{lightRed} 1011cccc & 0\#\#\#\#\#\#\# & 0VVVVVVV & Channel Mode Messages: The same code as tab.~\ref{table:MIDI_message_channel_voice} but implements Mode control. \\
+            \rowcolor{white}    1011cccc & 01111010 & 00000000 & Local Control Off: When Local Control is Off, all devices on a given channel will respond only to data received over MIDI. Played data, etc., will be ignored. 2nd Data byte = 122, 3rd Data byte at 0 = Local Control Off \\
+            \rowcolor{lightRed} 1011cccc & 01111010 & 01111111 & Local Control On: This restores the functions of the normal controllers. 2nd Data byte = 122, 3rd Data byte at 127 = Local Control On  \\
+            \rowcolor{white}    1011cccc & 01111011 & 00000000 & All Notes Off: When an All Notes Off is received, all oscillators will turn off. 2nd Data byte = 123, 0 = causes All Notes Off. (See text for description of actual mode commands.) \\
+            \rowcolor{lightRed} 1011cccc & 01111100 & 00000000 & Omni Mode Off: 2nd Data byte = 1 24, 0 = causes All Notes Off. \\
+            \rowcolor{white}    1011cccc & 01111101 & 00000000 & Omni Mode On: 2nd Data byte = 125, 0 = causes All Notes Off. \\
+            \rowcolor{lightRed} 1011cccc & 00000000 & 00000000 & Mono Mode On (Poly Off): This is where M is the number of channels: 2nd Data byte = 126, v = M (also causes All Notes Off). \\
+            \rowcolor{white}    1011cccc & 01111111 & 00000000 & Poly Mode On (Mono Off): 2nd Data byte = 127, 0 = also causes All Notes Off.
+
+ \\
         \end{supertabular}
         \end{center}
 
@@ -742,16 +746,16 @@
         \bottomcaption{Lista de mensagens comuns do sistema
         \label{table:MIDI_message_channel_mode}}
         %
-        \begin{supertabular}{| c | c | c | c |}
-            \rowcolor{lightRed} 11110000 & 0iiiiiii & 0ddddddd & Exclusivo do sistema \\
+        \begin{supertabular}{| C{2cm} | C{2cm} | C{2.3cm} | C{8cm} |}
+            \rowcolor{lightRed} 11110000 & 0iiiiiii & 0ddddddd & System Exclusive: This message makes up for all that MIDI doesn’t support. System Exclusive is used to send bulk dumps such as patch parameters and other non-spec data. (Note: real-time messages may be interleaved ONLY with a System Exclusive.) \\
             \rowcolor{white}    ... & ... & 0ddddddd & 11110111 \\
             \rowcolor{lightRed} 11110001 &  &  & Indefinido  \\
-            \rowcolor{white}    11110010 & 0lllllll & 0mmmmmmm & Seleção da música    \\
-            \rowcolor{lightRed} 11110011 & 0sssssss &  & Indefinido           \\
+            \rowcolor{white}    11110010 & 0lllllll & 0mmmmmmm & Song Position Pointer: This is an internal 14-bit register that holds the number of MIDI beats (1 beat = six MIDI clocks) from the start of the song. \\
+            \rowcolor{lightRed} 11110011 & 0sssssss &  & Song Select: The Song Select specifies which sequence or song is to be played. \\
             \rowcolor{white}    11110100 &  &  & Indefinido           \\
             \rowcolor{lightRed} 11110101 &  &  & Indefinido           \\
-            \rowcolor{white}    11110110 &  &  & Indefinido           \\
-            \rowcolor{lightRed} 11110111 &  &  & Indefinido           \\
+            \rowcolor{white}    11110110 &  &  & Tune Request: Upon receiving a Tune Request, all analog synthesizers should tune their oscillators. \\
+            \rowcolor{lightRed} 11110111 &  &  & End of Exclusive: Used to terminate a System Exclusive dump. \\
         \end{supertabular}
         \end{center}
 
@@ -780,14 +784,14 @@
         \bottomcaption{Lista de mensagens em tempo real
         \label{table:MIDI_message_channel_mode}}
         %
-        \begin{supertabular}{| c | c | c | c |}
-            \rowcolor{lightRed} 11111000 &  &  & Exclusivo do sistema \\
+        \begin{supertabular}{| C{2cm} | C{2cm} | C{2.3cm} | C{8cm} |}
+            \rowcolor{lightRed} 11111000 &  &  & Timing Clock: Sent 24 times per quarter note when synchronization is required. \\
             \rowcolor{white}    11111001 &  &  & Indefinido \\
-            \rowcolor{lightRed} 11111010 &  &  & Indefinido  \\
-            \rowcolor{white}    11111011 &  &  & Seleção da música    \\
-            \rowcolor{lightRed} 11111100 &  &  & Indefinido           \\
+            \rowcolor{lightRed} 11111010 &  &  & Start: Start the current sequence playing. (This message will be followed with timing clocks.) \\
+            \rowcolor{white}    11111011 &  &  & Continue: Continue at the point the sequence was stopped. \\
+            \rowcolor{lightRed} 11111100 &  &  & Stop: Stop the current sequence. \\
             \rowcolor{white}    11111101 &  &  & Indefinido           \\
-            \rowcolor{lightRed} 11111110 &  &  & Indefinido           \\
-            \rowcolor{white}    11111111 &  &  & Indefinido           \\
+            \rowcolor{lightRed} 11111110 &  &  &  \\
+            \rowcolor{white}    11111111 &  &  & Reset: Reset all receivers in the system to power-up status. This should be used sparingly, preferably under manual control. In particular, it should not be sent on power-up. \\
         \end{supertabular}
-        \end{center}
+        \end{center} 
