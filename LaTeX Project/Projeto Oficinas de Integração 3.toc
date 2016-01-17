@@ -32,17 +32,20 @@
 \contentsline {subsection}{\numberline {3.3.1}Interface}{28}
 \contentsline {subsection}{\numberline {3.3.2}L\IeC {\'o}gica}{28}
 \contentsline {section}{\numberline {3.4}\MakeUppercase {Comunica\IeC {\c c}\IeC {\~a}o entre Hardware e Software}}{28}
-\contentsline {section}{\numberline {3.5}\MakeUppercase {Projeto Mec\IeC {\^a}nico - Inv\IeC {\'o}lucro}}{28}
-\contentsline {chapter}{\numberline {4}\MakeUppercase {Resultados e Discuss\IeC {\~o}es}}{29}
-\contentsline {chapter}{\numberline {5}\MakeUppercase {Considera\IeC {\c c}\IeC {\~o}es Finais}}{30}
-\contentsline {section}{\numberline {5.1}\MakeUppercase {Sugest\IeC {\~o}es para trabalhos futuros}}{30}
-\contentsline {chapter}{REFER\^ENCIAS}{31}
-\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Datasheets}}{33}
-\contentsline {chapter}{Ap\^endice{} B{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Notas musicais em MIDI}}{34}
-\contentsline {chapter}{Ap\^endice{} C{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Especifica\IeC {\c c}\IeC {\~a}o MIDI}}{35}
-\contentsline {section}{\numberline {C.1}\MakeUppercase {Bytes de estado}}{35}
-\contentsline {section}{\numberline {C.2}\MakeUppercase {Bytes de dados}}{41}
-\contentsline {section}{\numberline {C.3}\MakeUppercase {Mensagens MIDI}}{46}
-\contentsline {chapter}{Anexo{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Datasheets}}{51}
-\contentsline {section}{\numberline {A.1}\MakeUppercase {Potenci\IeC {\^o}metro rotativo}}{52}
-\contentsline {section}{\numberline {A.2}\MakeUppercase {Potenci\IeC {\^o}metro linear}}{53}
+\contentsline {section}{\numberline {3.5}\MakeUppercase {Projeto Mec\IeC {\^a}nico}}{28}
+\contentsline {subsection}{\numberline {3.5.1}Componentes terceirizados}{29}
+\contentsline {subsection}{\numberline {3.5.2}Componentes projetados}{30}
+\contentsline {subsection}{\numberline {3.5.3}Produto final}{32}
+\contentsline {chapter}{\numberline {4}\MakeUppercase {Resultados e Discuss\IeC {\~o}es}}{33}
+\contentsline {chapter}{\numberline {5}\MakeUppercase {Considera\IeC {\c c}\IeC {\~o}es Finais}}{34}
+\contentsline {section}{\numberline {5.1}\MakeUppercase {Sugest\IeC {\~o}es para trabalhos futuros}}{34}
+\contentsline {chapter}{REFER\^ENCIAS}{35}
+\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Datasheets}}{37}
+\contentsline {chapter}{Ap\^endice{} B{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Notas musicais em MIDI}}{38}
+\contentsline {chapter}{Ap\^endice{} C{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Especifica\IeC {\c c}\IeC {\~a}o MIDI}}{39}
+\contentsline {section}{\numberline {C.1}\MakeUppercase {Bytes de estado}}{39}
+\contentsline {section}{\numberline {C.2}\MakeUppercase {Bytes de dados}}{45}
+\contentsline {section}{\numberline {C.3}\MakeUppercase {Mensagens MIDI}}{50}
+\contentsline {chapter}{Anexo{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Datasheets}}{55}
+\contentsline {section}{\numberline {A.1}\MakeUppercase {Potenci\IeC {\^o}metro rotativo}}{56}
+\contentsline {section}{\numberline {A.2}\MakeUppercase {Potenci\IeC {\^o}metro linear}}{57}

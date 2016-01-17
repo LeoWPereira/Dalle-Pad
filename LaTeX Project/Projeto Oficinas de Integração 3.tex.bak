@@ -26,8 +26,9 @@
 \usepackage{color} % para poder usar cores diferentes no documento
 \usepackage{float} % para controlar a posição de figuras no documento
 \usepackage{chngcntr} % para utilizar enumeração não-contínua de figuras
+
 \counterwithin{figure}{chapter} % a enumeração de figuras será separado por capítulos
-\counterwithin{table}{chapter, section} % a enumeração de tabelas será separado por capítulos
+\counterwithin{table}{chapter} % a enumeração de tabelas será separado por capítulos
 
 %\geometry{left=3.0cm,right=1.5cm,top=4cm,bottom=1cm}       Usado para realizar pequenos ajustes das margens.
 
