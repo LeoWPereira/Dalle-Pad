@@ -79,26 +79,33 @@
 
             O conector MIDI, semelhante ao apresentado na figura ~\ref{fig:MIDI_connector}, apresenta 5 pinos distintos. Entretanto, como já mencionado, MIDI envia informações utilizando um protocolo de transmissão serial. Desta forma, apenas um pino é realmente utilizado para o envio de informações. A tabela ~\ref{table:MIDI_pins} descreve cada pino do conector e sua respectiva função.
 
-            \begin{table}[H]
-                \centering
-                \begin{tabular}{| c | p{5cm} |}
-                    \hline
-                    \rowcolor{darkRed} \textcolor{white}{\textbf{Pino}} & \textcolor{white}{\textbf{Descrição}} \\
-                    \hline
+            \begin{center}
+                \tablefirsthead{%
+                  \hline
+                  \rowcolor{darkRed} \textcolor{white}{\textbf{Pino}} & \textcolor{white}{\textbf{Descrição}} \\
+                  \hline}
+                \tablehead{%
+                  \hline
+                  \multicolumn{2}{|l|}{\small\sl continuação da página anterior} \\
+                  \hline
+                  \rowcolor{darkRed} \textcolor{white}{\textbf{Pino}} & \textcolor{white}{\textbf{Descrição}} \\
+                  \hline}
+                \tabletail{%
+                  \hline
+                  \multicolumn{2}{|r|}{\small\sl continua na próxima página} \\
+                  \hline}
+                \tablelasttail{\hline}
+                \bottomcaption{Pinos em um conector MIDI
+                \label{table:MIDI_pins}}
+                %
+                \begin{supertabular}{| C{0.8cm} | C{14.3cm} |}
                     \rowcolor{lightRed} 1 &  Não é utilizado. Na maioria dos cabos MIDI, este pino não está conectado a nenhum fio. \\
-                    \hline
                     \rowcolor{white}    2 &  Este é utilizado para proteção elétrica (~\sigla{GND}{Ground}). Esta proteção impede que a transmissão apresente sinais elétricos indesejados. \\
-                    \hline
                     \rowcolor{lightRed} 3 &  Como o Pino 1, este também não é utilizado, e na maioria dos cabos MIDI, também não está conectado a nenhum fio. \\
-                    \hline
                     \rowcolor{white}    4 &  Este é o único receptor de dados MIDI. As informações através deste cabo fluem em uma única direção. \\
-                    \hline
                     \rowcolor{lightRed} 5 &  Este é o único transmissor de dados MIDI e, assim como no pino 4, as informações também fluem unidirecionalmente. \\
-                    \hline
-                \end{tabular}
-                \caption{Pinos em um conector MIDI}
-                \label{table:MIDI_pins}
-            \end{table}
+                \end{supertabular}
+            \end{center}
 
             Além do conector, outro hardware importante, que vale a pena ser ressaltado, é a versão fêmea do cabo MIDI. Controladores MIDI, como o desenvolvido neste projeto, apresentam normalmente 2 ou 3 destes conectores, rotulados como \textbf{In}, \textbf{Out} e \textbf{~\sigla{Thru}{Through}} (veja a figura ~\ref{fig:MIDI_connector_Female}). O conjunto destes conectores é chamado de \textbf{porta MIDI} e cada uma deles será explicado com mais detalhes a seguir.
 

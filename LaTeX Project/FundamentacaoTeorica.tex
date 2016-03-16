@@ -9,8 +9,8 @@
 \definecolor{lightRed}{rgb}{0.9568627450980392, 0.803921568627451, 0.7843137254901961}
 
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
-            
-            
+
+
 \chapter{Fundamentação Teórica}
 \label{chap:fundamentacaoTeorica}
 
@@ -189,6 +189,8 @@
             Digamos que um dispositivo MIDI receba três valores: 175, 43 e 125. Ele saberá que 175 é um \textit{byte} de estado, enquanto os outros dois valores são os \textit{bytes} de dados que estão acompanhando o \textit{byte} de estado. Caso este dispositivo receba outros valores, digamos: 200, 220 e 90. Ele saberá que os dois primeiros valores são \textit{bytes} de estados, enquanto o último é um \textit{byte} de dados que acompanha apenas o último \textit{byte} de estado, não ambos.
 
             Mensagens MIDI são normalmente representadas em um dos três mais comuns formatos digitais: decimais; binários; e hexadecimais. Explicar a conversão entre estes formatos (e os formatos em si) jazem fora do escopo deste projeto, mas podem ser consultados no livro \textit{MIDI Power!}~\cite{Guerin}.
+            
+            
 
     \section{Microcontroladores e Arduino}
 

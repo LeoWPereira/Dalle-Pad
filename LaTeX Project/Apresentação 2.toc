@@ -1,0 +1,16 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {portuges}
+\beamer@sectionintoc {1}{Componentes e custos}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Potenci\IeC {\^o}metro linear B10K}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{Potenci\IeC {\^o}metro Mixer Fader B10K}{5}{0}{1}
+\beamer@subsectionintoc {1}{3}{Bot\IeC {\~a}o interruptor com parafuso}{6}{0}{1}
+\beamer@subsectionintoc {1}{4}{Inv\IeC {\'o}lucro}{7}{0}{1}
+\beamer@sectionintoc {2}{Etapas do projeto}{8}{0}{2}
+\beamer@subsectionintoc {2}{1}{Primeira etapa}{9}{0}{2}
+\beamer@subsectionintoc {2}{2}{Segunda etapa}{10}{0}{2}
+\beamer@subsectionintoc {2}{3}{Terceira etapa}{11}{0}{2}
+\beamer@subsectionintoc {2}{4}{Quarta etapa}{12}{0}{2}
+\beamer@sectionintoc {3}{Riscos}{13}{0}{3}
+\beamer@subsectionintoc {3}{1}{Prazo de entrega}{14}{0}{3}
+\beamer@subsectionintoc {3}{2}{Conhecimento sobre MIDI}{15}{0}{3}
+\beamer@subsectionintoc {3}{3}{Custo Impressora 3D}{16}{0}{3}
