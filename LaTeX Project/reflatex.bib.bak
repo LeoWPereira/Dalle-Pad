@@ -332,6 +332,16 @@
   urlaccessdate = {19 de dezembro de 2015}
 }
 
+@MISC{Instructables02,
+  author = {Instructables},
+  title = {Custom Arduino MIDI Controller},
+  year = {2015},
+  owner = {Instructables},
+  timestamp = {2015.19.12},
+  url = {http://www.instructables.com/id/Arduino-AND-Bluetooth-HC-05-Connecting-easily/},
+  urlaccessdate = {19 de março de 2016}
+}
+
 @MISC{AndroidDeveloper,
   author = {Android},
   title = {Android Reference},
@@ -362,12 +372,12 @@
   urlaccessdate = {04 de janeiro de 2016}
 }
 
-@MISC{Gibson2013,
-  author = {Gibson, John},
-  title = {Introduction to MIDI and Computer Music:  The MIDI Standard},
-  year = {2013},
-  owner = {John Gibson},
+@MISC{WikipediaOitava,
+  author = {Wikipedia},
+  title = {Oitava},
+  year = {2016},
+  owner = {Wikipedia},
   timestamp = {2016.04.01},
-  url = {http://www.iu.edu/~emusic/361/midi.htm},
+  url = {https://pt.wikipedia.org/wiki/Oitava},
   urlaccessdate = {04 de janeiro de 2016}
 }
