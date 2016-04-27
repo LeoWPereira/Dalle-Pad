@@ -1,0 +1,56 @@
+track 1 (left audio)
+
+midi from:your left launchpad
+midi to:your left launchpad
+
+track 2(left light and tutorial)
+
+midi from:your left launchpad
+midi to:your left launchpad
+
+track 3 (right audio)
+
+midi from:your right launchpad
+midi to :your right launchpad
+
+track 4(right light and tutorial)
+
+midi from:your right launchpad
+midi to: your right launchpad
+
+track 5 (light1)
+
+midi from: your right launchpad
+midi to :your left launchpad
+
+track 6(lights2)
+
+midi from: your left launchpad
+midi to: your right launchpad
+
+track 7(light3)
+
+midi from:your left launchpad
+midi to :your right launchpad
+
+track 8 (lights4)
+
+midi from: your left launchpad
+midi to :your right launchpad
+
+left tutorial track:
+
+midi from:your left launchpad
+midi to :your left launchpad
+the track monitor should be "AUTO"
+
+right tutorial track:
+
+midi from :your right launchpad
+midi to :your right launchpad
+the track monitor should be "AUTO"
+
+
+
+when you playing the project make sure two audio track  monitor should be "IN"
+when you wathing the project tutorial make sure audio  track monitor should be "AUTO"
