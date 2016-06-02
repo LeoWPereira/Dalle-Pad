@@ -1,0 +1,407 @@
+%===============================================================
+% Universidade Tecnológica Federal do Paraná
+% Departamento Acadêmico de Eletrônica
+% Departamento Acadêmico de Informática
+% Engenharia de Computação
+% Oficina de Integração 3 (IF66J)
+% Modelo e instruções para a elaboração dos
+% relatórios técnicos da disciplina IF66J
+% Autores: Gustavo B. Borba e Guilherme A. Schneider
+% Versão: 27.fev.2016
+%===============================================================
+
+% Preâmbulo
+
+% http://easylatek.blogs.sapo.pt/3034.html [---
+\documentclass[a4paper,11pt]{article}
+\usepackage[portuguese]{babel}
+% Para Windows
+\usepackage[latin1]{inputenc} %substituir 'latin1' por 'utf8' para editores ShareLaTex ou Overleaf
+\usepackage[T1]{fontenc}
+% Para Linux
+% \usepackage[utf8]{inputenc}
+% Para Mac
+% \usepackage[applemac]{inputenc}
+% ---]
+% Packages [---
+\usepackage{fancyhdr} %para copeçalho e rodapé
+\usepackage{fancybox} %para copeçalho e rodapé
+\pagestyle{fancy} %para copeçalho e rodapé
+\usepackage{easylist} %para aninhar enumerate
+\usepackage{paralist} %para compactenum
+\usepackage{pbox} %para parbox
+\usepackage[hyphens]{url}  %para url com line break
+\usepackage{multirow} %para multirow e multicolumn
+\usepackage{array, hhline} %mais opcoes para o ambiente tabular
+\usepackage{fourier} %symbols
+\usepackage{ifsym} %symbols
+\usepackage{graphicx} %para inserir jpg e png e pdf
+% ---]
+
+% Cria hyperlinks e estrutura de tópicos para navegar em um pdf reader [---
+% Não alterar
+\usepackage[pdftex]{hyperref}
+\usepackage{color}
+\definecolor{corlinkprint}{rgb}{0, 0, 0}
+\hypersetup{
+  colorlinks,
+  citecolor   = corlinkprint,
+  filecolor   = corlinkprint,
+  linkcolor   = corlinkprint,
+  urlcolor    = corlinkprint}
+% ---]
+
+% Cabeçalho e rodapé a partir da página 2 [---
+% Substituir 'Modelo' pelo nome do projeto (nome de uma palavra usado na disciplina)
+\fancyhead[L]{\small{Relatório Técnico: Dalle Pad - O \textit{gadget} que te transforma em um DJ}}
+\fancyhead[R]{\small\thepage}
+\fancyfoot{}
+\renewcommand\headrulewidth{0.4pt}
+% ---]
+
+% Título [---
+% Substituir 'Modelo...' pelo título do relatório
+\title{
+Relatório Técnico\\
+\textbf{Dalle Pad - O \textit{gadget} que te transforma em um DJ}}
+% ---]
+
+% Autores [---
+% Substituir pelos nomes e emails dos integrantes
+\author{
+Leonardo W. Pereira \footnotesize{-- leonardowinterpereira@gmail.com}\\
+Lucas Z. Cordeiro \footnotesize{-- emailpessoal2@qqrlugar.com}\\
+Luís Felipe. M. Ortiz \footnotesize{-- emailpessoaln@qqrlugar.com}\\
+}
+% ---]
+
+% Substituir pelo mes e ano da defesa [---
+\date{Junho de 2016}
+% ---]
+
+\begin{document}
+
+% Cabeçalho da página 1 [---
+% Não alterar
+\thisfancyput(35mm,-10mm){
+\begin{tabular}{c}
+Universidade Tecnológica Federal do Paraná -- \small{UTFPR}\\
+Departamento Acadêmico de Eletrônica -- \small{DAELN}\\
+Departamento Acadêmico de Informática -- \small{DAINF}\\
+Engenharia de Computação\\
+Oficina de Integração 3 (IF66J) -- S71 -- 2016/1 \\
+\\
+\hline
+\end{tabular}}
+% ---]
+
+% Insere título, autores e data [---
+\maketitle
+% ---]
+
+% Resumo [---
+% Sustituir pelo seu resumo
+\begin{abstract}
+
+\end{abstract}
+% ---]
+
+%===============================================================
+% Corpo do texto [---
+% Substituir pelo seu relatório
+
+\section{Introdução}
+\label{sec:introducao}
+
+    \textbf{DALLE PAD - O Gadget que te transforma em um DJ} foi desenvolvido para a disciplina de Oficina de Integração 3 (IF66J - S71), do curso de Engenharia de Computação da Universidade Tecnológica Federal do Paraná.
+
+    Como proposto pela disciplina, o sistema é composto por uma estação base (desenvolvida para \textit{mobile}), um sistema de comunicação e um sistema embarcado. O sistema de comunicação é baseado em tecnologia sem fio, além de conexão USB e MIDI (\textit{Musical Instrument Digital Interface}); o sistema embarcado consiste em um sistema microcontrolado e a estrutura física do produto é composta por um invólucro mecânico contendo todo o sistema microcontrolado e toda a estrutura física necessária para que o usuário final possa utilizar tudo o que o \textbf{DALLE PAD} permite. O sistema completo pode ser facilmente visualizado na Figura~\ref{fig:imagem-geral}.
+    
+    \begin{figure}[h]
+    	\centering
+    	\includegraphics[scale=0.12]{Imagens/imagem-geral.png}
+    	\caption[Visão Geral do projeto]{Visão Geral do projeto}
+    	\label{fig:imagem-geral}
+    \end{figure}
+    
+    \subsection{Tema}
+
+        A música é a arte de combinar sons de maneira agradável ao ouvido e a sensibilidade emocional utilizando elementos como melodia, harmonia e ritmo. Atualmente, não se conhece nenhuma civilização ou agrupamento que não possua manifestações musicais próprias. A criação, o desempenho, o significado e até mesmo a definição de música variam de acordo com a cultura e o contexto social, como composições fortemente organizadas e improvisadas.
+
+        A música expandiu-se ao longo dos anos, e atualmente encontra-se em diversas utilidades, não só como arte, mas também como a militar, educacional ou terapêutica (musicoterapia). Além disso, tem presença central em diversas atividades coletivas, como os rituais religiosos e festas.
+
+        Os instrumentos musicais até o século XIX baseavam-se em um mesmo princípio de produção sonora, todo som era proveniente da vibração de algum material elástico (as cordas do violão e do piano, por exemplo) que gerava ondas que se propagam pelo ar até atingirem o sistema auditivo do ouvinte. Entretanto, o surgimento de novas tecnologias baseadas na eletricidade e no uso de sinais eletromagnéticos abriu a possibilidade da geração de sons artificiais, sem a utilização de instrumentos mecânicos. Embora as ondas que atingem os ouvidos possuam a mesma natureza, a sua produção é radicalmente diferente.~\cite{SANTINI2005}
+
+        Para alguns indivíduos, a música está extremamente ligada à sua vida, mas a dificuldade de manter um grupo musical unido é muito grande, sem contar o custo elevado de determinados instrumentos e outros equipamentos. Atualmente, pode-se contar com a Tecnologia MIDI.
+
+        Desde seu lançamento no mercado no inicio da década de 1980, o protocolo MIDI tem tido um papel de grande importância na indústria da música. Entretanto, mais importante ainda é que este trouxe para músicos e entusiastas uma ferramenta que lhes permitiu preencher a lacuna antes existente. MIDI permitiu, pela primeira vez, um meio de comunicação de informações musicais de um dispositivo para outro de uma forma que foi aceito e adotado por toda uma indústria.~\cite{Guerin}
+
+        Alguns anos mais tarde, em meados da década de 1990, alguns acreditavam que MIDI não tinha mais futuro. Estações de trabalho de áudio digital foram se tornando cada vez mais acessíveis e computadores passaram a oferecer um poder de processamento cada vez maior, que o uso de MIDI foi quase considerada uma coisa do passado, lento demais para continuar sendo utilizado. Entretanto, não foi isso o que aconteceu.
+
+        Este protocolo continua sendo amplamente utilizado na área musical, e é de interesse deste projeto compreender a teoria por trás do mesmo, não somente sua utilização no produto final, o controlador DALLE PAD.
+
+        Inspirado em diversos produtos já existentes, o protótipo aqui apresentado será capaz de realizar todas as principais funções de um controlador MIDI (a ser explicitado no decorrer deste documento).
+
+    \subsection{Delimitação do Estudo}
+
+        Este trabalho busca disponibilizar as informações necessárias sobre o protocolo MIDI para os leitores interessados, incluindo sua importância, utilidade e formas de utilização, além de explicar a teoria por trás de todos os conceitos utilizados neste protótipo. Desta forma, até mesmo o leitor leigo na área de computação musical poderá acompanhar este trabalho sem maiores problemas.
+
+        Com o objetivo de desenvolver um produto acessível para o usuário final, procurou-se componentes de baixo custo e interfaces gráficas para trabalhar em conjunto com o mesmo que fossem comuns e de fácil aquisição: computadores, \textit{notebooks}, \textit{smartphones} e \textit{tablets}.
+
+    \subsection{Problema}
+
+        O trabalho consiste na confecção de um controlador MIDI e sua integração à um sistema através do uso das comunicações \textit{bluetooth}, USB e MIDI. Com o objetivo principal do trabalho sendo adquirir experiência e aprendizado quanto aos elementos envolvidos, o problema do projeto se limita à utilização do \textit{bluetooth} e ao custo total do projeto. Ao longo do desenvolvimento do projeto, o problema que se procura resolver é: Existe como confeccionar um controlador MIDI que utilize as comunicações citadas e que possua custo acessível?
+
+        A primeira etapa do desenvolvimento do projeto se baseia na escolha dos componentes e sua montagem, procurando a solução quanto aos custos totais. Já na segunda fase, o desenvolvimento da integração com um sistema irá permitir avaliar a viabilidade do \textit{bluetooth} no projeto.
+
+    \subsection{Objetivos}
+
+        Nesta seção são apresentados os objetivos geral e específicos do trabalho, relativos ao problema anteriormente apresentado.
+
+        \subsubsection{Objetivos Gerais}
+
+            Desenvolver um controlador MIDI capaz de exercer todas as principais funções impostas a ele no meio musical, através de um dispositivo que possua sistema operacional \textit{Android} e comunicação por \textit{bluetooth} ou através de um computador ou \textit{notebook} que possua o sistema operacional \textit{Windows}, utilizando-se das comunicações USB e MIDI.
+
+        \subsubsection{Objetivos Específicos}
+
+            \begin{itemize}
+              \item Projetar e montar o protótipo do controlador aqui proposto;
+
+              \item Desenvolver um aplicativo para \textit{Android} capaz de se comunicar com o mesmo;
+
+              \item Implementação do protocolo de comunicação entre as estações base e o controlador.
+            \end{itemize}
+
+    \subsection{Justificativa}
+
+        O controlador MIDI surgiu para conectar instrumentos musicais eletrônicos, computadores e outros dispositivos relacionados através de uma simples conexão MIDI. Esse produto auxilia músicos amadores e profissionais na edição e criação de músicas, incentivando-os à utilizar sua criatividade com os novos tipos de efeitos e funcionalidades que estão contidos no software utilizado.
+
+        O desenvolvimento desse produto no Brasil é limitado e seu preço no mercado pode ser alto para usuários amadores. Ao inserirmos um novo tipo de comunicação no dispositivo, permitimos outra maneira de acessá-lo e um software para controle básico de suas funções. Ao mesmo tempo, procuramos diminuir o custo do projeto, tornando-o acessível para o mercado e, principalmente, às pessoas que desejam começar a aprender esse ramo da música.
+
+    \subsection{Procedimentos Metodológicos}
+
+        A natureza deste trabalho é de pesquisa aplicada, pois gerará um protótipo de aplicação prática utilizando conhecimento teórico já existente, dirigido a um problema específico. A abordagem é qualitativa, envolvendo testes do projeto em ambiente simulado.
+
+        O seu desenvolvimento é organizado em três principais estágios: pesquisa bibliográfica, implementação e experimentação. Na fase de pesquisa bibliográfica, são considerados os resultados de trabalhos passados que se mostraram relevantes para a implementação do presente projeto, desde os conceitos mais abrangentes (e.g.: programação em Android) até os mecanismos básicos (e.g.: protocolo MIDI). Será dada uma atenção fundamental ao estudo do protocolo MIDI para o desenvolvimento desse projeto.
+
+        No estágio de implementação serão realizados diagramas esquemáticos do hardware e software que serão desenvolvidos com base nos conceitos estudados na fase de pesquisa bibliográfica. Assim que os esquemáticos forem finalizados, a compra dos materiais para o hardware e o início do desenvolvimento dos softwares poderão ser iniciados. Ao obtermos todos os materiais necessários para o hardware, será possível iniciar o projeto da PCB e dos componentes necessários através do diagrama esquemático.
+
+        Após finalizada a implementação do projeto, a fase de experimentação será iniciada. Vários testes individuais com o hardware e os softwares serão realizados, assim como testes envolvendo a conexão dos dois componentes. Assim, haverá espaço para ajustes e verificação do projeto antes da montagem do produto final.
+
+    \subsection{Embasamento Teórico}
+
+        Para que seja possível a execução deste projeto, diversas referências serão utilizadas.
+
+        Referente ao protocolo MIDI, serão utilizados como referencial teórico, principalmente, ~\cite{Alves}, ~\cite{Hewitt}, ~\cite{Colbeck}, ~\cite{Guerin}, ~\cite{McGuire} e ~\cite{Huber}, mas diversos outros trabalhos serão citados no decorrer deste trabalho.
+
+        Referente às estações base, os principais referenciais teóricos são, além dos já citados anteriormente, ~\cite{Ballou}, ~\cite{Gregoire}, ~\cite{Jackson}, além de ~\cite{AndroidDeveloper}.
+
+        Por último, para o sistema microcontrolado, as principais referencias são ~\cite{Wheat}, ~\cite{Bayle}, ~\cite{Ghassaei} e ~\cite{Hass}, além de ~\cite{Arduino2014}, ~\cite{ArduinoRef2014}.
+
+\section{Fundamentação Teórica}
+\label{sec:fundamentacao}
+
+    Para uma melhor compreensão e análise do funcionamento e princípios envolvidos em um controlador MIDI, é fundamental entendermos todos os conceitos nesse processo.
+    
+    \subsection{O que é MIDI}
+
+            O primeiro conceito que o leitor deve entender é o que é, de fato, o protocolo MIDI, citado repetidas vezes no capítulo anterior, mas que ainda não foi explicitado. Para tanto, serão citadas três definições deste e após, será estudado o real significado das mesmas.
+
+            Adam Olson, do Conservatório Shenandoah, define MIDI como: \epigraph{[...] MIDI é um protocolo de controle que envia dados entre vários instrumentos musicais e sequênciadores.}{~\cite{McGuire}}
+
+            Já David Miles Huber, autor do livro \textit{The MIDI Manual} define MIDI como: \epigraph{[...] Basicamente, MIDI é uma linguagem e especificação compatível de comunicação digital que permite múltiplos hardwares e softwares se comunicarem uns com os outros através de uma rede conectada.}{~\cite{Huber}}
+
+            Robert Guérin, autor do livro \textit{MIDI Power!}, por sua vez, define MIDI como: \epigraph{[...] MIDI permite que músicos, engenheiros de som e iluminação, entusiastas da computação, ou qualquer outra pessoa usem computadores e instrumentos musicais eletrônicos para criar, ouvir e aprender sobre música, oferecendo uma linguagem comum que é compartilhado entre dispositivos e software compatíveis.}{~\cite{Guerin}}
+
+            Com estas definições, pode-se perceber que MIDI é, por si só, incapaz de reproduzir som. Esta é sua maior qualidade. Seus dados podem ser gravados em um programa de software (conhecido como sequênciador) ou dispositivo de hardware, onde estes podem ser editados e transmitidos para instrumentos eletrônicos ou outros dispositivos para criar a música ou controlar qualquer parâmetro desejado. Além disso, MIDI pode ser separado em três entidades diferentes: A linguagem utilizada, também conhecida como protocolo de comunicação; a interface de hardware utilizada para transmitir e receber essas informações (tais como conectores e cabos); e os formatos de distribuição, tal como \sigla{SMF}{Standard MIDI Files} (Arquivos MIDI padrão). No decorrer deste capítulo, abordaremos separadamente cada entidade, a fim de entender como elas trabalham juntas e o porquê do MIDI funcionar tão bem, oferecendo interconectividade, flexibilidade e (em termos de tamanho de arquivo) portabilidade.
+
+            Fundamentalmente, MIDI é uma linguagem de descrição de música em forma binária, em que cada palavra binária descreve um evento de uma música. Cada instrumento musical realiza um som, o qual está totalmente sobre controle do músico. O músico controla o momento em que o instrumento começará a realizar um determinado som - um tecladista pressionará uma tecla, um trompetista soprará ar e um baixista puxará uma corda. Considere esta ação como o evento \textbf{Note ON}. A mensagem MIDI em si não contém o real som tocado pelo instrumento, mas sim a ação de tocar uma determinada nota em um determinado momento e durante um determinado período.
+
+            Quando o músico deixa de pressionar uma tecla em seu teclado ou de puxar uma corda em seu baixo, o som pára. Com MIDI, quando tal ação é realizada, uma mensagem é enviada para essa nota, para que esta deixe de realizar som. Esta mensagem é conhecida por \textbf{Note OFF}. A figura ~\ref{fig:MIDI_Nota_ON_e_OFF} demonstra um exemplo destes dois eventos.
+
+            \begin{figure}[H]
+            	\centering
+            	\includegraphics{Imagens/MIDI_Nota_ON_e_OFF.jpg}
+            	\caption[Exemplo de transmissão das mensagens de Nota ON e OFF]{Exemplo de transmissão das mensagens de Nota ON e OFF ~\cite{Guerin}}
+            	\label{fig:MIDI_Nota_ON_e_OFF}
+            \end{figure}
+
+            A fim de identificar qual nota foi ativada / desativada no instrumento, um número é atribuído para cada nota. MIDI também lida com valores interpretativos, como por exemplo a velocidade que a nota foi pressionada e a pressão que é executada na mesma.
+
+        \subsection{O protocolo de comunicação MIDI}
+
+            O protocolo de comunicação MIDI é transmitido de forma serial ao invés de paralela. Em uma transmissão paralela, como o nome sugere, as informações são transmitidas simultaneamente. A quantidade de dados que podem ser transmitidos simultaneamente depende na capacidade física do fio e da velocidade com que os dispositivos podem enviar suas informações. Na figura ~\ref{fig:Parallel_versus_serial_transmissions}, podemos perceber que um \textit{byte} (oito \textit{bits}) é transmitido simultaneamente utilizando uma transmissão paralela. A transmissão serial, por outro lado, consegue enviar apenas um \textit{bit} após o outro.
+
+            \begin{figure}[H]
+            	\centering
+            	\includegraphics[scale=0.8]{Imagens/Parallel_versus_serial_transmissions.png}
+            	\caption[Comparação entre transmissão serial e paralela]{Comparação entre transmissão serial e paralela}
+            	\label{fig:Parallel_versus_serial_transmissions}
+            \end{figure}
+
+            A pergunta que fica é: Por que MIDI usa transmissão serial ao invés da transmissão paralela?
+
+            A resposta para essa pergunta está no período em que o protocolo foi desenvolvido. A transmissão paralela tinha algumas desvantagens que superavam as vantagens desta sobre a transmissão serial, além de ser muito mais cara, uma vez que os fios, conectores e tomadas eram mais complexos. Já a transmissão serial, por outro lado, era muito mais simples de ser produzida, mais acessível para o público e rápida o suficiente para os fins que os fabricantes e usuários tinham em mente naquela época, para não mencionar mais confiável. Com o passar dos anos, a tecnologia avançou muito e os custos da transmissão paralela despencaram. Entretanto, para manter o MIDI compatível com todos os antigos dispositivos, sua forma de transmissão de dados permaneceu inalterada desde sua introdução no mercado.
+
+            MIDI envia informação a uma taxa de 31250 \sigla{bps}{\textit{bits} por segundo}. Essa velocidade é chamada de taxa de transmissão. Uma vez que o protocolo utiliza transmissão serial, o mesmo envia apenas um \textit{bit} por vez. Cada \textit{byte} em uma mensagem MIDI contém 10 \textit{bits} de dados (8 \textit{bits} para as informações e 2 \textit{bits} para correção de erro). Isso significa que MIDI envia cerca de 3125 \textit{bytes} de dados cada segundo.
+
+            Quando comparamos esse valor com a taxa de transmissão de 176400 \textit{bytes} necessária para transmitir áudio digital (reprodução e gravação) em formado de CD de áudio, MIDI pode parecer incrivelmente devagar. Entretanto, neste último não é necessário enviar tanta informação quanto o áudio digital, sendo capaz de, teoricamente, transmitir até 500 mensagens MIDI por segundo. Na realidade, leva cerca de um milésimo de segundo para transmitir uma única nota. O limiar para distinguir os eventos de som individuais é de aproximadamente 10 milissegundos, então você apresentará dificuldades com 10 ou mais eventos simultâneos.
+
+        \subsection{Hardware e conectores}
+
+            Informações MIDI são transmitidas através de fios e conectores, e seus cabos podem apresentar até 15 metros de comprimento. Entretanto, por se tratar de um cabo serial, todos os dados são transmitidos através de um único fio principal, e grandes distâncias podem inferir em uma degradação do sinal, ocasionando em possíveis perdas de dados ou mensagens impossíveis de serem lidas.
+
+            \begin{figure}[H]
+            	\centering
+            	\includegraphics[scale=0.8]{Imagens/MIDI_connector.jpg}
+            	\caption[Conector MIDI]{Conector MIDI}
+            	\label{fig:MIDI_connector}
+            \end{figure}
+
+            O conector MIDI, semelhante ao apresentado na figura ~\ref{fig:MIDI_connector}, apresenta 5 pinos distintos. Entretanto, como já mencionado, MIDI envia informações utilizando um protocolo de transmissão serial. Desta forma, apenas um pino é realmente utilizado para o envio de informações. A tabela ~\ref{table:MIDI_pins} descreve cada pino do conector e sua respectiva função.
+
+            \begin{center}
+                \tablefirsthead{%
+                  \hline
+                  \rowcolor{darkRed} \textcolor{white}{\textbf{Pino}} & \textcolor{white}{\textbf{Descrição}} \\
+                  \hline}
+                \tablehead{%
+                  \hline
+                  \multicolumn{2}{|l|}{\small\sl continuação da página anterior} \\
+                  \hline
+                  \rowcolor{darkRed} \textcolor{white}{\textbf{Pino}} & \textcolor{white}{\textbf{Descrição}} \\
+                  \hline}
+                \tabletail{%
+                  \hline
+                  \multicolumn{2}{|r|}{\small\sl continua na próxima página} \\
+                  \hline}
+                \tablelasttail{\hline}
+                \bottomcaption{Pinos em um conector MIDI
+                \label{table:MIDI_pins}}
+                %
+                \begin{supertabular}{| C{0.8cm} | C{14.3cm} |}
+                    \rowcolor{lightRed} 1 &  Não é utilizado. Na maioria dos cabos MIDI, este pino não está conectado a nenhum fio. \\
+                    \rowcolor{white}    2 &  Este é utilizado para proteção elétrica (~\sigla{GND}{Ground}). Esta proteção impede que a transmissão apresente sinais elétricos indesejados. \\
+                    \rowcolor{lightRed} 3 &  Como o Pino 1, este também não é utilizado, e na maioria dos cabos MIDI, também não está conectado a nenhum fio. \\
+                    \rowcolor{white}    4 &  Este é o único receptor de dados MIDI. As informações através deste cabo fluem em uma única direção. \\
+                    \rowcolor{lightRed} 5 &  Este é o único transmissor de dados MIDI e, assim como no pino 4, as informações também fluem unidirecionalmente. \\
+                \end{supertabular}
+            \end{center}
+
+            Além do conector, outro hardware importante, que vale a pena ser ressaltado, é a versão fêmea do cabo MIDI. Controladores MIDI, como o desenvolvido neste projeto, apresentam normalmente 2 ou 3 destes conectores, rotulados como \textbf{In}, \textbf{Out} e \textbf{~\sigla{Thru}{Through}} (veja a figura ~\ref{fig:MIDI_connector_Female}). O conjunto destes conectores é chamado de \textbf{porta MIDI} e cada uma deles será explicado com mais detalhes a seguir.
+
+            \begin{figure}[H]
+            	\centering
+            	\includegraphics[scale=0.8]{Imagens/midi_in_out_thru.png}
+            	\caption[Conectores fêmeas MIDI]{Conectores fêmeas MIDI}
+            	\label{fig:MIDI_connector_Female}
+            \end{figure}
+
+            \begin{itemize}
+                \item MIDI IN: Através deste conector são recebidas as mensagens MIDI de um determinado dispositivo ou software MIDI. Estas mensagens podem então ser processadas e, caso desejado, enviadas para outro dispositivo através do conector MIDI Thru.
+
+                \item MIDI OUT: Através deste conector são transmitidas as mensagens MIDI que são geradas em um software ou dispositivo MIDI. Esta saída não envia informação de áudio, mas sim simples mensagens MIDI que são interpretadas por um conector MIDI In de um outro dispositivo. Tais mensagens são códigos digitais que representam o que e como músicas e eventos são tocados em um determinado instrumento.
+
+                \item MIDI THRU: envia uma réplica do sinal recebido na porta In para o componente ligado a ele, seja em cadeia ou somente os dois, desde que sejam componentes MIDI.
+            \end{itemize}
+
+        \subsection{Formatos de distribuição}
+
+            Como já dito no início deste capítulo, existe um formato de arquivo padrão para MIDI, o SMF. Este tipo de arquivo armazena todas as informações necessárias para reproduzir todos os parâmetros suportados pelo protocolo. Além disso, ele também adiciona o que chamamos de \textit{time stamp} em cada evento, para que o software MIDI, ou até mesmo o usuário final, saiba o momento correto de realizar cada um destes.
+
+            MIDI tem a vantagem de ser compacto, uma vez que o som tocado por determinado instrumento não é gravado, mas sim apenas as informações de cada evento. Devido a este fato, arquivos MIDI apresentam um tamanho cerca de 300 vezes menor do que um arquivo de música atual (MP3). Entretanto, esse valor pode ser muito maior se compararmos com formatos descompactados de músicas.
+
+            O fato de MIDI não gravar som, entretanto, pode também ser uma desvantagem. Quando o som de um determinado instrumento é gravado, o usuário tem total controle sobre o resultado final, enquanto com MIDI, este mesmo resultado depende do dispositivo ou software que será utilizado para reproduzir este mesmo som.
+
+        \subsection{Canais MIDI}
+
+            Quando trabalhamos com música, muitas vezes desejamos que diversos instrumentos participem da mesma composição. Com MIDI, podemos incluir instruções para cada um deles através dos chamados \textbf{canais MIDI}.
+
+            Pense em um canal MIDI como um canal de televisão (veja a figura ~\ref{fig:midi-channels}). Um determinado instrumento conecta-se apenas a um único canal, assim como um usuário o faz em sua televisão. Isso não significa que os outros canais não estão disponíveis, mas sim que o conteúdo disponível (no nosso caso, a mensagem MIDI) foi filtrado para processar apenas o relevante para aquele canal.
+
+            \begin{figure}[H]
+            	\centering
+            	\includegraphics[scale=0.6]{Imagens/midi-channels.png}
+            	\caption[Exemplo de canais MIDI]{Exemplo de canais MIDI ~\cite{Gibson2013}}
+            	\label{fig:midi-channels}
+            \end{figure}
+
+            Cada porta MIDI suporta até 16 canais simultâneos. Em outras palavras, um usuário pode escolher um determinado canal para transmitir as mensagens MIDI ou possuir até 16 instrumentos conectados simultaneamente, cada um realizando diferentes eventos.
+
+    \section{Mensagens MIDI}
+
+        Agora que já explicamos o básico sobre o protocolo MIDI, é necessário estudarmos como podemos transmitir informações através de dispositivos. Essas informações são as chamadas \textbf{mensagens MIDI}.
+
+        O conteúdo de uma mensagem MIDI é bastante simples. Todas elas apresentam um componente chamado de \textit{status byte}. Este componente é acompanhado por um valor que é definido por um ou mais \textit{bytes} de dados.
+
+        Durante essa seção, os seguintes tópicos serão abordados:
+
+        \begin{itemize}
+                \item A estrutura de uma mensagem MIDI.
+
+                \item Diferenças entre os tipos de mensagens MIDI.
+
+                \item O que essas mensagens contêm e o que seus valores representam.
+
+                \item Como MIDI atribui nomes e números de notas para cada evento.
+
+                \item Como as mensagens MIDI transmitem e armazenam informações sobre a performance, e então as reproduzem no tempo correto.
+        \end{itemize}
+
+        \subsection{Mensagens de estado e de dados}
+
+            Como já visto na seção anterior, cada \textit{byte} em uma mensagem MIDI contém 10 \textit{bits}. Destes, 8 são utilizados para a transmissão de informações. Desta forma, cada mensagem pode conter um valor entre 0 e 255. Tais mensagens são divididas em duas categorias: \textit{Estado} e \textit{Dados} (veja a figura ~\ref{fig:Status_and_Data_Bytes}).
+
+            \begin{figure}[H]
+            	\centering
+            	\includegraphics[scale=0.8]{Imagens/Status_and_Data_Bytes.jpg}
+            	\caption[Byte de estado e de dados]{Byte de estado e de dados ~\cite{Guerin}}
+            	\label{fig:Status_and_Data_Bytes}
+            \end{figure}
+
+            \begin{itemize}
+                \item A porção referente ao \textit{byte} de estado serve para identificar o tipo de informação que está sendo enviada. Ela informa ao dispositivo receptor a qual canal MIDI determinado evento pertence e o que este evento é. Um evento pode ser, por exemplo, um Note On ou um Note Off. Outros eventos serão explicados no decorrer do projeto.
+
+                \item A porção referente ao \textit{byte} de dados informa ao dispositivo receptor o valor que está associado ao evento determinado na outra porção da mensagem MIDI. Por exemplo, se o usuário decidir tocar um \textit{Dó} mediano com uma força também mediana, o \textit{byte} de estado irá enviar um evento "Note On", enquanto o \textit{byte} de dados irá passar o valor correspondente à essa nota e à velocidade que esta foi tocada. No nosso exemplo, a nota C4 tem o valor correspondente a 60 (veja a tabela ~\ref{table:MIDI_notes}) e a velocidade de aproximadamente 64.
+            \end{itemize}
+
+            Os valores utilizados pelo \textit{byte} de estado variam entre 128 e 255 (1000 0000 a 1111 1111 em números binários), enquanto para o \textit{byte} de dados estes variam entre 0 a 127 (0000 0000 a 0111 1111 em números binários). É fácil perceber que, para um dispositivo MIDI reconhecer qual o tipo de mensagem que se está sendo transmitida, basta verificar o \sigla{MSB}{Most Significant Bit} (\textit{Bit} mais significativo, do inglês). Se este valor for 1, trata-se de um \textit{byte} de estado. Caso contrário, de um \textit{byte} de dados. Simples assim.
+
+            Digamos que um dispositivo MIDI receba três valores: 175, 43 e 125. Ele saberá que 175 é um \textit{byte} de estado, enquanto os outros dois valores são os \textit{bytes} de dados que estão acompanhando o \textit{byte} de estado. Caso este dispositivo receba outros valores, digamos: 200, 220 e 90. Ele saberá que os dois primeiros valores são \textit{bytes} de estados, enquanto o último é um \textit{byte} de dados que acompanha apenas o último \textit{byte} de estado, não ambos.
+
+            Mensagens MIDI são normalmente representadas em um dos três mais comuns formatos digitais: decimais; binários; e hexadecimais. Explicar a conversão entre estes formatos (e os formatos em si) jazem fora do escopo deste projeto, mas podem ser consultados no livro \textit{MIDI Power!}~\cite{Guerin}.
+
+\section{Metodologia e Desenvolvimento}
+\label{desenvolvimento}
+
+
+    \subsection{Estrutura}
+    \label{subsec:estrutura}
+    
+    
+    \subsection{Sistema Microcontrolado}
+    \label{subsec:microcontrolado}
+    
+    
+    \subsection{Conexão}
+    \label{subsec:conexao}
+    
+    
+    \subsection{Estação Base - Android}
+    \label{subsec:android}
+    
+    
+
+\section*{Agradecimentos}
+
+
+
+%Insere referencias [---
+\bibliographystyle{unsrt}
+\bibliography{reflatex} % Substituir pelo seu arquivo bib
+% ---]
+
+% ---]
+
+\end{document}
+
