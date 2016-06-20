@@ -1,0 +1,9 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {portuges}
+\beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{3}{0}{1}
+\beamer@sectionintoc {2}{Estrutura}{8}{0}{2}
+\beamer@sectionintoc {3}{Sistema Embarcado e Esta\IeC {\c c}\IeC {\~a}o Base}{10}{0}{3}
+\beamer@subsectionintoc {3}{1}{Sistema Embarcado}{10}{0}{3}
+\beamer@subsectionintoc {3}{2}{Esta\IeC {\c c}\IeC {\~a}o Base}{15}{0}{3}
+\beamer@sectionintoc {4}{Algoritmos}{16}{0}{4}
+\beamer@sectionintoc {5}{Conclus\IeC {\~a}o}{18}{0}{5}

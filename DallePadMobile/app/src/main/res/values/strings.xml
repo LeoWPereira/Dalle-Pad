@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Dalle Pad</string>
+    <string name="connect">Connect</string>
+    <string name="dallepad">Dalle Pad</string>
+    <string name="status">Status:</string>
+    <string name="disconnected">Disconnected</string>
+</resources>

@@ -1,0 +1,119 @@
+%%
+%% Projeto Oficinas de Integração 3.tex
+%% Projeto Oficinas de Integração 3
+%% Created by Leonardo Winter Pereira and Lucas Zimmermann Cordeiro on 10.03.2016
+%% Copyright (C). All rights reserved
+%%
+
+\documentclass[openright]{normas-utf-tex} %openright = O capítulo começa sempre em páginas ímpares
+%\documentclass[oneside]{normas-utf-tex} %oneside = Para dissertações com número de páginas menor que 100 (apenas frente da folha)
+
+\usepackage[alf,abnt-emphasize=bf,bibjustif,recuo=0cm, abnt-etal-cite=2]{abntcite} % configuração correta das referências bibliográficas.
+\usepackage[brazil, portuges]{babel} % pacote português brasileiro
+\usepackage[utf8]{inputenc} % pacote para acentuação direta
+\usepackage{amsmath,amsfonts,amssymb} % pacote matemático
+\usepackage{graphicx} % pacote gráfico
+\usepackage{times} % fonte times
+\usepackage{url} % fonte times
+\usepackage{listings} % pacote para códigos
+\usepackage{pdfsync} % para sincronização automática do PDF
+\usepackage{pdfpages} % para poder adicionar documentos PDF ao arquivo
+\usepackage{epigraph} % para utilizar epígrafes
+\usepackage{array} % para poder utilizar comprimentos pré-definidos em uma tabela
+\usepackage{xcolor,colortbl} % para poder utilizar cores em uma tabela
+\usepackage{booktabs, tabularx, ltablex, longtable, supertabular} % para poder usar tabelas em múltiplas páginas
+\usepackage{multirow} % para poder usar Linhas e Colunas multiplas em tabelas
+\usepackage{color} % para poder usar cores diferentes no documento
+\usepackage{float} % para controlar a posição de figuras no documento
+\usepackage{chngcntr} % para utilizar enumeração não-contínua de figuras
+\usepackage{caption, subcaption} % para figuras / subfiguras
+
+\counterwithin{figure}{chapter} % a enumeração de figuras será separado por capítulos
+\counterwithin{table}{chapter} % a enumeração de tabelas será separado por capítulos
+
+%\geometry{left=3.0cm,right=1.5cm,top=4cm,bottom=1cm}       Usado para realizar pequenos ajustes das margens.
+
+% ---------- Preâmbulo ----------
+\instituicao{Universidade Tecnológica Federal do Paraná} % nome da instituição
+\programa{Bacharelado em Engenharia de Computação} % nome do programa
+
+\documento{Artigo Acadêmico} % [Monografia], [Dissertação] ou [Tese]
+\nivel{Graduação} % [Mestrado] ou [Doutorado]
+\titulacao{Oficinas de Integração 3} % [Mestre] ou [Doutor]
+
+\titulo{\MakeUppercase{Dalle Pad}} % Título do trabalho em português
+\title{\MakeUppercase{Dalle Pad}} % Título do trabalho em inglês
+
+\autor{\hspace{2.25cm}Leonardo Winter Pereira \newline Lucas Zimmermann Cordeiro \hspace{10cm} Luís Felipe Mazzuchetti Ortiz} % Autor do trabalho
+\cita{WINTER PEREIRA, Leonardo; ZIMMERMANN CORDEIRO, Lucas; MAZZUCHETTI ORTIZ, Luís F.} % sobrenome (maiúsculas), Nome do autor do trabalho
+
+\palavraschave{Arduino, Android, Projeto, Gerenciamento} % Palavras-chave do trabalho
+\keywords{Arduino, Android, Project, Management} % Palavras-chave do trabalho em inglês
+
+\comentario{\UTFPRdocumentodata\ apresentado pelo \UTFPRprogramadata\ da \ABNTinstituicaodata\ como requisito parcial para aprovação na disciplina de "\UTFPRtitulacaodata\ ".}
+
+\orientador{Gustavo Benvenutti Borba \newline Guilherme Alceu Schneider} % nome do orientador do trabalho
+\local{Curitiba} % cidade
+\data{\the\year} % ano automático
+
+%---------- Inicio do Documento ----------
+\begin{document}
+
+    \capa % Geração automática da capa
+    \folhaderosto % Geração automática da folha de rosto
+
+    % Dedicatória (Ppcional)
+    \begin{dedicatoria}
+        AQUI A DEDICATÓRIA
+    \end{dedicatoria}
+
+    % Agradecimentos (Opcional)
+    \begin{agradecimentos}
+        AQUI OS AGRADECIMENTOS
+    \end{agradecimentos}
+
+    % Epigrafe (Opcional)
+    \begin{epigrafe}
+        "A geometria é uma ciência de todas as espécies possíveis de espaços." (Kant)
+    \end{epigrafe}
+
+    % Resumo
+    \begin{resumo}
+
+        Resumo (Máximo de 500 palavras).
+
+    \end{resumo}
+
+    % Abstract
+    \begin{abstract}
+
+        Abstract text (maximum of 500 words).
+
+    \end{abstract}
+
+    % Listas (opcionais, mas recomenda-se a partir de 5 elementos)
+    \listadefiguras % Geração automática da lista de figuras
+    \listadetabelas % Geração automática da lista de tabelas
+    \listadesiglas % Geração automática da lista de siglas
+    %\listadesimbolos % Geração automática da lista de símbolos
+
+    % Sumário
+    \sumario % Geração automática do sumário
+
+    %---------- Início do Texto ----------
+    \input{Introducao.tex}
+    \input{FundamentacaoTeorica.tex}
+    \input{Desenvolvimento.tex}
+    \input{Resultados.tex}
+    \input{Conclusao.tex}
+
+    %---------- Referências ----------
+    \bibliography{reflatex} % Geração automática das referências a partir do arquivo reflatex.bib
+
+    \apendice
+    \input{Apendice.tex}
+
+    \anexo
+    \input{Anexos.tex}
+
+\end{document} 
